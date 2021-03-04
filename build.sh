@@ -1,7 +1,8 @@
 #!/bin/sh
 # This is a comment!
-rm -f ./dist
+rm -rf ./dist
 mkdir ./dist
+mkdir ./dist/magazines
 echo "Build de..."
 mdbook build ./src/de
 mkdir ./dist/magazines/de
