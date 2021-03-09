@@ -148,6 +148,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="was-ist-eddsa-support-schmucklos-cp"><a class="header" href="#was-ist-eddsa-support-schmucklos-cp">Was ist &quot;EdDSA Support&quot; (Schmucklos c&amp;p)</a></h1>
+<p>Das neue gebräuchliche Signaturschema Ed25519 wird das alte Winternitz One-Time Signature (w-OTS) ersetzten. Dies reduziert drastisch die Transaktionsgröße und ermöglicht folglich eine deutliche Erhöhung der möglichen Messeges pro Sekunde (MPS), zudem werden durch die Einführung des neuen Signaturschemas auch wiederverwendbare Adressen ermöglicht. Das Ed25519 ist ein modernes EdDSA-Signaturschema, das SHA-512 und Curve25519 verwendet. Es zielt darauf ab, alle oben genannten Punkte anzusprechen, mit dem Nachteil, dass es weniger quanten-robust ist. Dieses Problem kann jedoch teilweise gemildert werden, wenn es mit einem Commitment-Schema kombiniert wird: Die Adresse wird als Hash des öffentlichen Schlüssels gewählt, der selbst erst während des eigentlichen Signierprozesses offenbart wird. Auf diese Weise kann der Algorithmus von Shor erst angewendet werden, nachdem das signierte Bündel an das Netzwerk ausgegeben wurde, sodass dieses Signaturschema effektiv gegen diesen Angriff immun ist, wenn Adressen nicht wiederverwendet werden.</p>
 
                     </main>
 
