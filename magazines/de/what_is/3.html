@@ -147,7 +147,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="was-ist-atomic-transaction-schmucklos-cp"><a class="header" href="#was-ist-atomic-transaction-schmucklos-cp">Was ist &quot;Atomic Transaction&quot; (Schmucklos c&amp;p)</a></h1>
+                        <h1 id="was-ist-atomic-transaction"><a class="header" href="#was-ist-atomic-transaction">Was ist &quot;Atomic Transaction&quot;</a></h1>
 <p>IOTA 1.0 verwendete das Konzept der Bundles zur Erstellung von Transfers. Bundles sind eine Reihe von Transaktionen, die über ihre Stamm-Referenz (Trunk) miteinander verbunden sind. Diese Transaktionen haben ein festes Layout und eine feste Größe unabhängig von ihrem &quot;Inhalt&quot;. Da die Signatur von Wert-Transaktionen nicht in eine einzelne Transaktion passt, müssen mindestens 3 Transaktionen verwendet werden, um eine einfache Übertragung zu erstellen: 2 Transaktionen für die Eingabe + ihre Signatur und eine Transaktion für den Rest (ohne Signatur). </p>
 <p>Mit dem Update auf IOTA 1.5 wurde das alte Bundle-Konstrukt entfernt, stattdessen wurden die einfacheren Atomic-Transactions eingeführt. Dieser Wechsel bringt folgende Vorteile mit sich:</p>
 <p>Weniger Netzwerk-Overhead: Das Transaktions-Format kann so angepasst werden, dass nur die wirklich benötigten Informationen übertragen werden. Auf viele unnötige Informationen, wie für die aufeinanderfolgenden Transaktionen eines Bundle (2. Signaturtransaktion + Rest) kann verzichtet werden. Der Einsatz des UTXO Modells nach dem Coordicide würde diese Situation noch verschlimmern und noch mehr Transaktionen verwenden, um eine einfache Übertragung zu erstellen.</p>
