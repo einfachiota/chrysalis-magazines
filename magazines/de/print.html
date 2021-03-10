@@ -155,7 +155,66 @@
 <p>Test</p>
 <h1 id="was-ist-neu"><a class="header" href="#was-ist-neu">Was ist neu?</a></h1>
 <h1 id="der-weg-dorthin"><a class="header" href="#der-weg-dorthin">Der weg dorthin</a></h1>
-<h1 id="firefly---schmucklos--vieles-steht-im-guide-teilweise-cp-"><a class="header" href="#firefly---schmucklos--vieles-steht-im-guide-teilweise-cp-">Firefly - Schmucklos ?, vieles steht im Guide, teilweise c&amp;p ?</a></h1>
+<h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
+<p><strong>Eine neue Wallet für IOTA 1.5</strong></p>
+<p>Die bevorstehenden grundlegenden Änderungen im IOTA-Protokoll (neues Signaturschema etc.) verlangen eine völlig neue Wallet-Architektur, IOTA hat diesen Umstand zum Anlass genommen, um die Wallet von Grund auf neu zu überdenken, von der Transaktionslogik über das Benutzererlebnis bis hin zum Design. Die neue Wallet namens &quot;Firefly&quot; soll als Plattform für das aktuelle und zukünftige IOTA-Ökosystem dienen.</p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/2_t7ocbffu-u1zgrmxo76ggg.png" alt="Image of Firefly's Dashboard im Dunkel-Modus" />
+Firefly's Dashboard im Dunkel-Modus</p>
+<p>Die technische Architektur und die Benutzerschnittstelle der Wallet wurden im Zusammenhang mit späteren Ergänzungen wie Digital-Assets, Chat und Kontaktmanagement entworfen. Im Laufe des nächsten Jahres werden eine Reihe zusätzlicher Funktionen zum Stack der Wallet hinzukommen. In der ersten Version von Firefly wurde zunächst ein besonderer Wert auf Sicherheit, Benutzerfreundlichkeit und eine erweiterbare Architektur gelegt. </p>
+<p>Es gibt bereits einige offensichtliche Unterschiede zu der alten Trinity-Wallet:</p>
+<ul>
+<li>Profile: Die App kann von mehrere Personen auf demselben Gerät genutzt werden, ohne auf die Wallets der anderen Personen zuzugreifen. </li>
+<li>Konten: Ein Benutzer kann seine Geldmittel z. B. auf ein Hauptkonto, ein Ausgabenkonto und ein Ledger Nano-Konto aufteilen.</li>
+<li>Eine PIN Eingabe öffnet die Wallet, ohne dass jemals der Seed entschlüsselt wird, so kann der Kontostand sicher überprüft werden.</li>
+<li>Wiederverwendbare Adressen</li>
+<li>24-Wort-Wiederherstellungssätze</li>
+<li>Verbesserte Benutzerfreundlichkeit und Netzwerkleistung.</li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/4_jg6wu5ljjh_ksvwqdibpiq.png" alt="Image of Kont System" />
+Firefly's Konto-System</p>
+<p><strong>Unter der Haube</strong></p>
+<p><strong>Ein erweiterbarer und exportierbarer Anwendungskern</strong></p>
+<p>Mit diesem Konzept können alle Entwicklungen von anderen Entwicklern in neuen Anwendungen wiederverwendet werden.
+Folglich existieren bereits einige nützlichen Tools für andere Entwickler, mit denen sie ihre eigenen Anwendungen entwickeln können.</p>
+<p><strong>stronghold.rs - Eine sichere Mehrzweckbibliothek zur Handhabung und Speicherung von Seeds</strong></p>
+<p>Stronghold ist die bedeutendste Neuerung, welche die Sicherheit der Wallet erheblich verbessert. Sensible Operationen wie Adressgenerierung und Transaktionssignierung finden in einem isolierten Anwendungsspeicher statt, wodurch der Seed von potenziellen Angreifern ferngehalten wird. Stronghold dient auch als Key-Wert-Speicher und wird zur Speicherung von Anwendungen verwendet. Das bedeutet, dass die Wallet vollständig portabel wird, um die Transaktionshistorie auf ein anderes Gerät oder eine andere Wallet-App zu übertragen wird nur ein aktuelles Stronghold-Backup benötigt.</p>
+<p><strong>wallet.rs - Eine vielseitige Wallet-Bibliothek</strong></p>
+<p>Die gesamte Transaktionslogik in Firefly wird von wallet.rs bereitgestellt - einer umfassenden, in Rust geschriebenen IOTA Wallet-Bibliothek. Die Bibliothek bietet alle Funktionen, die für die Erstellung von Wallets und Tauschintegrationen benötigt werden, von der Kontoerstellung über die Initiierung von Transfers bis hin zur Zustandsverwaltung und Sicherung. Die erste Version wird mit Neon-Bindungen für Node JS kommen, Python und WASM werden folgen, weitere sind zu einem späteren Zeitpunkt geplant.</p>
+<p>Mit wallet.rs und stronghold.rs können Entwickler auf einfache Weise sichere Wallet- und Zahlungsfunktionalitäten in einer Vielzahl von Anwendungsfällen und Umgebungen integrieren. Zudem wird die Mentalität der Wiederverwendbarkeit auch auf das Design der Benutzerschnittstelle angewandt und IOTA plant eine Komponentenbibliothek für Entwickler zur Verfügung zu stellen, die neu gestaltet und in eigenen Projekten verwenden werden kann. Parallel wird an einem Plugin-System mit einer Zugangskontroll-API gearbeitet, um den Benutzern die Kontrolle darüber zu geben, welche Funktionen in der Wallet aktiviert werden soll. IOTA rechnet mit einer Reihe von Community-Projekten, bei denen Wallets und andere Anwendungen mit diesen Tools entwickelt werden.</p>
+<p><strong>Die Zukunft von Firefly</strong></p>
+<p>Firefly dient als Einstiegspunkt in das IOTA-Ökosystem und IOTA wird in Zukunft mit neuen Funktionen das Benutzererlebnis als Zahlungsprotokoll verbessern. Die Priorität liegt aber zunächst auf der Desktop-Version, bevor die Aufmerksamkeit auf mobile Geräte gelenkt wird.</p>
+<p>Die neue Wallet ist eine modulare Plattform für unterschiedlichen Anwendungen, ggf. auch von Drittanbietern, im folgendem werden ein paar dieser kommenden Funktionen aufgelistet:</p>
+<ul>
+<li>
+<p>Mana-Delegation: Diese Funktion wird im Mainnet erst ab dem Coordicide zwingend benötigt, man wird dann gegen Bezahlung, das von den gehaltenen Token erzeugte Mana an Nodes verpfänden können. </p>
+</li>
+<li>
+<p>Kontaktsystem: Konto-Adressen können mit Namen verknüpft werden, damit löst Firefly das Problem der komplizierten Adressierung von Kryptowährungen für Benutzer, um beispielsweise sich wiederholende Transaktionen (Bsp.: Geschäftskontakte oder Freunde) sicherer und schnellere zu tätigen. </p>
+</li>
+<li>
+<p>Chat mit Bezahlfunktion: Der Nutzer soll mit Kryptowährungen so einfach umgehen können, wie beim Versenden von Textnachrichten oder beim Scannen eines QR-Codes. Die Messaging-App ähnelt der Funktionsweise der von Tencent betriebenen App WeChat, diese deckt bereits über 30 Prozent der mobilen Zahlungen in China ab und erfreut sich steigender Beliebtheit. </p>
+</li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/request-funds-select.png" alt="Image of Assets2" /></p>
+<ul>
+<li>
+<p>Digitale Identität: Durch die Bereitstellung einer digitalen Identität für Benutzer wird das Vertrauen in Transaktionen erhöht. Benutzer können ihr Profil mit überprüfbaren Anmeldeinformationen wie von Drittanbietern überprüften KYC-Informationen verbessern. Auch könnte sich ein Benutzer an verschiedenen Terminals auf einfache Weise mit dem Handy über NFC ausweisen. Eine Implementierung der digitalen Identität eröffnet eine große Menge an weiteren Anwendungsfällen.</p>
+</li>
+<li>
+<p>Browsererweiterung: Diese kommt, allerdings darf man auf die Umsetzung gespannt sein, wird es etwas Ähnliches wie Metamask, evtl mit einer Brücke zu ETH, die Gerüchteküche brodelt.</p>
+</li>
+<li>
+<p>DApp-Interaktion: Verschiedenen Drittanbieter-Apps werden mit der Wallet und ggf. untereinander kommunizieren können. Beispielsweise könnten Exchanges, Börsen oder Banken die IOTA-Wallet-Plattform, als Grundlage für eigene Anwendungen zu nutzen, um mit dem Tangle zu interagieren. Dies erschafft völlig neue Servicedienstleistungen und Anwendungsgebiete. Neben dem einfacheren und schnelleren Kauf/Verkauf von Miota, könnte dies auch Umtausch-Transaktionen von EUR/Miota in Echtzeit ermöglichen, wenn die Wallet eine Drittanbieter-App mit Banklizenz und somit direkter Bankverbindung bekommen würde.</p>
+</li>
+<li>
+<p>Zugriffskontrolle: Mit IOTA-Access kann der Zugriff/Zugang auf unterschiedlichste Geräte/Orte gewährt werden.</p>
+</li>
+<li>
+<p>Digital Assets: Die Verwaltung von Colored Coins und NFTs wird zukünftig ebenfalls mit der Wallet möglich sein.</p>
+</li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/wallet2.png" alt="Image of Assets" />
+<img src="https://iota-einsteiger-guide.de/media/images/wallet.png" alt="Image of Assets2" /></p>
 <h1 id="migration-was-ist-zu-beachten"><a class="header" href="#migration-was-ist-zu-beachten">Migration, was ist zu beachten?</a></h1>
 <h1 id="trinity"><a class="header" href="#trinity">Trinity</a></h1>
 <h1 id="ledger-faq-httpsiota-einsteiger-guidedeledger-nano-s-xhtml"><a class="header" href="#ledger-faq-httpsiota-einsteiger-guidedeledger-nano-s-xhtml">Ledger (FAQ: https://iota-einsteiger-guide.de/ledger-nano-s-x.html)</a></h1>
