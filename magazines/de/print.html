@@ -182,7 +182,7 @@ Mit einem weiteren Nachteil von Bundles haben vor allem die Entwickler zu kämpf
 <p>Die Implementierung des neuen Ledger-State (dt. Kassenbuchstatus) ist eines der letzten Sprungbretter zu einem voll funktionsfähigen Prototyp des Tangle ohne Koordinator, daher soll es mit dem UTXO-Modell sofort und auf die richtige Art implementiert werden. UTXO steht für &quot;unspent transaction output&quot;, was einfach bedeutet, dass man nicht nur die Guthaben auf der Adresse im Auge behält, sondern auch den Überblick darüber behält, woher die Guthaben stammen und wohin sie versendet werden, wenn sie ausgegeben werden.
 Das bedeutet, jeder Token ist eindeutig identifizierbar und jede Ausgabe benennt genau den Token, die sie bewegen möchten. Dabei besteht jede Transaktion aus beliebig vielen Eingaben (Inputs) und beliebig vielen Ausgaben. Die Eingaben einer Transaktion sind immer auch Ausgaben einer vorherigen Transaktion.</p>
 <p>Dies ermöglicht eine schnellere und genauere  Konfliktbehandlung und verbessert die Belastbarkeit sowie die Sicherheit des Protokolls. Darüber hinaus wird die Umstellung auf  UTXO die Verwendung von Digital Assets auf IOTA ermöglichen. Zusammen mit Mana (Coordicide) ergibt dies in naher Zukunft ein sehr attraktives Tokenisierungsmodell und wird die Adoption des IOTA-Tokens weiter vorantreiben.</p>
-<p>Das alte Modell: IOTA 1.0 verwendete  ein Guthabenmodell zur Verfolgung von Adressen, bei dem jeder Adresse lediglich ein einziger Wert zugeordnet war (der aktuelle Guthabenstand). Der Ledger-State kann daher als ein einfaches Verzeichnis von Adressen und ihren entsprechenden Guthaben betrachtet werden:</p>
+<p><strong>Das alte Modell:</strong> IOTA 1.0 verwendete  ein Guthabenmodell zur Verfolgung von Adressen, bei dem jeder Adresse lediglich ein einziger Wert zugeordnet war (der aktuelle Guthabenstand). Der Ledger-State kann daher als ein einfaches Verzeichnis von Adressen und ihren entsprechenden Guthaben betrachtet werden:</p>
 <p>Adresse1 = Guthaben1</p>
 <p>Adresse2 = Guthaben2</p>
 <p>Adresse3 = Guthaben3 </p>
@@ -198,13 +198,13 @@ Das bedeutet, jeder Token ist eindeutig identifizierbar und jede Ausgabe benennt
 <p>Auf diese Weise kann direkt festgestellt werden, welche Transaktionen widersprüchlich sind (die gelben Gelder werden zweimal verwendet).</p>
 <p>[$=project.imageAltText(816)$]</p>
 <p>Ein UTXO-Modell ermöglicht auch, auf einfache Weise Features wie &quot;Digital Assets&quot; zu implementieren, bei denen Benutzer IOTA-Token so markieren können, dass sie eine vorher festgelegt &quot;Bedeutung&quot; haben (und behalten). Wenn man bedenkt, dass 99% der bestehenden smart contracts versuchen, einfach &quot;Token&quot; zu erstellen, die sich auf einen bestimmten Anwendungsfall beziehen, ist dies ein interessantes Feature, welches einen großen Mehrwert für das IOTA-Ökosystem darstellt.</p>
-<p>Vorteile UTXO-Modell:</p>
+<p><strong>Vorteile UTXO-Modell:</strong></p>
 <ul>
 <li>schnellere und genauere Konfliktbehandlung (weniger Aufwand für Abstimmungsbasierten Konsens)</li>
 <li>Unterstützung für Digital Assets</li>
 <li>es ist unmöglich, Gelder zu stehlen, indem alte Transaktionen wieder angehängt werden (reattachment)</li>
 </ul>
-<p>Nachteile UTXO-Modell: </p>
+<p><strong>Nachteile UTXO-Modell:</strong></p>
 <ul>
 <li>etwas größere Transaktionen (ein paar Trytes extra), da die Kennung der Token, die bewegt werden, &quot;benannt&quot; werden muss.</li>
 </ul>
