@@ -147,7 +147,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="was-ist-binary-transaction-layout-schmucklos-hat-etwas-ist-aber-nicht-sicher-ob-aktuell"><a class="header" href="#was-ist-binary-transaction-layout-schmucklos-hat-etwas-ist-aber-nicht-sicher-ob-aktuell">Was ist &quot;Binary Transaction Layout&quot; (Schmucklos hat etwas, ist aber nicht sicher, ob aktuell)</a></h1>
+                        <h1 id="was-ist-binary-transaction-layout"><a class="header" href="#was-ist-binary-transaction-layout">Was ist &quot;Binary Transaction Layout&quot;</a></h1>
+<p>Umstellung auf eine interne binäre Darstellung der ternären Transaktion. Dies ermöglicht es binäre Daten (1,0) für Validierung  und andere Verarbeitungen zu verwenden, ohne dass viele binär-ternäre Konvertierungen wie in der alten IOTA 1.0 Node-Software erforderlich sind. Dies sollte zu weiteren Leistungsverbesserungen führen.</p>
+<p><strong>Technische Details:</strong> 
+Im IOTA 1.0 Mainnet besteht eine Transaktion aus 2.673 tryte-kodierten Zeichen und setzt sich aus verschiedenen Feldern unterschiedlicher Tryte-Längen zusammen.</p>
+<p>Wichtig ist, dass bei der derzeit verwendeten Kerl-Hash-Funktion ein Hash (und damit auch eine Adresse) naturgemäß nicht aus 243 Trits, sondern aus 48 Bytes besteht. Das bedeutet, dass für jede Adresse oder jeden Hash die 48-Byte-Darstellung absolut äquivalent zu der derzeit verwendeten 243-Trits-Darstellung ist, die nur das Ergebnis einer zusätzlichen Konvertierung zur Basis 3 ist.</p>
+<p>Das alte ternäre Transaktionslayout bestand aus den folgenden Typen:</p>
+<ul>
+<li>Integers (dt. ganze Zahlen) &gt; Ganze Zahlen sind einfachl in binärer Form zu kodieren.</li>
+<li>Hashes (hash (Curl), Adresse (Kerl), bundle (Kerl)</li>
+<li>Signature-Nachrichten-Fragment</li>
+</ul>
+<p>Ternäre Zeichenketten werden zukünftig kodiert als:</p>
+<ul>
+<li>1 byte per tryte (3 trits),</li>
+<li>1 byte per 5 trits or</li>
+<li>native 48 bytes for Kerl Hashes.</li>
+</ul>
 
                     </main>
 
