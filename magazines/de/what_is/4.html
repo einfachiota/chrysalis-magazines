@@ -156,16 +156,14 @@ Das bedeutet, jeder Token ist eindeutig identifizierbar und jede Ausgabe benennt
 <p>Adresse2 = Guthaben2</p>
 <p>Adresse3 = Guthaben3 </p>
 <p>Probleme: Bei Konflikten wie double-spends (dt.doppelte Ausgaben) ist es schwierig herauszufinden, bei welcher von mehreren Transaktionen tatsächlich eine doppelte Ausgabe erfolgt und bei welcher Transaktion legitime Gelder verwendet werden. Dies schränkt die Möglichkeiten, Konflikte effizient zu lösen, massiv ein und erhöht die Größe der Konfliktsätze&quot;. Siehe Beispiel im untenstehenden Bild:</p>
-<p>Bild: Bei welcher dieser drei Transaktionen handelt es sich um double spending?</p>
-<p>Bei einem Guthabenmodell ist dies unklar, daher müssten alle 3 als double spending betrachtet werden.</p>
-<p>[$=project.imageAltText(815)$]</p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/1.jpg" alt="Image of old model" /></p>
+<p>Bild: Bei welcher dieser drei Transaktionen handelt es sich um double spending? Bei einem Guthabenmodell ist dies unklar, daher müssten alle 3 als double spending betrachtet werden.</p>
 <p>Bei IOTA 1.0 war dies kein Problem, da die Regel &quot;heaviest subtangle wins&quot; nur sicherstellen muss, dass die Adressen eines bestimmten subtangle niemals negativ wird.</p>
 <p>Mit der neuen auf Abstimmungen (voting) basierenden Coordicid-Lösungen ist es notwendig, die auftretenden Konflikte bei Transaktionen so schnell und so genau wie möglich zu identifizieren, um über sie abstimmen zu können. Dadurch würde die Anzahl der Stimmabgaben, die ausgetauscht werden müssen, massiv reduziert.</p>
 <p>Ein weiteres Problem bei der Verwendung eines Guthabenmodells hängt mit den reattachments (Transaktion wieder anfügen) zusammen. Wenn jemand jemals Gelder für eine Adresse erhält, von der bereits Ausgaben getätigt wurden, kann jeder einfach die vorherigen Ausgaben wieder anfügen und die Adresse erneut leeren (auch ohne Zugriff auf den privaten Schlüssel der Adresse). Dies wurde bereits als &quot;Angriffsvektor&quot; benutzt, wenn Benutzer den Ratschlag, Adressen nur einmal zu verwenden, nicht befolgt haben.</p>
 <p>Die Lösung: Bei der Verwendung des UTXO-Modell, um die Guthaben zu verfolgen, würde jede Adresse nicht nur ihr Gesamtguthaben enthalten, sondern auch mehrere Unter-Guthaben, die mit einer Markierung versehen sind, welche anzeigt, durch welche Transaktion die Guthaben entstanden sind. Jeder Token auf einer Adresse wäre daher eindeutig identifizierbar und jede Ausgabe würde genau den Token benennen, die sie bewegen möchten. Dies würde helfen, Konflikte zu erkennen und auch böswillige Akteure davon abhalten, neu erhaltene Gelder auszugeben, indem sie eine alte Transaktion wieder anfügen. Siehe Beispiel im untenstehenden Bild:</p>
-<p>Bild: Bei einem UTXO-Modell identifiziert jede getätigte Ausgabe eindeutig, welche Gelder ausgegeben wurden.</p>
-<p>Auf diese Weise kann direkt festgestellt werden, welche Transaktionen widersprüchlich sind (die gelben Gelder werden zweimal verwendet).</p>
-<p>[$=project.imageAltText(816)$]</p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/2.jpg" alt="Image of UTXO model" /></p>
+<p>Bild: Bei einem UTXO-Modell identifiziert jede getätigte Ausgabe eindeutig, welche Gelder ausgegeben wurden. Auf diese Weise kann direkt festgestellt werden, welche Transaktionen widersprüchlich sind (die gelben Gelder werden zweimal verwendet).</p>
 <p>Ein UTXO-Modell ermöglicht auch, auf einfache Weise Features wie &quot;Digital Assets&quot; zu implementieren, bei denen Benutzer IOTA-Token so markieren können, dass sie eine vorher festgelegt &quot;Bedeutung&quot; haben (und behalten). Wenn man bedenkt, dass 99% der bestehenden smart contracts versuchen, einfach &quot;Token&quot; zu erstellen, die sich auf einen bestimmten Anwendungsfall beziehen, ist dies ein interessantes Feature, welches einen großen Mehrwert für das IOTA-Ökosystem darstellt.</p>
 <p><strong>Vorteile UTXO-Modell:</strong></p>
 <ul>
