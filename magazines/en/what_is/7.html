@@ -148,6 +148,13 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="urts-tip-selection"><a class="header" href="#urts-tip-selection">URTS Tip-Selection</a></h1>
+<p>Due to the white flag confirmation algorithm, it is no longer necessary to perform a complex tip selection such as the &quot;random walk&quot;. Therefore, a simpler, more powerful tip selection algorithm can be used, which in turn increases overall message throughput. The new URTS tip selection in the node software is significantly faster and more efficient than the old approach used in IOTA 1.0.</p>
+<p>The tip selection algorithm is the process by which transactions are selected for approval. A good algorithm allows the Tangle to grow in a stable and secure manner.</p>
+<p>To attach a new transaction to the Tangle, the algorithm can select and approve up to eight previous transactions - preferably tips. This approval mechanism represents the &quot;belief&quot; in the Tangle: If transaction y approves transaction x, it means that y believes that transaction x is valid and that its entire history is also valid.</p>
+<p>In the past, the algorithm used for tip selection was random walk. This was essential for consensus building, but also introduced some undesirable properties:
+Honest transactions could become neglected if they did not have enough weighting.  This led to an increased need for promotions and reattachments (even without attacks), which in turn significantly affected transaction reliability. Attackers messed with the random walk and created malicious structures such as parasitic chains. Thus splitting attacks were carried out to prevent the network from reaching consensus. Calculating the cumulative weights of transactions is relatively expensive and poses a problem for the scalability of the protocol, especially in high-throughput scenarios.</p>
+<p>Adding a voting layer to identify the preferred part of the Tangle (as an additional module) results in the following benefits:</p>
+<p>Faster conflict resolution, reducing the likelihood that a transaction will be accidentally attached to the wrong part of the Tangle. Using different mechanisms for tip selection that are no longer based on cumulative weighting and have a lower chance of leaving valid transactions behind.</p>
 
                     </main>
 
