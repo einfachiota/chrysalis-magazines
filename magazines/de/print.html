@@ -174,9 +174,10 @@
 <li>Profile: Die App kann von mehrere Personen auf demselben Gerät genutzt werden, ohne auf die Wallets der anderen Personen zuzugreifen. </li>
 <li>Konten: Ein Benutzer kann seine Geldmittel z. B. auf ein Hauptkonto, ein Ausgabenkonto und ein Ledger Nano-Konto aufteilen.</li>
 <li>Eine PIN Eingabe öffnet die Wallet, ohne dass jemals der Seed entschlüsselt wird, so kann der Kontostand sicher überprüft werden.</li>
-<li>Wiederverwendbare Adressen</li>
-<li>24-Wort-Wiederherstellungssätze</li>
-<li>Verbesserte Benutzerfreundlichkeit und Netzwerkleistung.
+<li>Wiederverwendbare Adressen, die neuen Chrysalis Adressen (Bech32 Standard) sehen so aus: iota11qykf7rrdjzhgynfkw6z7360avhaaywf5a4vtyvvk6a06gcv5y7sksu7n5cs</li>
+<li>24-Wort-Wiederherstellungssätze (Bip39 Standard).</li>
+<li>Verbesserte Benutzerfreundlichkeit und Netzwerkleistung.</li>
+<li>Eine Netzwerkindikator zeigt Informationen über den aktuellen Zustand des IOTA-Netzwerks an.
 <br /></li>
 </ul>
 <p><img src="https://iota-einsteiger-guide.de/media/images/4_jg6wu5ljjh_ksvwqdibpiq.png" alt="Image of Kont System" /></p>
@@ -185,13 +186,13 @@
 <p><strong>Unter der Haube</strong></p>
 <p><strong>Ein erweiterbarer und exportierbarer Anwendungskern</strong></p>
 <p>Mit diesem Konzept können alle Entwicklungen von anderen Entwicklern in neuen Anwendungen wiederverwendet werden.
-Folglich existieren bereits einige nützlichen Tools für andere Entwickler, mit denen sie ihre eigenen Anwendungen entwickeln können.
+Folglich existieren bereits einige nützliche Tools für andere Entwickler, mit denen sie ihre eigenen Anwendungen entwickeln können.
 <br /></p>
 <p><strong>stronghold.rs - Eine sichere Mehrzweckbibliothek zur Handhabung und Speicherung von Seeds</strong></p>
 <p>Stronghold ist die bedeutendste Neuerung, welche die Sicherheit der Wallet erheblich verbessert. Sensible Operationen wie Adressgenerierung und Transaktionssignierung finden in einem isolierten Anwendungsspeicher statt, wodurch der Seed von potenziellen Angreifern ferngehalten wird. Stronghold dient auch als Key-Wert-Speicher und wird zur Speicherung von Anwendungen verwendet. Das bedeutet, dass die Wallet vollständig portabel wird, um die Transaktionshistorie auf ein anderes Gerät oder eine andere Wallet-App zu übertragen wird nur ein aktuelles Stronghold-Backup benötigt.
 <br /></p>
 <p><strong>wallet.rs - Eine vielseitige Wallet-Bibliothek</strong></p>
-<p>Die gesamte Transaktionslogik in Firefly wird von wallet.rs bereitgestellt - einer umfassenden, in Rust geschriebenen IOTA Wallet-Bibliothek. Die Bibliothek bietet alle Funktionen, die für die Erstellung von Wallets und Tauschintegrationen benötigt werden, von der Kontoerstellung über die Initiierung von Transfers bis hin zur Zustandsverwaltung und Sicherung. Die erste Version wird mit Neon-Bindungen für Node JS kommen, Python und WASM werden folgen, weitere sind zu einem späteren Zeitpunkt geplant.</p>
+<p>Die gesamte Transaktionslogik in Firefly wird von wallet.rs bereitgestellt - einer umfassenden, in Rust geschriebene IOTA Wallet-Bibliothek. Die Bibliothek bietet alle Funktionen, die für die Erstellung von Wallets und Tauschintegrationen benötigt werden, von der Kontoerstellung über die Initiierung von Transfers bis hin zur Zustandsverwaltung und Sicherung. Die erste Version wird mit Neon-Bindungen für Node JS kommen, Python und WASM werden folgen, weitere sind zu einem späteren Zeitpunkt geplant.</p>
 <p>Mit wallet.rs und stronghold.rs können Entwickler auf einfache Weise sichere Wallet- und Zahlungsfunktionalitäten in einer Vielzahl von Anwendungsfällen und Umgebungen integrieren. Zudem wird die Mentalität der Wiederverwendbarkeit auch auf das Design der Benutzerschnittstelle angewandt und IOTA plant eine Komponentenbibliothek für Entwickler zur Verfügung zu stellen, die neu gestaltet und in eigenen Projekten verwenden werden kann. Parallel wird an einem Plugin-System mit einer Zugangskontroll-API gearbeitet, um den Benutzern die Kontrolle darüber zu geben, welche Funktionen in der Wallet aktiviert werden soll. IOTA rechnet mit einer Reihe von Community-Projekten, bei denen Wallets und andere Anwendungen mit diesen Tools entwickelt werden.
 <br /></p>
 <p><strong>Die Zukunft von Firefly</strong></p>
