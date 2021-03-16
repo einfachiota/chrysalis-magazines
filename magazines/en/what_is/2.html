@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>What's new? - Chrysalis Magazine</title>
+        <title>EdDSA Support - Chrysalis Magazine</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../topic/index.html"><strong aria-hidden="true">2.</strong> Focus Intro</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/1.html"><strong aria-hidden="true">2.1.</strong> What is Chrysalis?</a></li><li class="chapter-item expanded "><a href="../topic/2.html" class="active"><strong aria-hidden="true">2.2.</strong> What's new?</a></li><li class="chapter-item expanded "><a href="../topic/3.html"><strong aria-hidden="true">2.3.</strong> Path to Chrysalis</a></li><li class="chapter-item expanded "><a href="../topic/4.html"><strong aria-hidden="true">2.4.</strong> Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.html"><strong aria-hidden="true">2.5.</strong> Migration: What to keep in mind</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/5.1.html"><strong aria-hidden="true">2.5.1.</strong> Trinity</a></li><li class="chapter-item expanded "><a href="../topic/5.2.html"><strong aria-hidden="true">2.5.2.</strong> Ledger</a></li></ol></li><li class="chapter-item expanded "><a href="../topic/6.html"><strong aria-hidden="true">2.6.</strong> Next stop: Coordicide!</a></li></ol></li><li class="chapter-item expanded "><a href="../what_is/index.html"><strong aria-hidden="true">3.</strong> What is...</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../what_is/1.html"><strong aria-hidden="true">3.1.</strong> Dust Protection</a></li><li class="chapter-item expanded "><a href="../what_is/2.html"><strong aria-hidden="true">3.2.</strong> EdDSA Support</a></li><li class="chapter-item expanded "><a href="../what_is/3.html"><strong aria-hidden="true">3.3.</strong> Atomic Transaction</a></li><li class="chapter-item expanded "><a href="../what_is/4.html"><strong aria-hidden="true">3.4.</strong> UTXO</a></li><li class="chapter-item expanded "><a href="../what_is/5.html"><strong aria-hidden="true">3.5.</strong> Autopeering</a></li><li class="chapter-item expanded "><a href="../what_is/6.html"><strong aria-hidden="true">3.6.</strong> Whiteflag</a></li><li class="chapter-item expanded "><a href="../what_is/7.html"><strong aria-hidden="true">3.7.</strong> URTS Tip-Selection</a></li><li class="chapter-item expanded "><a href="../what_is/8.html"><strong aria-hidden="true">3.8.</strong> New Milestone Selection</a></li><li class="chapter-item expanded "><a href="../what_is/9.html"><strong aria-hidden="true">3.9.</strong> Binary Transaction Layout</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../topic/index.html"><strong aria-hidden="true">2.</strong> Focus Intro</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/1.html"><strong aria-hidden="true">2.1.</strong> What is Chrysalis?</a></li><li class="chapter-item expanded "><a href="../topic/2.html"><strong aria-hidden="true">2.2.</strong> What's new?</a></li><li class="chapter-item expanded "><a href="../topic/3.html"><strong aria-hidden="true">2.3.</strong> Path to Chrysalis</a></li><li class="chapter-item expanded "><a href="../topic/4.html"><strong aria-hidden="true">2.4.</strong> Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.html"><strong aria-hidden="true">2.5.</strong> Migration: What to keep in mind</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/5.1.html"><strong aria-hidden="true">2.5.1.</strong> Trinity</a></li><li class="chapter-item expanded "><a href="../topic/5.2.html"><strong aria-hidden="true">2.5.2.</strong> Ledger</a></li></ol></li><li class="chapter-item expanded "><a href="../topic/6.html"><strong aria-hidden="true">2.6.</strong> Next stop: Coordicide!</a></li></ol></li><li class="chapter-item expanded "><a href="../what_is/index.html"><strong aria-hidden="true">3.</strong> What is...</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../what_is/1.html"><strong aria-hidden="true">3.1.</strong> Dust Protection</a></li><li class="chapter-item expanded "><a href="../what_is/2.html" class="active"><strong aria-hidden="true">3.2.</strong> EdDSA Support</a></li><li class="chapter-item expanded "><a href="../what_is/3.html"><strong aria-hidden="true">3.3.</strong> Atomic Transaction</a></li><li class="chapter-item expanded "><a href="../what_is/4.html"><strong aria-hidden="true">3.4.</strong> UTXO</a></li><li class="chapter-item expanded "><a href="../what_is/5.html"><strong aria-hidden="true">3.5.</strong> Autopeering</a></li><li class="chapter-item expanded "><a href="../what_is/6.html"><strong aria-hidden="true">3.6.</strong> Whiteflag</a></li><li class="chapter-item expanded "><a href="../what_is/7.html"><strong aria-hidden="true">3.7.</strong> URTS Tip-Selection</a></li><li class="chapter-item expanded "><a href="../what_is/8.html"><strong aria-hidden="true">3.8.</strong> New Milestone Selection</a></li><li class="chapter-item expanded "><a href="../what_is/9.html"><strong aria-hidden="true">3.9.</strong> Binary Transaction Layout</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -147,20 +147,27 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="whats-new"><a class="header" href="#whats-new">What's new?</a></h1>
+                        <h1 id="eddsa-support"><a class="header" href="#eddsa-support">EdDSA Support</a></h1>
+<p>The current IOTA protocol is based on the Winternitz One Time Signature (W-OTS) scheme, a hash-based signature scheme that uses the ternary 243-trit hash function Kerl. 
+This signature scheme has been shown to be resistant to a sufficiently powerful quantum computer running Shor's algorithm. However, unlike conventional ECDSA or EdDSA 
+signatures, it also has significant drawbacks.</p>
+<p><strong>State dependency:</strong> W-OTS allows only a single secure signing operation. From the second signature on, enough information is exposed that the private key, and thus the money at that address, is considered insecure. This is a serious security risk, since signing a single invalid transaction must be considered as dangerous as revealing the private key itself.</p>
+<p><strong>Size:</strong> The signatures generated are quite large. In IOTA, 2187 to 6561 trytes or 1300 to 3900 bytes (depending on the security level chosen) are reserved for the signature.</p>
+<p><strong>Speed:</strong> It is based on the hash function Keccak-384 and was developed to achieve a compromise between size and speed. For example, in the default setting, the hashing function must be executed 702 times to validate a signature, which can lead to significant system overhead even on powerful hardware.</p>
+<p>Chrysalis introduces the new common signature scheme Ed25519, which completely replaces the old W-OTS scheme. The Ed25519 is a modern EdDSA signature scheme that uses SHA-512 and Curve25519. It drastically reduces the transaction size and consequently allows a significant increase in possible messages per second (mps). Another advantage is the reusability of addresses, which significantly increases usability and also greatly simplifies the implementation of IOTA technology in apps, exchanges or other systems. One disadvantage, however, is that it is less quantum robust, but this is a problem that most conventional encryption systems currently have. Currently, research is already being conducted worldwide on suitable new signature schemes and as soon as there is a viable solution, it can simply be adopted by IOTA.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../topic/1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../what_is/1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../topic/3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../what_is/3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -172,13 +179,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../topic/1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../what_is/1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../topic/3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../what_is/3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
