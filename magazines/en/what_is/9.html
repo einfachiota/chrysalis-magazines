@@ -148,6 +148,21 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="binary-transaction-layout"><a class="header" href="#binary-transaction-layout">Binary Transaction Layout</a></h1>
+<p>Switch to an internal binary representation of the ternary transaction. This allows binary data (1,0) to be used for validation and other processing without requiring many binary-to-ternary conversions as in the old IOTA 1.0 node software. This should lead to further performance improvements.</p>
+<p><strong>Technical details:</strong> In the IOTA 1.0 mainnet, a transaction consists of 2,673 tryte-encoded characters and is composed of various fields of different tryte lengths.</p>
+<p>It is important to note that with the currently used Kerl hash function, a hash (and thus an address) is naturally composed of 48 bytes rather than 243 trits. This means that for each address or hash, the 48 byte representation is absolutely equivalent to the 243 trits representation currently used. This is only the result of an additional conversion to base 3.</p>
+<p>The old ternary transaction layout consisted of the following types:</p>
+<ul>
+<li>Integers: Integers are simple to encode in binary form.</li>
+<li>Hashes (hash (Curl), address (Kerl), bundle (Kerl)).</li>
+<li>Signature message fragment</li>
+</ul>
+<p>In the future, ternary strings will be encoded as:</p>
+<ul>
+<li>1 byte per tryte (3 trits),</li>
+<li>1 byte per 5 trits or</li>
+<li>native 48 bytes for Kerl hashes.</li>
+</ul>
 
                     </main>
 
