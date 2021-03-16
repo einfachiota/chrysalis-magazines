@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="topic/index.html"><strong aria-hidden="true">2.</strong> Focus Intro</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="topic/1.html"><strong aria-hidden="true">2.1.</strong> What is Chrysalis?</a></li><li class="chapter-item expanded "><a href="topic/2.html"><strong aria-hidden="true">2.2.</strong> What's new?</a></li><li class="chapter-item expanded "><a href="topic/3.html"><strong aria-hidden="true">2.3.</strong> Path to Chrysalis</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="topic/index.html"><strong aria-hidden="true">2.</strong> Focus Intro</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="topic/1.html"><strong aria-hidden="true">2.1.</strong> What is Chrysalis?</a></li><li class="chapter-item expanded "><a href="topic/2.html"><strong aria-hidden="true">2.2.</strong> What's new?</a></li><li class="chapter-item expanded "><a href="topic/3.html"><strong aria-hidden="true">2.3.</strong> Path to Chrysalis</a></li><li class="chapter-item expanded "><a href="topic/4.html"><strong aria-hidden="true">2.4.</strong> Firefly</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -160,6 +160,96 @@
 <center> Image: The improved modules </center>
 <h1 id="whats-new"><a class="header" href="#whats-new">What's new?</a></h1>
 <h1 id="path-to-chrysalis"><a class="header" href="#path-to-chrysalis">Path to Chrysalis</a></h1>
+<h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
+<p><strong>A new wallet for IOTA 1.5</strong></p>
+<p>The upcoming fundamental changes in the IOTA protocol (new signature scheme, etc.) require a completely new wallet architecture. IOTA has taken this as an opportunity 
+to completely rethink the wallet from the ground up, from transaction logic to user experience and design. The new wallet, called &quot;Firefly,&quot; is intended to serve as a 
+platform for the current and future IOTA ecosystem.
+<br /></p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/2_t7ocbffu-u1zgrmxo76ggg.png" alt="Image of Firefly's Dashboard im Dunkel-Modus" /></p>
+<center> Image: Firefly's dashboard in dark mode </center>
+<br /><br />
+<p>The Wallet's technical architecture and user interface were designed in the context of future additions such as digital assets, chat and contact management. Over the 
+next year, a number of additional features will be added to the wallet. The first version of Firefly initially emphasizes security, ease of use, and an extensible architecture.
+<br /></p>
+<p>There are already some obvious differences from the old Trinity wallet:</p>
+<ul>
+<li>Profiles: The app can be used by multiple people on the same device without accessing each other's wallets.</li>
+<li>Accounts: A user can split their funds between, for example, a main account, an expense account, and a Ledger Nano account.</li>
+<li>Entering a PIN opens the wallet without ever decrypting the seed, so the account balance can be checked securely.</li>
+<li>Reusable addresses</li>
+<li>24-word recovery records</li>
+<li>Improved usability and network performance.
+<br /></li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/4_jg6wu5ljjh_ksvwqdibpiq.png" alt="Image of Kont System" /></p>
+<center> Image: Firefly's account system </center>
+<br />
+<br />
+<p><strong>Under the hood</strong></p>
+<p><strong>An extensible and exportable application core</strong></p>
+<p>With this concept, all developments from other programmers can be reused in new applications. Consequently, some useful tools already exist for other developers 
+to create their own applications.
+<br /></p>
+<p><strong>stronghold.rs - A secure multipurpose library for handling and storing seeds</strong></p>
+<p>Stronghold is the most relevant new feature that significantly improves the security of the wallet. Sensitive operations such as address generation and transaction 
+signing take place in an isolated application memory, keeping the seed away from potential attackers. Stronghold also serves as a key-value store and is used to store 
+applications. This means that the wallet becomes fully portable. To transfer the transaction history to another device or wallet-app, only a recent Stronghold backup is 
+needed.
+<br /></p>
+<p><strong>wallet.rs - A versatile wallet library.</strong></p>
+<p>All transaction logic in Firefly is provided by wallet.rs - a comprehensive IOTA wallet library written in Rust. The library provides all the functionality needed to 
+create wallets and exchange integrations, from account creation and transfer initiation to state management and backup. The first version will come with Neon bindings 
+for Node JS. Python and WASM will follow, with more to come at a later time.</p>
+<p>With wallet.rs and stronghold.rs, developers can easily integrate secure wallet and payment functionality across a variety of use cases and environments. In addition, 
+the mindset of reusability is also being applied to user interface design, and IOTA plans to provide a component library for developers to use in their own projects. 
+At the same time, a plugin system with an access control API is being worked on to give users control over what features should be enabled in the wallet. IOTA anticipates 
+a number of community projects developing wallets and other applications using these tools.
+<br /></p>
+<p><strong>The future of Firefly</strong></p>
+<p>Firefly serves as an entry point into the IOTA ecosystem. IOTA will be adding new features in the future to improve the user experience as a payment protocol. 
+However, the priority is first on the desktop version before turning attention to mobile devices.</p>
+<p>The new wallet is a modular platform for different applications, possibly from third parties. The following section lists a few of these upcoming features:</p>
+<ul>
+<li>
+<p>Mana delegation: This function will be mandatory in the mainnet after Coordicide. You will then be able to pledge the mana generated by the tokens held to nodes for a fee.</p>
+</li>
+<li>
+<p>Contact system: Account addresses can be linked to names. So Firefly solves the problem of complicated addressing of cryptocurrencies for users, for example, 
+to make repetitive transactions (e.g., business contacts or friends) safer and faster.</p>
+</li>
+<li>
+<p>Chat with payment function: users should be able to deal with cryptocurrencies as easily as sending text messages or scanning a QR code. The messaging app is similar 
+to the way the app WeChat (by Tencent) works. WeChat already covers more than 30 percent of mobile payments in China and is growing in popularity.</p>
+</li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/request-funds-select.png" alt="Image of Assets2" /></p>
+<ul>
+<li>
+<p>Digital identity: Providing users with a digital identity increases trust in transactions. Users can enhance their profile with verifiable credentials such as third-party 
+verified KYC information. Also, a user could easily identify themselves at various terminals using their cell phone via NFC. A digital identity implementation opens up 
+a large set of other use cases.</p>
+</li>
+<li>
+<p>Browser extension: An extension is coming, however one may be curious about the implementation. Will it be similar to Metamask? Will there be a bridge to ETH? There 
+are a lot of rumors, but none of them have been confirmed yet.</p>
+</li>
+<li>
+<p>DApp interaction: Various third-party apps will be able to communicate with the wallet and possibly with each other. For example, exchanges, stock exchanges or banks 
+could use the IOTA wallet platform as a basis for their own applications to interact with the Tangle. This creates entirely new services and application areas. In addition 
+to easier and faster buying / selling of MIOTA, this could also enable real-time EUR / MIOTA exchange transactions if the wallet would get a third party app with a 
+banking license and thus direct banking connection.</p>
+</li>
+<li>
+<p>Access Control: Access can be granted to a wide variety of devices / locations with IOTA Access.</p>
+</li>
+<li>
+<p>Digital Assets: The management of Colored Coins and NFTs will also be possible with the wallet in the future.
+<br /></p>
+</li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/wallet2.png" alt="Image of Assets" />
+<img src="https://iota-einsteiger-guide.de/media/images/wallet.png" alt="Image of Assets2" /></p>
 
                     </main>
 
