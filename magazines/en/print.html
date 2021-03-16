@@ -300,6 +300,8 @@ Address 3 = Balance 3</p>
 <li>Somewhat larger transactions, as the identifier of the tokens being moved must be “named”.</li>
 </ul>
 <h1 id="autopeering"><a class="header" href="#autopeering">Autopeering</a></h1>
+<p>In peer-to-peer networks like IOTA, a node's neighbors are the only source of information. A peering mechanism must therefore focus on a healthy number of honest neighbors, that are not trying to harm the network. In IOTA's autopeering mechanism, each node has its own criteria for selecting potential neighbors. An attacker cannot influence a node's decisions in the peer selection process. Therefore, a node's particular &quot;view&quot; of the network is both local and unpredictable. This serves to protect against outside attacks (e.g., Eclipse attacks) and makes it virtually impossible for attackers to target specific nodes in the peering process, while ensuring that nodes always have at least a certain number of honest neighbors.</p>
+<p>In addition, the autopeering mechanism will attempt to create a small global network in which nodes can be reached by any other node through a small number of intermediate steps. This feature speeds up the time to reach consensus.</p>
 <h1 id="whiteflag"><a class="header" href="#whiteflag">Whiteflag</a></h1>
 <h1 id="urts-tip-selection"><a class="header" href="#urts-tip-selection">URTS Tip-Selection</a></h1>
 <h1 id="new-milestone-selection"><a class="header" href="#new-milestone-selection">New Milestone Selection</a></h1>
