@@ -1,1 +1,1 @@
-# Schwerpunkt inro
+# Focus intro
