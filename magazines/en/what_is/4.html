@@ -148,6 +148,32 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="utxo"><a class="header" href="#utxo">UTXO</a></h1>
+<p>The implementation of the ledger state is one of the last steps to a fully functional prototype of the tangle without a coordinator, so it should be implemented immediately and in the right way with the UTXO model. UTXO stands for “unspent transaction output”, which simply means keeping track of not only the balances on the address, but also where the balances come from and where they are sent when they are spent. This means that each token is uniquely identifiable and each output names exactly the token that it wants to move. Each transaction consists of any number of inputs and any number of outputs. The inputs of a transaction are always also outputs of a previous transaction.</p>
+<p>This enables faster and more accurate conflict handling and improves the resilience as well as the security of the protocol. In addition, the move to UTXO will enable the use of digital assets on IOTA. Together with Mana (Coordicide), this will result in a very attractive tokenization model in the near future and will further drive the adoption of the IOTA token.</p>
+<p><strong>The old model:</strong> IOTA 1.0 used a credit model to track addresses, where each address has only a single value associated with it (the current credit balance). The ledger state can therefore be viewed as a simple directory of addresses and their corresponding credit balances:</p>
+<p>Address 1 = Balance 1
+Address 2 = Balance 2
+Address 3 = Balance 3</p>
+<p>Problems: In the case of conflicts such as double-spends, it is difficult to figure out which of several transactions is actually a double-spend and which transaction uses legitimate funds. This massively limits the ability to handle conflicts efficiently and increases the size of conflict records. Example:</p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/1.jpg" alt="Image of old model" /></p>
+<p>Image: Which of these three transactions is a double spend? This is unclear for a credit model, so all 3 would have to be considered as a double spend.</p>
+<p>With IOTA 1.0, this is not a problem, as the “heaviest subtangle wins” rule only needs to ensure that the addresses of a given subtangle never go negative.</p>
+<p>With the new voting-based Coordicide solution, it is necessary to identify the conflicts that arise in transactions as quickly and as accurately as possible in order to vote on them. This would massively reduce the number of votes that need to be exchanged.</p>
+<p>Another problem with using a credit model is related to reattachments. If someone ever receives funds for an address from which spending has already occurred, anyone can simply reattach the previous spending and empty the address again (even without access to the address’s private key). This has already been used as an “attack vector” when users have not followed the advice to use addresses only once.</p>
+<p>The solution: Using the UTXO model to keep track of credits, each address would contain not only its total balance, but also multiple sub-balances tagged with a marker indicating which transaction created the balances. Each token on an address would therefore be uniquely identifiable, and each issue would name the exact token it wishes to move. This would help identify conflicts and also prevent malicious actors from spending newly received funds by reattaching an old transaction. Example:</p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/2.jpg" alt="Image of UTXO model" /></p>
+<p>Image: In a UTXO model, each expenditure uniquely identifies which funds were spent. In this way, it is possible to directly identify which transactions are inconsistent (the yellow funds are used twice).</p>
+<p>A UTXO model would also allow for easy implementation of features such as “Digital Assets” where users can mark IOTA tokens to have (and keep) a pre-determined “meaning”. Considering that 99% of existing Smart Contracts attempt to simply create “tokens” that relate to a specific use case, this is an interesting feature that adds a lot of value to the IOTA ecosystem.</p>
+<p><strong>Advantages UTXO model:</strong></p>
+<ul>
+<li>Faster and more accurate conflict handling</li>
+<li>Support for digital assets</li>
+<li>It is impossible to steal funds by reattaching old transactions</li>
+</ul>
+<p><strong>Disadvantages UTXO model:</strong></p>
+<ul>
+<li>Somewhat larger transactions, as the identifier of the tokens being moved must be “named”.</li>
+</ul>
 
                     </main>
 
