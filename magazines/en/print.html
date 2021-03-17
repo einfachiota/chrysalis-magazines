@@ -255,6 +255,13 @@ banking license and thus direct banking connection.</p>
 <h1 id="next-stop-coordicide"><a class="header" href="#next-stop-coordicide">Next stop: Coordicide!</a></h1>
 <h1 id="what-is"><a class="header" href="#what-is">What is...</a></h1>
 <h1 id="dust-protection"><a class="header" href="#dust-protection">Dust Protection</a></h1>
+<p>Since IOTA is feeless and allows microtransactions, such as 1 IOTA, attackers can easily &quot;spam&quot; the network. We refer to this &quot;spamming&quot; as &quot;dust.&quot; To avoid this, we only allow microtransactions under 1.000.000 IOTA tokens to another address if it has already been loaded with at least 1.000.000 IOTA tokens.</p>
+<h2 id="how-does-it-work"><a class="header" href="#how-does-it-work">How does it work?</a></h2>
+<p>Dust protection is hardcoded into the core protocol.</p>
+<p>Each node must know the balance of each address (apart from zero value addresses). Otherwise you could spend more money than you have.</p>
+<p>However, this circumstance could be used as an attack vector, in which one simply &quot;loads&quot; many addresses with 1 IOTA token each, because then all these addresses would have to be stored by the entire network, and so the memory requirement that each node basically needs (even without saving the current history of all transactions) would already grow immeasurably. To clarify the whole thing once again, with 1.000.000 IOTA (countervalue at the time of this article in about 1,40$) - one could already &quot;dust&quot; a million addresses with one IOTA each, and these would have to be saved forever by all nodes. This will be much more expensive for an attacker - and thus factually not &quot;affordable&quot; with the introduction of a &quot;minimum balance&quot;, that each address must have according to Chrysalis. Strictly speaking, this value is at least 1.000.000 IOTA per address.</p>
+<p>However, it is not impossible to send smaller amounts. Because as soon as an address has this minimum number of value, one can receive with it 10 smaller transactions of any amount, until one must recharge the minimum value again. However, further action is required for this - you have to enable so-called &quot;SigLockedDustAllowanceOutputs&quot;.</p>
+<p><a href="https://github.com/iotaledger/protocol-rfcs/pull/32">RFC Link</a></p>
 <h1 id="eddsa-support"><a class="header" href="#eddsa-support">EdDSA Support</a></h1>
 <p>The current IOTA protocol is based on the Winternitz One Time Signature (W-OTS) scheme, a hash-based signature scheme that uses the ternary 243-trit hash function Kerl. 
 This signature scheme has been shown to be resistant to a sufficiently powerful quantum computer running Shor's algorithm. However, unlike conventional ECDSA or EdDSA 
