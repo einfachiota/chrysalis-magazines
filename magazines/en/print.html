@@ -161,7 +161,7 @@
 <h1 id="whats-new"><a class="header" href="#whats-new">What's new?</a></h1>
 <h1 id="path-to-chrysalis"><a class="header" href="#path-to-chrysalis">Path to Chrysalis</a></h1>
 <h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
-<p><strong>A new wallet for IOTA 1.5</strong></p>
+<h2 id="a-new-wallet-for-iota-15"><a class="header" href="#a-new-wallet-for-iota-15">A new wallet for IOTA 1.5</a></h2>
 <p>The upcoming fundamental changes in the IOTA protocol (new signature scheme, etc.) require a completely new wallet architecture. IOTA has taken this as an opportunity 
 to completely rethink the wallet from the ground up, from transaction logic to user experience and design. The new wallet, called &quot;Firefly,&quot; is intended to serve as a 
 platform for the current and future IOTA ecosystem.
@@ -185,18 +185,18 @@ next year, a number of additional features will be added to the wallet. The firs
 <p><img src="https://iota-einsteiger-guide.de/media/images/4_jg6wu5ljjh_ksvwqdibpiq.png" alt="Image of Kont System" /></p>
 <center> Image: Firefly's account system </center>
 <br />
-<p><strong>Under the hood</strong></p>
-<p><strong>An extensible and exportable application core</strong></p>
+<h2 id="under-the-hood"><a class="header" href="#under-the-hood">Under the hood</a></h2>
+<h3 id="an-extensible-and-exportable-application-core"><a class="header" href="#an-extensible-and-exportable-application-core">An extensible and exportable application core</a></h3>
 <p>With this concept, all developments from other programmers can be reused in new applications. Consequently, some useful tools already exist for other developers 
 to create their own applications.
 <br /></p>
-<p><strong>stronghold.rs - A secure multipurpose library for handling and storing seeds</strong></p>
+<h3 id="strongholdrs---a-secure-multipurpose-library-for-handling-and-storing-seeds"><a class="header" href="#strongholdrs---a-secure-multipurpose-library-for-handling-and-storing-seeds">stronghold.rs - A secure multipurpose library for handling and storing seeds</a></h3>
 <p>Stronghold is the most relevant new feature that significantly improves the security of the wallet. Sensitive operations such as address generation and transaction 
 signing take place in an isolated application memory, keeping the seed away from potential attackers. Stronghold also serves as a key-value store and is used to store 
 applications. This means that the wallet becomes fully portable. To transfer the transaction history to another device or wallet-app, only a recent Stronghold backup is 
 needed.
 <br /></p>
-<p><strong>wallet.rs - A versatile wallet library.</strong></p>
+<h3 id="walletrs---a-versatile-wallet-library"><a class="header" href="#walletrs---a-versatile-wallet-library">wallet.rs - A versatile wallet library.</a></h3>
 <p>All transaction logic in Firefly is provided by wallet.rs - a comprehensive IOTA wallet library written in Rust. The library provides all the functionality needed to 
 create wallets and exchange integrations, from account creation and transfer initiation to state management and backup. The first version will come with Neon bindings 
 for Node JS. Python and WASM will follow, with more to come at a later time.</p>
@@ -205,7 +205,7 @@ the mindset of reusability is also being applied to user interface design, and I
 At the same time, a plugin system with an access control API is being worked on to give users control over what features should be enabled in the wallet. IOTA anticipates 
 a number of community projects developing wallets and other applications using these tools.
 <br /></p>
-<p><strong>The future of Firefly</strong></p>
+<h2 id="the-future-of-firefly"><a class="header" href="#the-future-of-firefly">The future of Firefly</a></h2>
 <p>Firefly serves as an entry point into the IOTA ecosystem. IOTA will be adding new features in the future to improve the user experience as a payment protocol. 
 However, the priority is first on the desktop version before turning attention to mobile devices.</p>
 <p>The new wallet is a modular platform for different applications, possibly from third parties. The following section lists a few of these upcoming features:</p>
