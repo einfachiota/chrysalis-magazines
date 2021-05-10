@@ -96,3 +96,13 @@ Summary:
 
 Translate:
  Die OMG arbeitet an Standards für IOTA Smart Contracts und andere DLT-Systeme. Die OMG ist ein eigenständiges Gremium mit dem Ziel, ein Standardgremium für alle DLTs zu schaffen.
+
+
+### IOTA Identity: Beta Release
+> May 10, 2021 https://blog.iota.org/iota-identity-beta-release/
+
+Summary:
+"IOTA Identity is a Self Sovereign Identity (SSI) framework that enables people, organizations, or machines to create and have complete control over a digital identity. IOTA Identity allows IoT devices to create their own identities and collect verifiable statements about themselves. The first major feature we introduced with this beta release is the account, a higher-level API to use IOTA identity."
+
+Translate:
+ IOTA Identity ist ein Self Sovereign Identity (SSI) Framework, das es Menschen, Organisationen oder Maschinen ermöglicht, eine digitale Identität zu erstellen und vollständig zu kontrollieren. IOTA Identity ermöglicht IoT-Geräten ihre eigenen Identitäten zu erstellen und überprüfbare Aussagen über sich selbst zu sammeln.
