@@ -32,7 +32,7 @@ https://blog.iota.org/digital-green-certificates-a-decentralized-and-interoperab
 "The European Union (EU) Commission has set some requirements to drive this market. The aim is to facilitate the safe, free movement of citizens within the EU during the COVID-19 pandemic. Once deployed, the Digital Green Certificate will enable travelers to present a credential."
 
 Translate:
-Die Europäische Union (EU) Kommission hat einige Anforderungen festgelegt, um diesen Markt voranzutreiben. Ziel ist es, den sicheren und freien Verkehr von Bürgern innerhalb der EU während der COVID-19-Pandemie zu erleichtern.
+Die Europäische Union (EU) Kommission hat einige Anforderungen festgelegt, um diesen Markt voranzutreiben. Ziel ist es, den sicheren und freien Verkehr von Bürgern innerhalb der EU während der COVID-19-Pandemie zu erleichtern. Mit der Bereitstellung ermöglicht das Digital Green Certificate Reisenden einen Berechtigungsnachweises vorzuweisen.
 
 ### Firefly Token Migration
 
@@ -105,4 +105,4 @@ Summary:
 "IOTA Identity is a Self Sovereign Identity (SSI) framework that enables people, organizations, or machines to create and have complete control over a digital identity. IOTA Identity allows IoT devices to create their own identities and collect verifiable statements about themselves. The first major feature we introduced with this beta release is the account, a higher-level API to use IOTA identity."
 
 Translate:
-IOTA Identity ist ein Self Sovereign Identity (SSI) Framework, das es Menschen, Organisationen oder Maschinen ermöglicht, eine digitale Identität zu erstellen und vollständig zu kontrollieren. IOTA Identity ermöglicht IoT-Geräten ihre eigenen Identitäten zu erstellen und überprüfbare Aussagen über sich selbst zu sammeln.
+IOTA Identity ist ein Self Sovereign Identity (SSI) Framework, das es Menschen, Organisationen oder Maschinen ermöglicht, eine digitale Identität zu erstellen und vollständig zu kontrollieren. IOTA Identity ermöglicht IoT-Geräten ihre eigenen Identitäten zu erstellen und überprüfbare Aussagen über sich selbst zu sammeln. Das erste wichtige Feature, das wir mit dieser Beta-Version eingeführt haben, ermöglicht eine übergeordnete API zur Verwendung der IOTA-Identität.
