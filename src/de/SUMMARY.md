@@ -7,7 +7,7 @@
     - [Der weg dorthin](./topic/3.md)
     - [Neues Wallet - Firefly](./topic/4.md)
     - [❌ Migration, was ist zu beachten?](./topic/5.md)
-        - [❌ Trinity](./topic/5.1.md)
+        - [❌ Firefly](./topic/5.1.md)
         - [❌ Ledger](./topic/5.2.md)
     - [❌ Nächste Haltestelle, Coordicide!](./topic/6.md)
 - [Was ist ...](./what_is/README.md)
