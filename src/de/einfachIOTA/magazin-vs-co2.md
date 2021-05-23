@@ -1,1 +1,0 @@
-# ❌ Magazin vs CO2
