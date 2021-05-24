@@ -27,6 +27,7 @@
 - [Akuelles](./news/README.md)
 - [❌ Vorschau](./roadmap/README.md)
     - [❌ Roadmap](./roadmap/1.md)
+    - [❌ Im nächsten Magazin](./roadmap/2-magazin.md)
 - [Developer](./developer/README.md)
     - [Libraries](./developer/1.md)
     - [Nodes](./developer/2-nodes.md)
