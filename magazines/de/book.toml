@@ -1,8 +1,0 @@
-[book]
-authors = [""]
-language = "de"
-multilingual = false
-src = "./"
-title = "Chrysalis Magazin"
-[output.html]
-theme = "../theme"
