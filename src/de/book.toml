@@ -8,7 +8,7 @@ title = "Chrysalis Magazin"
 theme = "../theme"
 
 [output.html]
-git-repository-url = "https://github.com/einfachiota/chrysalis-magazines    "
+git-repository-url = "https://github.com/einfachiota/chrysalis-magazines/src/de"
 additional-css = ["theme/open-in.css"]
 
 [preprocessor.open-on-gh]
