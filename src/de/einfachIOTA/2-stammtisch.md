@@ -1,4 +1,12 @@
-# ❌ Stammtisch - IOTA, Bier und Diskussionen
+<!--
+---article_info
+title: IOTA Einsteiger Guide
+author: [vromvonbeyond]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+
+# Stammtisch - IOTA, Bier und Diskussionen
 
 ## Virtual Stammtisch
 
