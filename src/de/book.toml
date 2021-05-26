@@ -4,11 +4,10 @@ language = "de"
 multilingual = false
 src = "./"
 title = "Chrysalis Magazin"
-[output.html]
-theme = "../theme"
 
 [output.html]
-git-repository-url = "https://github.com/einfachiota/chrysalis-magazines/src/de"
+theme = "../theme"
+git-repository-url = "https://github.com/einfachiota/chrysalis-magazines"
 additional-css = ["theme/open-in.css"]
 
 [preprocessor.open-on-gh]
