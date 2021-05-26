@@ -1,0 +1,642 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Roadmap - Chrysalis Magazin</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../theme/open-in.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../topic/index.html"><strong aria-hidden="true">2.</strong> Schwerpunkt</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/1.html"><strong aria-hidden="true">2.1.</strong> Was ist Chrysalis?</a></li><li class="chapter-item expanded "><a href="../topic/2.html"><strong aria-hidden="true">2.2.</strong> Was ist neu?</a></li><li class="chapter-item expanded "><a href="../topic/3.html"><strong aria-hidden="true">2.3.</strong> Der weg dorthin</a></li><li class="chapter-item expanded "><a href="../topic/4.html"><strong aria-hidden="true">2.4.</strong> Neues Wallet - Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.html"><strong aria-hidden="true">2.5.</strong> Migration, was ist zu beachten?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/5.1.html"><strong aria-hidden="true">2.5.1.</strong> Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.2.html"><strong aria-hidden="true">2.5.2.</strong> ❌ Ledger</a></li></ol></li><li class="chapter-item expanded "><a href="../topic/6.html"><strong aria-hidden="true">2.6.</strong> Nächste Haltestelle, Coordicide!</a></li><li class="chapter-item expanded "><a href="../topic/7-stronghold.html"><strong aria-hidden="true">2.7.</strong> ❌ Stronghold</a></li></ol></li><li class="chapter-item expanded "><a href="../einfachIOTA/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../einfachIOTA/1-stammtisch.html"><strong aria-hidden="true">3.1.</strong> Stammtisch - IOTA, Bier und Diskussionen</a></li></ol></li><li class="chapter-item expanded "><a href="../what_is/index.html"><strong aria-hidden="true">4.</strong> Was ist ...</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../what_is/1.html"><strong aria-hidden="true">4.1.</strong> Was ist &quot;Dust Protection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/2.html"><strong aria-hidden="true">4.2.</strong> Was ist &quot;EdDSA Support&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/3.html"><strong aria-hidden="true">4.3.</strong> Was ist &quot;Atomic Transaction&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/4.html"><strong aria-hidden="true">4.4.</strong> Was ist &quot;UTXO&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/5.html"><strong aria-hidden="true">4.5.</strong> Was ist &quot;Autopeering&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/6.html"><strong aria-hidden="true">4.6.</strong> Was ist &quot;White-Flag&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/7.html"><strong aria-hidden="true">4.7.</strong> Was ist &quot;URTS Tip-Selection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/8.html"><strong aria-hidden="true">4.8.</strong> ❌ Was ist &quot;New Milestone Selection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/9.html"><strong aria-hidden="true">4.9.</strong> ❌ Was ist &quot;Binary Transaction Layout&quot;</a></li></ol></li><li class="chapter-item expanded "><a href="../news/index.html"><strong aria-hidden="true">5.</strong> Akuelles</a></li><li class="chapter-item expanded "><a href="../roadmap/index.html"><strong aria-hidden="true">6.</strong> Vorschau</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../roadmap/1.html" class="active"><strong aria-hidden="true">6.1.</strong> Roadmap</a></li><li class="chapter-item expanded "><a href="../roadmap/2-magazin.html"><strong aria-hidden="true">6.2.</strong> Im nächsten Magazin</a></li></ol></li><li class="chapter-item expanded "><a href="../developer/index.html"><strong aria-hidden="true">7.</strong> Developer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../developer/1.html"><strong aria-hidden="true">7.1.</strong> Libraries</a></li><li class="chapter-item expanded "><a href="../developer/2-nodes.html"><strong aria-hidden="true">7.2.</strong> Nodes</a></li></ol></li><li class="chapter-item expanded "><a href="../IMPRINT.html"><strong aria-hidden="true">8.</strong> Impressum</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Chrysalis Magazin</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/einfachiota/chrysalis-magazines" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="roadmap"><a class="header" href="#roadmap">Roadmap</a></h1>
+<p>Übersetzung der Interaktive Roadmap der IOTA-Forschung und -Entwicklung.</p>
+<blockquote>
+<p>https://roadmap.iota.org/</p>
+</blockquote>
+<h2 id="protokoll"><a class="header" href="#protokoll">Protokoll</a></h2>
+<p>Wichtige bevorstehende Upgrades des IOTA-Protokolls.</p>
+<h3 id="coordicide"><a class="header" href="#coordicide">Coordicide</a></h3>
+<p>Vollständige Dezentralisierung des IOTA-Netzwerks durch Entfernen des Koordinators. Dies ist die Zukunft der erlaubnislosen und skalierbaren verteilten Hauptbuchtechnologie.</p>
+<h4 id="aktuelles-ziel"><a class="header" href="#aktuelles-ziel">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Nectar</strong>
+Ein nahezu funktionsreiches Netzwerk zum Testen und Benchmarking von IOTA 2.0, das Mana und Fast-Probabilistic Consensus präsentiert.</li>
+</ul>
+<h4 id="nächste-ziele"><a class="header" href="#nächste-ziele">Nächste Ziele</a></h4>
+<ul>
+<li><strong>Honey</strong>
+Der endgültige Release-Kandidat für IOTA 2.0, Honey, wird alle Module gemäß der vollständigen und endgültigen Spezifikation von IOTA 2.0 enthalten.</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele"><a class="header" href="#zuletzt-erreichte-ziele">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li><strong>Pollen</strong>
+Das erste offizielle Testnetz des IOTA 2.0-Netzwerks. Das Pollennetzwerk ist in erster Linie ein Forschungsprüfstand zur Validierung von Konzepten für IOTA 2.0.</li>
+</ul>
+<h3 id="smart-contracts"><a class="header" href="#smart-contracts">Smart Contracts</a></h3>
+<p>Ein Layer-2-Protokoll für dezentrale, automatisch ausgeführte Programme, mit denen digitale Assets und Token verschoben werden können.</p>
+<h4 id="aktuelles-ziel-1"><a class="header" href="#aktuelles-ziel-1">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Beta Release</strong>
+Programmierbare Smart-Verträge, verfügbar im Nectar-Testnetz, mit grundlegender Unterstützung für die Ethereum Virtual Machine und Solidity.</li>
+</ul>
+<h4 id="nächste-ziele-1"><a class="header" href="#nächste-ziele-1">Nächste Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Erweiterte EVM- und Solidity-Unterstützung</strong>
+Native Asset-Unterstützung und kettenübergreifende Kommunikation.</p>
+</li>
+<li>
+<p><strong>Mainnet Release</strong>
+Veröffentlichung der intelligenten Verträge im IOTA-Mainnet.</p>
+</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-1"><a class="header" href="#zuletzt-erreichte-ziele-1">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li><strong>Alpha Release</strong>
+Alpha-Version des IOTA Smart-Vertragsprotokolls. Protokollspezifikationen, implementation der <code>Wasp</code> Node und erste Version der Entwicklertools.</li>
+</ul>
+<h2 id="anwendungen-apps"><a class="header" href="#anwendungen-apps">Anwendungen (Apps)</a></h2>
+<p>Kernsoftware, die von der IOTA Foundation erstellt und gewartet wird.</p>
+<h3 id="firefly"><a class="header" href="#firefly">Firefly</a></h3>
+<h4 id="aktuelles-ziel-2"><a class="header" href="#aktuelles-ziel-2">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Ledger Nano Integration</strong>
+Unterstützung für Ledger Nano S und X über USB.</li>
+</ul>
+<h4 id="nächste-ziele-2"><a class="header" href="#nächste-ziele-2">Nächste Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Mobile Design</strong>
+Das Design von UX und UI der ersten Version von Firefly Mobile.</p>
+</li>
+<li>
+<p><strong>Mobile Alpha Release</strong>
+Eine Alpha-Version für die Firefly Mobile-App.</p>
+</li>
+<li>
+<p><strong>Mobile Beta-Version</strong>
+Eine Beta-Version für die Firefly Mobile App.</p>
+</li>
+<li>
+<p><strong>Mobile Produktionsfreigabe</strong>
+Eine Produktionsversion von Firefly Mobile im Mainnet.</p>
+</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-2"><a class="header" href="#zuletzt-erreichte-ziele-2">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Desktop Production Release</strong>
+Eine Produktionsversion der Firefly-Brieftasche im Mainnet.</p>
+</li>
+<li>
+<p><strong>Erste Desktop-Benutzeroberfläche</strong>
+Eine saubere und moderne Benutzeroberfläche ist der Schlüssel zu einer guten Benutzererfahrung.</p>
+</li>
+<li>
+<p><strong>Desktop Beta Release</strong>
+Die Beta-Version ist die letzte Phase vor der Produktionsbereitschaft. Die App ist öffentlich verfügbar und kann nach einem Sicherheitsaudit in der Produktion freigegeben werden.</p>
+</li>
+<li>
+<p><strong>Desktop Alpha Release</strong>
+Die Freigabe der neuen Brieftasche an eine geschlossene Alpha-Testgruppe ist ein wichtiger Schritt in Richtung eines produktionsbereiten Produkts.</p>
+</li>
+<li>
+<p><strong>Desktop-Audit</strong>
+Ein externes Audit zur Überprüfung der Sicherheit der Brieftasche.</p>
+</li>
+<li>
+<p><strong>HStronghold Integration</strong>
+Eine sichere Handhabung und Lagerung des Seeds ist unerlässlich. Stronghold ist eine auf Rust basierende Bibliothek, die alle Maßnahmen zum Schutz des Samens ergreift.</p>
+</li>
+<li>
+<p><strong>Wallet Spezifikation</strong>
+Das Erstellen einer Open-Source-, zusammensetzbaren und erweiterbaren Anwendung erfordert eine detaillierte und sorgfältige Planung.</p>
+</li>
+<li>
+<p><strong>Desktop-Design</strong>
+Das Design von UX und UI der ersten Version von Firefly Desktop.</p>
+</li>
+</ul>
+<h3 id="bee"><a class="header" href="#bee">Bee</a></h3>
+<h4 id="aktuelles-ziel-3"><a class="header" href="#aktuelles-ziel-3">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Lokale Snapshots</strong>
+Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Knotendatenbank steuern kann.</li>
+</ul>
+<h4 id="nächste-ziele-3"><a class="header" href="#nächste-ziele-3">Nächste Ziele</a></h4>
+<ul>
+<li><strong>MQTT-Unterstützung</strong>
+Unterstützung für das MQTT-Pubsub-Messaging-Protokoll hinzufügen.</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-3"><a class="header" href="#zuletzt-erreichte-ziele-3">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Beta-Version</strong>
+Eine Beta-Version von Bee</p>
+</li>
+<li>
+<p><strong>Alpha Release</strong>
+Alpha-Veröffentlichung von Bee</p>
+</li>
+<li>
+<p><strong>Dashboard-Integration</strong>
+Unterstützung für die neue Benutzeroberfläche des Node-Dashboards hinzufügen.</p>
+</li>
+<li>
+<p><strong>API</strong>
+Dies ist die Schnittstelle zwischen Clients und Datenbanken - eine API, mit der Informationen und Daten aus der Ferne abgefragt werden können. Modular aufgebaut, ermöglicht es die einfache Implementierung neuer Architekturen (REST, gRPC,…).</p>
+</li>
+<li>
+<p><strong>Messages</strong>
+Implementiert das neue atomare Nachrichtenlayout von Chrysalis Part 2.</p>
+</li>
+<li>
+<p><strong>UTXO-Ledger</strong>
+Ermöglicht eine schnellere und genauere Konfliktbehandlung und behandelt mögliche Szenarien für das erneute Anhängen ungültiger Transaktionen. Wird es dem Protokoll ermöglichen, in Zukunft farbige Münzen zu unterstützen.</p>
+</li>
+<li>
+<p><strong>Proof of Work</strong>
+Ermöglicht dem Node das durchführen von Proof of Work.</p>
+</li>
+<li>
+<p><strong>Tangle</strong>
+Implementiert die API für die typsichere Interaktion mit und die Bearbeitung des Tangle.</p>
+</li>
+<li>
+<p><strong>Speicherebene</strong>
+Die Speicherschicht des Bee-Nodes. Dies ist die Schnittstelle zwischen dem Tangle und den Datenbanken. Modular aufgebaut, ermöglicht es die einfache Implementierung neuer Backends (SQL, KV,…).</p>
+</li>
+<li>
+<p><strong>Netzwerkschicht</strong>
+Bietet eine einfache und bequeme Möglichkeit zum Austausch von Nachrichten zwischen benachbarten Nodes.</p>
+</li>
+<li>
+<p><strong>Gossip protokoll</strong>
+Ermöglicht dem Node, Transaktionen über das Netzwerk zu verbreiten.</p>
+</li>
+<li>
+<p><strong>White Flag</strong>
+in einfacherer, konfliktunabhängiger Ansatz, der eine schnellere und effizientere Auswahl von Spitzen ermöglicht, bestimmte Angriffe eliminiert und den Bedarf an erneuten Anhängen erheblich reduziert.</p>
+</li>
+<li>
+<p><strong>Binär codiertes ternäres (Vereinheitlichung)</strong>
+Schnittstelle zur Vereinheitlichung von binär-ternären Codierungen.</p>
+</li>
+<li>
+<p><strong>Signaturschema</strong>
+Implementiert dieselben Signaturschemata, die die Authentizität im aktuellen IOTA-Netzwerk gewährleisten, wie IRI v1.8.1.</p>
+</li>
+<li>
+<p><strong>Kryptografische Grundelemente - Schwamm, Locke und Kerl</strong>
+Implementiert die kryptografischen Hash-Funktionen CurlP und Kerl. CurlP81 (ein neuer Typ für CurlP mit 81 Runden) und Kerl sind die beiden von IRI v1.8.1 verwendeten kryptografischen Hash-Funktionen.</p>
+</li>
+</ul>
+<h4 id="abgebrochene-ziele"><a class="header" href="#abgebrochene-ziele">Abgebrochene Ziele</a></h4>
+<p>Findet und aktualisiert Peers im Netzwerk automatisch.</p>
+<h3 id="chronicle"><a class="header" href="#chronicle">Chronicle</a></h3>
+<p>Chronicle ist eine auf Rust basierende Permanode, die die gesamte Geschichte des Tangle speichert.</p>
+<h4 id="aktuelles-ziel-4"><a class="header" href="#aktuelles-ziel-4">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Permanode-Dashboard</strong>
+Ein Dashboard, mit dem Benutzer ihre permanente Instanz überwachen und steuern können.</li>
+</ul>
+<h4 id="nächste-ziele-4"><a class="header" href="#nächste-ziele-4">Nächste Ziele</a></h4>
+<ul>
+<li><strong>Selektiver Permanode</strong>
+Ein selektiver Permanode speichert und filtert einen benutzerdefinierten Satz von Transaktionen.</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-4"><a class="header" href="#zuletzt-erreichte-ziele-4">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Chronikarchiv</strong>
+Eine Protokollfunktion, um den bestätigten Verwicklungsdatenfluss nach Meilensteinindex zu sichern.</p>
+</li>
+<li>
+<p><strong>Chrysalis-Unterstützung</strong>
+Unterstützung für neue Datenmodelle und Chrysalis Part 2-Typen</p>
+</li>
+<li>
+<p><strong>Transaktionsverfestigung</strong>
+Unterstützung für die Festigung von Transaktionen in Chronicle</p>
+</li>
+<li>
+<p><strong>Chronik-Broker</strong>
+MQTT-Unterstützung mit einem verteilten und parallelen Kollektor zum Empfangen von Ereignissen von IOTA-Nodes und einem erweiterten angepassten Cache.</p>
+</li>
+<li>
+<p><strong>Unterstützung für ausgegebene Adressen</strong>
+Funktionalität zum Speichern und Nachschlagen verbrauchter Adressen zur Verwendung beim Chrysalis-Übergang</p>
+</li>
+<li>
+<p><strong>API-Verbesserungen</strong>
+Unterstützung von weiteren Einschränkungen für die API, um die Effizienz des Datenzugriffs zu verbessern und ein API-Referenzhandbuch hinzuzufügen.</p>
+</li>
+<li>
+<p><strong>Alpha Release</strong>
+Alpha-Version der Chronicle permanode.</p>
+</li>
+<li>
+<p><strong>Permanode-Runtime</strong>
+Eine erste Implementierung der Laufzeit von Chronicle basierend auf der Tokio Rust-Crate.</p>
+</li>
+</ul>
+<h4 id="abgebrochene-ziele-1"><a class="header" href="#abgebrochene-ziele-1">Abgebrochene Ziele</a></h4>
+<ul>
+<li><strong>Weitere Verbesserungen der Permanode-Runtime</strong>
+Das Hizufügen von weitere Tests und Profile für die Robustheit der Runtime.</li>
+</ul>
+<h2 id="werkzeuge-und-bibliotheken"><a class="header" href="#werkzeuge-und-bibliotheken">Werkzeuge und Bibliotheken</a></h2>
+<p>Entwicklertools und Bibliotheken zum Erstellen von Anwendungsfällen auf IOTA.</p>
+<h3 id="client-bibliothek"><a class="header" href="#client-bibliothek">Client Bibliothek</a></h3>
+<p>Die Client Bibliothek abstrahiert die Komplexität des IOTA-Protokolls in einfache, einheitliche Methoden.</p>
+<h4 id="aktuelles-ziel-5"><a class="header" href="#aktuelles-ziel-5">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Java-Bindungen</strong>
+Erstellung einer Bindung zu der Java Programmiersprache, mit der die Rust-Bibliothek in Java verwenden werden kann.</li>
+</ul>
+<h4 id="nächste-ziele-5"><a class="header" href="#nächste-ziele-5">Nächste Ziele</a></h4>
+<ul>
+<li><strong>C Beta-Version</strong>
+Eine C-basierte Bibliothek mit intuitiven Methoden für die IOTA-Funktionalität, z. B. Senden und Empfangen von Transaktionen.</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-5"><a class="header" href="#zuletzt-erreichte-ziele-5">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Spezifikation</strong>
+Eine Spezifikation für die IOTA-Clientbibliothek.</p>
+</li>
+<li>
+<p><strong>Rust Beta Release</strong>
+Eine Spezifikation für die IOTA-Clientbibliothek.</p>
+</li>
+<li>
+<p><strong>Go Beta-Version</strong>
+Eine Go-basierte Bibliothek mit intuitiven Methoden für die IOTA-Funktionalität, z. B. Senden und Empfangen von Transaktionen.</p>
+</li>
+<li>
+<p><strong>Rust Alpha Release</strong>
+Eine Rust-basierte Bibliothek mit intuitiven Methoden für die IOTA-Funktionalität, z. B. Senden und Empfangen von Transaktionen.</p>
+</li>
+<li>
+<p><strong>Python-Bindungen</strong>
+Ertellung einer Bindung, mit der die Rust-Bibliothek in Python verwenden werden kann.</p>
+</li>
+<li>
+<p><strong>Node.js Bindungen</strong>
+Ertellung einer Bindung, mit der die Bibliothek iota.rs in Node.js über Neon verwenden können.</p>
+</li>
+</ul>
+<h3 id="wallet-bibliothek"><a class="header" href="#wallet-bibliothek">Wallet-Bibliothek</a></h3>
+<p>Die Wallet-Bibliothek vereinfacht Implementierungen, die das IOTA-Token verwenden.</p>
+<h4 id="aktuelles-ziel-6"><a class="header" href="#aktuelles-ziel-6">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Ledger Nano Support</strong>
+Für Benutzer, die die Bibliothek mit einem Ledger Nano nutzen möchten.</li>
+</ul>
+<h4 id="nächste-ziele-6"><a class="header" href="#nächste-ziele-6">Nächste Ziele</a></h4>
+<p>Aktuell keine.</p>
+<h4 id="zuletzt-erreichte-ziele-6"><a class="header" href="#zuletzt-erreichte-ziele-6">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Java-Bindungen</strong>
+Bindungen, mit denen Sie die Bibliothek wallet.rs in Java verwenden können.</p>
+</li>
+<li>
+<p><strong>Beta-Version</strong>
+Bindungen, mit denen Sie die Bibliothek wallet.rs in Python verwenden können.</p>
+</li>
+<li>
+<p><strong>Python-Bindungen</strong>
+Binding zu der Python Programmiersprache, mit der die Rust-Bibliothek in Python verwenden werden kann.</p>
+</li>
+<li>
+<p><strong>Alpha Release</strong>
+Eine neue benutzerfreundliche Brieftaschenbibliothek zur Vereinfachung von Implementierungen, die das IOTA-Token verwenden.</p>
+</li>
+<li>
+<p><strong>Node.js Bindungen</strong>
+Bindungen, mit denen Sie die Bibliothek wallet.rs in Node.js über Neon verwenden können.</p>
+</li>
+</ul>
+<h3 id="iota-streams"><a class="header" href="#iota-streams">IOTA-Streams</a></h3>
+<p>Mit IOTA Streams können Geräte jeder Größe verschlüsselte Datenströme senden und darauf zugreifen.</p>
+<h4 id="aktuelles-ziel-7"><a class="header" href="#aktuelles-ziel-7">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Dokumentation und Beispiele</strong>
+Verbesserung der Dokumentation und Beispiele für Rust und alle Bindungen.</li>
+</ul>
+<h4 id="nächste-ziele-7"><a class="header" href="#nächste-ziele-7">Nächste Ziele</a></h4>
+<ul>
+<li><strong>Streams Explorer</strong>
+Ein benutzerdefinierter Streams-Explorer, der einen Überblick über einen bestimmten Datenstrom gibt.</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-7"><a class="header" href="#zuletzt-erreichte-ziele-7">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Node.js Bindungen</strong>
+Node.js-Bindungen über Neon für die Rust-Bibliothek.</p>
+</li>
+<li>
+<p><strong>iota.rs Support</strong>
+Integration der neuen iota.rs-Clientbibliothek für Chrysalis.</p>
+</li>
+<li>
+<p><strong>Chrysalis-Unterstützung</strong>
+Sicherstellen, dass Streams für die Veröffentlichung von Chrysalis bereit ist.</p>
+</li>
+<li>
+<p><strong>C Bindungen</strong>
+C Bindungen für die Rust-Bibliothek.</p>
+</li>
+<li>
+<p><strong>Spezifikation</strong>
+Formale Spezifikation der Konstrukte, die die Funktionalität von IOTA Streams beschreiben.</p>
+</li>
+<li>
+<p><strong>Alpha</strong>
+Eine Alpha-Implementierung zur Validierung der IOTA Streams-Funktionalität mit unserer Community und unseren Partnern vor Beginn der endgültigen Implementierung.</p>
+</li>
+<li>
+<p><strong>Unterstützung der Rustbibliothek</strong>
+Unterstützung für IOTA-Streams in der Rust-Bibliothek.</p>
+</li>
+<li>
+<p><strong>Rustimplementierung</strong>
+Eine Veröffentlichung von IOTA Streams in einem Rust-Client.</p>
+</li>
+<li>
+<p><strong>WASM-Bindungen</strong>
+WASM-Bindungen für die Rust-Bibliothek.</p>
+</li>
+</ul>
+<h3 id="iota-identity"><a class="header" href="#iota-identity">IOTA-Identity</a></h3>
+<p>IOTA Identity implementiert die vorgeschlagenen Standards für DID und überprüfbare Anmeldeinformationen, um eine Identität für Personen, Organisationen und Dinge zu ermöglichen.</p>
+<h4 id="aktuelles-ziel-8"><a class="header" href="#aktuelles-ziel-8">Aktuelles Ziel</a></h4>
+<ul>
+<li><strong>Beta-Version</strong>
+Beta-Version des von W3C in Rust vorgeschlagenen Standards für dezentrale Identifikatoren (DID). Dies umfasst die Verwaltung von DID-Dokumenten, das Veröffentlichen und Lesen von DID-Dokumenten von IOTA.</li>
+</ul>
+<h4 id="nächste-ziele-8"><a class="header" href="#nächste-ziele-8">Nächste Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Kommunikationsbibliotheken</strong>
+Standardisierung der Kommunikation zwischen DIDs, einschließlich Authentifizierung, Anforderung und Freigabe von Überprüfungsanmeldeinformationen. Basierend auf DIDComm und Proof Präsentation vorgeschlagenen Standards.</p>
+</li>
+<li>
+<p><strong>Stronghold Integration</strong>
+Integrieren Sie Stronghold in das IOTA Identity Framework und bieten Sie sofort einsatzbereite Sicherheit und einen benutzerfreundlicheren, zustandsbehafteten Umgang mit Identitäten.</p>
+</li>
+<li>
+<p><strong>Prüfung</strong>
+Führen Sie eine externe Prüfung durch, um die Sicherheits- und Kryptografievorgänge zu überprüfen.</p>
+</li>
+<li>
+<p><strong>C Bindungen</strong>
+C-Bindungen mit vollständiger Abdeckung der Bibliothek zur Unterstützung der nativen App-Entwicklung und IoT-Geräte.</p>
+</li>
+<li>
+<p><strong>Produktionsfreigabe</strong>
+In dieser Version kann das Framework in der Produktion verwendet werden. Zukünftige Updates bieten Tools für Abwärtskompatibilität und Versionsübergang.</p>
+</li>
+<li>
+<p><strong>Datenschutzfunktionen</strong>
+Das Framework unterstützt Selective Disclosure und Zero Knowledge Proofs, reduziert die Menge der freigegebenen Informationen auf ein Minimum und maximiert so den Datenschutz.</p>
+</li>
+<li>
+<p><strong>Identitätsagent</strong>
+Der Identitätsagent bietet eine Möglichkeit, sofort Identitätsnachrichten zu erstellen und zu beantworten, die auf Ihre eigene Anwendung zugeschnitten sind.</p>
+</li>
+</ul>
+<h4 id="zuletzt-erreichte-ziele-8"><a class="header" href="#zuletzt-erreichte-ziele-8">Zuletzt erreichte Ziele</a></h4>
+<ul>
+<li>
+<p><strong>Spezifikation</strong>
+Eine umfassende Spezifikation für die Identität auf IOTA.</p>
+</li>
+<li>
+<p><strong>Rust Verifizierbare Berechtigungsnachweisbibliotheken</strong>
+Eine Implementierung des Standards für überprüfbare Anmeldeinformationen durch W3C in Rust. Dies umfasst die Erstellung, Verwaltung und Überprüfung von überprüfbaren Anmeldeinformationen / überprüfbaren Präsentationen.</p>
+</li>
+<li>
+<p><strong>Alpha Release</strong>
+Eine Implementierung des von W3C in Rust vorgeschlagenen Standards für dezentrale Kennungen (DID). Dies umfasst die Verwaltung von DID-Dokumenten, das Veröffentlichen und Lesen von DID-Dokumenten von IOTA.</p>
+</li>
+<li>
+<p><strong>Selv Demo</strong>
+Eine Demo-Anwendung, die verschiedene Funktionen von IOTA Identity zeigt und erklärt und eine Grundlage für Community-Experimente bietet.</p>
+</li>
+<li>
+<p><strong>Versuchsprotokoll</strong>
+Eine voll funktionsfähige Typescript-Implementierung für schnelles Experimentieren und Prototyping.</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../roadmap/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../roadmap/2-magazin.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../roadmap/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../roadmap/2-magazin.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

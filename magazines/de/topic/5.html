@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Migration, was ist zu beachten? - Chrysalis Magazin</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../theme/open-in.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../topic/index.html"><strong aria-hidden="true">2.</strong> Schwerpunkt</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/1.html"><strong aria-hidden="true">2.1.</strong> Was ist Chrysalis?</a></li><li class="chapter-item expanded "><a href="../topic/2.html"><strong aria-hidden="true">2.2.</strong> Was ist neu?</a></li><li class="chapter-item expanded "><a href="../topic/3.html"><strong aria-hidden="true">2.3.</strong> Der weg dorthin</a></li><li class="chapter-item expanded "><a href="../topic/4.html"><strong aria-hidden="true">2.4.</strong> Neues Wallet - Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.html" class="active"><strong aria-hidden="true">2.5.</strong> Migration, was ist zu beachten?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/5.1.html"><strong aria-hidden="true">2.5.1.</strong> Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.2.html"><strong aria-hidden="true">2.5.2.</strong> ❌ Ledger</a></li></ol></li><li class="chapter-item expanded "><a href="../topic/6.html"><strong aria-hidden="true">2.6.</strong> Nächste Haltestelle, Coordicide!</a></li><li class="chapter-item expanded "><a href="../topic/7-stronghold.html"><strong aria-hidden="true">2.7.</strong> ❌ Stronghold</a></li></ol></li><li class="chapter-item expanded "><a href="../einfachIOTA/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../einfachIOTA/1-stammtisch.html"><strong aria-hidden="true">3.1.</strong> Stammtisch - IOTA, Bier und Diskussionen</a></li></ol></li><li class="chapter-item expanded "><a href="../what_is/index.html"><strong aria-hidden="true">4.</strong> Was ist ...</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../what_is/1.html"><strong aria-hidden="true">4.1.</strong> Was ist &quot;Dust Protection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/2.html"><strong aria-hidden="true">4.2.</strong> Was ist &quot;EdDSA Support&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/3.html"><strong aria-hidden="true">4.3.</strong> Was ist &quot;Atomic Transaction&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/4.html"><strong aria-hidden="true">4.4.</strong> Was ist &quot;UTXO&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/5.html"><strong aria-hidden="true">4.5.</strong> Was ist &quot;Autopeering&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/6.html"><strong aria-hidden="true">4.6.</strong> Was ist &quot;White-Flag&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/7.html"><strong aria-hidden="true">4.7.</strong> Was ist &quot;URTS Tip-Selection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/8.html"><strong aria-hidden="true">4.8.</strong> ❌ Was ist &quot;New Milestone Selection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/9.html"><strong aria-hidden="true">4.9.</strong> ❌ Was ist &quot;Binary Transaction Layout&quot;</a></li></ol></li><li class="chapter-item expanded "><a href="../news/index.html"><strong aria-hidden="true">5.</strong> Akuelles</a></li><li class="chapter-item expanded "><a href="../roadmap/index.html"><strong aria-hidden="true">6.</strong> Vorschau</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../roadmap/1.html"><strong aria-hidden="true">6.1.</strong> Roadmap</a></li><li class="chapter-item expanded "><a href="../roadmap/2-magazin.html"><strong aria-hidden="true">6.2.</strong> Im nächsten Magazin</a></li></ol></li><li class="chapter-item expanded "><a href="../developer/index.html"><strong aria-hidden="true">7.</strong> Developer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../developer/1.html"><strong aria-hidden="true">7.1.</strong> Libraries</a></li><li class="chapter-item expanded "><a href="../developer/2-nodes.html"><strong aria-hidden="true">7.2.</strong> Nodes</a></li></ol></li><li class="chapter-item expanded "><a href="../IMPRINT.html"><strong aria-hidden="true">8.</strong> Impressum</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Chrysalis Magazin</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/einfachiota/chrysalis-magazines" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="migration-was-ist-zu-beachten"><a class="header" href="#migration-was-ist-zu-beachten">Migration, was ist zu beachten?</a></h1>
+<p><img src="https://iota-einsteiger-guide.de/media/images/token-migration-security-1-.jpg" alt="" /></p>
+<blockquote>
+<p>Chrysalis - Sicherheit bei der Token-Migration</p>
+</blockquote>
+<p>Die nächste Phase der Entwicklung von IOTA beinhaltet eine Token-Migration vom alten Netzwerk zum neuen Chrysalis-Netzwerk mit Hilfe der Firefly-Wallet. Dieser Artikel bietet eine kurze Anleitung, wie man sich sicher durch das Cryptoland bewegt und Social-Engineering-Angriffe und Phishing-Versuche vermeidet.</p>
+<p>Der offizielle Starttermin der Chrysalis-Netzwerkmigration war Mittwoch, dem 21. April 2021. Der Migrationszeitraum wird es Nutzern, Börsen und Verwahrern ermöglichen, ihre Token-Migration vor dem Netzwerk-Upgrade vorzubereiten. Das Netzwerk-Upgrade selbst wurde am Mittwoch, den 28. April 2021 gestartet. Benutzer waren nicht verpflichtet, ihre Token vor dem Netzwerk-Update zu migrieren, und werden in der Lage sein, dies mindestens bis zu IOTAs &quot;Coordicide&quot; zu tun, der voraussichtlich später in diesem Jahr stattfinden wird. IOTA-Token, die an Börsen aufbewahrt werden, werden von den Börsen im Namen ihrer Nutzer migriert.</p>
+<p>Dem Kaninchenbau ins Kryptoland zu folgen, eröffnet unendliche Möglichkeiten in technischer, finanzieller und professioneller Hinsicht.</p>
+<p>Leider gehört es zu dieser &quot;interessantesten Branche der Welt&quot;, dass Neulinge nicht selten in die Fänge krimineller Akteure geraten, die mit Hilfe von Impersonifikation und Social Engineering, getarnt als der Versuch, hilfreich zu sein, an Gelder und persönliche Informationen unerfahrener Nutzer gelangen.</p>
+<p>Der Paradigmenwechsel, den die Dezentralisierung darstellt, birgt zwar ein enormes Potenzial für finanzielle Selbstbestimmung und einen unerschöpflichen Raum für Innovationen, bringt aber auch ein Maß an Eigenverantwortung mit sich, das im Idealfall dazu führen kann, dieses Ökosystem von seiner besten Seite zu erleben, im schlimmsten Fall aber auch dazu, gleich zu Beginn der Reise ausgeraubt zu werden.</p>
+<p><strong>Sei deine eigene Bank</strong> (Be your own bank) ist das Mantra, seit DLT die Welt innoviert, und besonders in Zeiten steigender Bewertungen nehmen die finanziellen Anreize für Betrüger proportional zu.</p>
+<p>Die Dezentralisierung diktiert, dass eine einmal abgeschlossene Transaktion nie wieder rückgängig gemacht werden kann. Dies bedeutet, dass gestohlene Gelder nicht wiederhergestellt werden können.</p>
+<p>Besonders in Zeiten der Token-Migration für das Chrysalis-Update ist es wahrscheinlich, dass Mitglieder, die Hilfe beim Übergangsprozess benötigen, zur Zielscheibe von Betrügern werden.</p>
+<p>Um unserer Community und den Nutzern eine Hilfestellung zu geben, hat die IOTA Foundation eine Liste mit einfach zu befolgenden Best Practices erstellt, die unter allen Umständen befolgt werden sollten, um sich vor böswilligen Akteuren zu schützen.</p>
+<h2 id="best-practices"><a class="header" href="#best-practices">Best-Practices</a></h2>
+<p>a) Teile <strong>niemals</strong> persönliche Informationen über die Menge der Token, die du besitzt, oder wo und wie du deine Tokens aufbewahrst, einschließlich Passwörter, Passphrasen zur Wiederherstellung und Benutzernamen von Wallet-Konten oder Börsen. </p>
+<p>Teile diese Informationen mit niemandem - auch nicht mit Mitgliedern der IOTA Foundation.</p>
+<p>b) Teile <strong>niemals</strong> den Seed, den Privat-Key, die Ledger-Passphrase mit 24 Wörtern oder die Adresse zu deinen Tokens mit irgendjemandem - auch nicht mit Mitgliedern der IOTA Foundation.</p>
+<p>c) Mitglieder und Moderatoren der IOTA Foundation werden niemals nach deinem Seed, deinem Privat-Key oder deinem Ledger-Passphrase mit 24 Wörtern fragen. &quot;Nie&quot; bedeutet wirklich &quot;nie&quot;. Es gibt keine Ausnahmen, niemals. Falls es passiert, melde dich umgehend, bei einer vertrauenswürdigen Person der IOTA Foundationum diesen Vorfall aufzuklären.</p>
+<p>d) Wenn du von angeblichen IOTA Foundation-Mitgliedern oder Moderatoren auf dem IOTA Discord über deine Tokens angesprochen wirst, sind das mit Sicherheit keine Mitglieder der IOTA Foundation, sondern bösartige Akteure, die sich als IF-Mitglieder ausgeben. Leider ist es auf Discord durch bezahlte Abonnements unglaublich einfach, sich überzeugend als andere Benutzer, Moderatoren oder sogar Mitarbeiter auszugeben.</p>
+<h3 id="was-zu-tun-ist-falls-du-hilfe-benötigst"><a class="header" href="#was-zu-tun-ist-falls-du-hilfe-benötigst">Was zu tun ist, falls du Hilfe benötigst:</a></h3>
+<p>e) Wenn du bei der Migration deiner Tokens auf Hindernisse stoßen solltest, kansnt du im offiziellen Discord nach Community-Unterstützung suchen. Sobald du dich angemeldet hast, besuche den #help-Kanal, lese die Anweisungen und folgen ihnen. Der beste Weg, um Hilfe zu erbitten, ist, es öffentlich in diesem Kanal zu tun: Solange deine Konversation öffentlich ist und nicht in privaten Nachrichten, gibt es weniger Risiko, weil jeder sehen kann, ob ein Betrüger versucht, dich zu betrügen und dich darüber informieren wird.</p>
+<p>f) Wenn du jemanden über eine private Nachricht auf Discord um Hilfe bitten möchstest, stelle sicher, dass DU derjenige bist, der die Unterhaltung beginnt: Die Auswahl eines offiziellen Gesprächspartners aus der Seitenleiste und das Starten der Konversation durch Sie selbst ist ohne Risiko, da Imitatoren nicht als grün gefärbte offizielle Mitglieder der IOTA Foundation in der Seitenleiste angezeigt werden können. Eine Konversation zu beginnen, indem man jemanden Offiziellen aus der Seitenleiste auswählt, ist daher sicher. Eine Direktnachricht von jemandem anzunehmen, der nur den gleichen Namen wie jemand in der Seitenleiste hat, ist nicht sicher. Es könnte sich um einen Betrüger handeln, der nur den gleichen Namen hat wie die offiziellen Mitarbeiter, die in der Seitenleiste angezeigt werden.</p>
+<p>g) Lade deine Software nur von vertrauenswürdigen Quellen herunter (normalerweise Webseiten, die mit <code>.IOTA.org</code> enden). Um sicherzustellen, dass du nur besagte vertrauenswürdige Anwendungen verwendest, ist es ein guter Anfang, nach Links in den offiziellen Blog-Beiträgen (https://blog.IOTA.org) zu suchen.</p>
+<p>h) Klicke niemals auf zufällige Links, die von angeblichen Mitgliedern oder angeblichen Moderatoren eines IOTA-bezogenen Social-Media-Kanals zur Verfügung gestellt werden, da sie ein hohes Risiko bergen, schädliche Software zu enthalten, die Ihr System kapern könnte.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../topic/4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../topic/5.1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../topic/4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../topic/5.1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

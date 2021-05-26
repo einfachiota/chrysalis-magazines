@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Neues Wallet - Firefly - Chrysalis Magazin</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../theme/open-in.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../topic/index.html"><strong aria-hidden="true">2.</strong> Schwerpunkt</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/1.html"><strong aria-hidden="true">2.1.</strong> Was ist Chrysalis?</a></li><li class="chapter-item expanded "><a href="../topic/2.html"><strong aria-hidden="true">2.2.</strong> Was ist neu?</a></li><li class="chapter-item expanded "><a href="../topic/3.html"><strong aria-hidden="true">2.3.</strong> Der weg dorthin</a></li><li class="chapter-item expanded "><a href="../topic/4.html" class="active"><strong aria-hidden="true">2.4.</strong> Neues Wallet - Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.html"><strong aria-hidden="true">2.5.</strong> Migration, was ist zu beachten?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../topic/5.1.html"><strong aria-hidden="true">2.5.1.</strong> Firefly</a></li><li class="chapter-item expanded "><a href="../topic/5.2.html"><strong aria-hidden="true">2.5.2.</strong> ❌ Ledger</a></li></ol></li><li class="chapter-item expanded "><a href="../topic/6.html"><strong aria-hidden="true">2.6.</strong> Nächste Haltestelle, Coordicide!</a></li><li class="chapter-item expanded "><a href="../topic/7-stronghold.html"><strong aria-hidden="true">2.7.</strong> ❌ Stronghold</a></li></ol></li><li class="chapter-item expanded "><a href="../einfachIOTA/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../einfachIOTA/1-stammtisch.html"><strong aria-hidden="true">3.1.</strong> Stammtisch - IOTA, Bier und Diskussionen</a></li></ol></li><li class="chapter-item expanded "><a href="../what_is/index.html"><strong aria-hidden="true">4.</strong> Was ist ...</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../what_is/1.html"><strong aria-hidden="true">4.1.</strong> Was ist &quot;Dust Protection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/2.html"><strong aria-hidden="true">4.2.</strong> Was ist &quot;EdDSA Support&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/3.html"><strong aria-hidden="true">4.3.</strong> Was ist &quot;Atomic Transaction&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/4.html"><strong aria-hidden="true">4.4.</strong> Was ist &quot;UTXO&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/5.html"><strong aria-hidden="true">4.5.</strong> Was ist &quot;Autopeering&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/6.html"><strong aria-hidden="true">4.6.</strong> Was ist &quot;White-Flag&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/7.html"><strong aria-hidden="true">4.7.</strong> Was ist &quot;URTS Tip-Selection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/8.html"><strong aria-hidden="true">4.8.</strong> ❌ Was ist &quot;New Milestone Selection&quot;</a></li><li class="chapter-item expanded "><a href="../what_is/9.html"><strong aria-hidden="true">4.9.</strong> ❌ Was ist &quot;Binary Transaction Layout&quot;</a></li></ol></li><li class="chapter-item expanded "><a href="../news/index.html"><strong aria-hidden="true">5.</strong> Akuelles</a></li><li class="chapter-item expanded "><a href="../roadmap/index.html"><strong aria-hidden="true">6.</strong> Vorschau</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../roadmap/1.html"><strong aria-hidden="true">6.1.</strong> Roadmap</a></li><li class="chapter-item expanded "><a href="../roadmap/2-magazin.html"><strong aria-hidden="true">6.2.</strong> Im nächsten Magazin</a></li></ol></li><li class="chapter-item expanded "><a href="../developer/index.html"><strong aria-hidden="true">7.</strong> Developer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../developer/1.html"><strong aria-hidden="true">7.1.</strong> Libraries</a></li><li class="chapter-item expanded "><a href="../developer/2-nodes.html"><strong aria-hidden="true">7.2.</strong> Nodes</a></li></ol></li><li class="chapter-item expanded "><a href="../IMPRINT.html"><strong aria-hidden="true">8.</strong> Impressum</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Chrysalis Magazin</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/einfachiota/chrysalis-magazines" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
+<h2 id="eine-neue-wallet-für-iota-15"><a class="header" href="#eine-neue-wallet-für-iota-15">Eine neue Wallet für IOTA 1.5</a></h2>
+<p>Die bevorstehenden grundlegenden Änderungen im IOTA-Protokoll (neues Signaturschema etc.) verlangen eine völlig neue Wallet-Architektur, IOTA hat diesen Umstand zum Anlass genommen, um die Wallet von Grund auf neu zu überdenken: von der Transaktionslogik über das Benutzererlebnis bis hin zum Design. Die neue Wallet namens &quot;Firefly&quot; soll als Plattform für das aktuelle und zukünftige IOTA-Ökosystem dienen.
+<br /></p>
+<p><img src="https://iota-einsteiger-guide.de/media/images/2_t7ocbffu-u1zgrmxo76ggg.png" alt="Image of Firefly's Dashboard im Dunkel-Modus" /></p>
+<center> Bild: Firefly's Dashboard im Dunkel-Modus </center>
+<br />
+<p>Die technische Architektur und die Benutzerschnittstelle der Wallet wurden im Zusammenhang mit späteren Ergänzungen wie Digital-Assets, Chat und Kontaktmanagement entworfen. Im Laufe des nächsten Jahres werden eine Reihe zusätzlicher Funktionen zum Stack der Wallet hinzukommen. In der ersten Version von Firefly wurde zunächst ein besonderer Wert auf Sicherheit, Benutzerfreundlichkeit und eine erweiterbare Architektur gelegt. 
+<br /></p>
+<p>Es gibt bereits einige offensichtliche Unterschiede zu der alten Trinity-Wallet:</p>
+<ul>
+<li>Profile: Die App kann von mehrere Personen auf demselben Gerät genutzt werden, ohne auf die Wallets der anderen Personen zuzugreifen. </li>
+<li>Konten: Ein Benutzer kann seine Geldmittel z. B. auf ein Hauptkonto, ein Ausgabenkonto und ein Ledger Nano-Konto aufteilen.</li>
+<li>Pin-Code: Eine PIN Eingabe öffnet die Wallet, ohne dass jemals der Seed entschlüsselt wird, so kann der Kontostand sicher überprüft werden.</li>
+<li>Wiederverwendbare Adressen: Die neuen Chrysalis Adressen (Bech32 Standard) fangen immer mit &quot;iota&quot; and und sehen wie folgt aus: &quot;iota11qykf7rrdjzhgynfkw6z7360avhaaywf5a4vtyvvk6a06gcv5y7sksu7n5cs&quot;.</li>
+<li>Wiederherstellungssätze: Das Backup erfolgt über die 24-Wort-Wiederherstellungssätze (Bip39 Standard).</li>
+<li>Bedienung: Verbesserte Benutzerfreundlichkeit und Netzwerkleistung.</li>
+<li>Netzwerkindikator: Zeigt Informationen über den aktuellen Zustand des IOTA-Netzwerks an.
+<br /></li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/4_jg6wu5ljjh_ksvwqdibpiq.png" alt="Image of Kont System" /></p>
+<center> Bild: Firefly's Konto-System </center>
+<br />
+<h2 id="unter-der-haube"><a class="header" href="#unter-der-haube">Unter der Haube</a></h2>
+<h3 id="ein-erweiterbarer-und-exportierbarer-anwendungskern"><a class="header" href="#ein-erweiterbarer-und-exportierbarer-anwendungskern">Ein erweiterbarer und exportierbarer Anwendungskern</a></h3>
+<p>Mit diesem Konzept können alle Entwicklungen von anderen Entwicklern in neuen Anwendungen wiederverwendet werden.
+Folglich existieren bereits einige nützliche Tools für andere Entwickler, mit denen sie ihre eigenen Anwendungen entwickeln können.
+<br /></p>
+<h3 id="strongholdrs---eine-sichere-mehrzweckbibliothek-zur-handhabung-und-speicherung-von-seeds"><a class="header" href="#strongholdrs---eine-sichere-mehrzweckbibliothek-zur-handhabung-und-speicherung-von-seeds">stronghold.rs - Eine sichere Mehrzweckbibliothek zur Handhabung und Speicherung von Seeds</a></h3>
+<p>Stronghold ist die bedeutendste Neuerung, welche die Sicherheit der Wallet erheblich verbessert. Sensible Operationen wie Adressgenerierung und Transaktionssignierung finden in einem isolierten Anwendungsspeicher statt, wodurch der Seed von potenziellen Angreifern ferngehalten wird. Stronghold dient auch als Key-Wert-Speicher und wird zur Speicherung von Anwendungen verwendet. Das bedeutet, dass die Wallet vollständig portabel wird, um die Transaktionshistorie auf ein anderes Gerät oder einer anderen Wallet-App zu übertragen wird nur ein aktuelles Stronghold-Backup benötigt.
+<br /></p>
+<h3 id="walletrs---eine-vielseitige-wallet-bibliothek"><a class="header" href="#walletrs---eine-vielseitige-wallet-bibliothek">wallet.rs - Eine vielseitige Wallet-Bibliothek</a></h3>
+<p>Die gesamte Transaktionslogik in Firefly wird von wallet.rs bereitgestellt - einer umfassenden, in Rust geschriebene IOTA Wallet-Bibliothek. Die Bibliothek bietet alle Funktionen, die für die Erstellung von Wallets und Tauschintegrationen benötigt werden, von der Kontoerstellung über die Initiierung von Transfers bis hin zur Zustandsverwaltung und Sicherung. Die erste Version wird mit Neon-Bindungen für Node JS kommen, Python und WASM werden folgen, weitere sind zu einem späteren Zeitpunkt geplant.</p>
+<p>Mit wallet.rs und stronghold.rs können Entwickler auf einfache Weise sichere Wallet- und Zahlungsfunktionalitäten in einer Vielzahl von Anwendungsfällen und Umgebungen integrieren. Zudem wird die Mentalität der Wiederverwendbarkeit auch auf das Design der Benutzerschnittstelle angewandt und IOTA plant eine Komponentenbibliothek für Entwickler zur Verfügung zu stellen, die neu gestaltet und in eigenen Projekten verwenden werden kann. Parallel wird an einem Plugin-System mit einer Zugangskontroll-API gearbeitet, um den Benutzern die Kontrolle darüber zu geben, welche Funktionen in der Wallet aktiviert werden sollen. IOTA rechnet mit einer Reihe von Community-Projekten, bei denen Wallets und andere Anwendungen mit diesen Tools entwickelt werden.
+<br /></p>
+<h2 id="die-zukunft-von-firefly"><a class="header" href="#die-zukunft-von-firefly">Die Zukunft von Firefly</a></h2>
+<p>Firefly dient als Einstiegspunkt in das IOTA-Ökosystem und IOTA wird in Zukunft mit neuen Funktionen das Benutzererlebnis als Zahlungsprotokoll verbessern. Die Priorität liegt aber zunächst auf der Desktop-Version, bevor die Aufmerksamkeit auf mobile Geräte gelenkt wird.</p>
+<p>Die neue Wallet ist eine modulare Plattform für unterschiedliche Anwendungen, ggf. auch von Drittanbietern, im Folgendem werden ein paar dieser kommenden Funktionen aufgelistet:</p>
+<ul>
+<li>
+<p>Mana-Delegation: Diese Funktion wird im Mainnet erst ab dem Coordicide zwingend benötigt, man wird dann gegen Bezahlung, das von den gehaltenen Token erzeugte Mana an Nodes verpfänden können. </p>
+</li>
+<li>
+<p>Kontaktsystem: Konto-Adressen können mit Namen verknüpft werden, damit löst Firefly das Problem der komplizierten Adressierung von Kryptowährungen für Benutzer, um beispielsweise sich wiederholende Transaktionen (Bsp.: Geschäftskontakte oder Freunde) sicherer und schneller zu tätigen. </p>
+</li>
+<li>
+<p>Chat mit Bezahlfunktion: Der Nutzer soll mit Kryptowährungen so einfach umgehen können, wie beim Versenden von Textnachrichten oder beim Scannen eines QR-Codes. Die Messaging-App ähnelt der Funktionsweise der von Tencent betriebenen App WeChat, diese deckt bereits über 30% der mobilen Zahlungen in China ab und erfreut sich steigender Beliebtheit. </p>
+</li>
+</ul>
+<br />
+<p><img src="https://iota-einsteiger-guide.de/media/images/request-funds-select.png" alt="Image of Assets2" /></p>
+<br />
+<ul>
+<li>
+<p>Digitale Identität: Durch die Bereitstellung einer digitalen Identität für Benutzer wird das Vertrauen in Transaktionen erhöht. Benutzer können ihr Profil mit überprüfbaren Anmeldeinformationen wie von Drittanbietern überprüften KYC-Informationen verbessern. Auch könnte sich ein Benutzer an verschiedenen Terminals auf einfache Weise mit dem Handy über NFC ausweisen. Eine Implementierung der digitalen Identität eröffnet eine große Menge an weiteren Anwendungsfällen.</p>
+</li>
+<li>
+<p>Browsererweiterung: Diese kommt, allerdings darf man auf die Umsetzung gespannt sein. Wird es etwas Ähnliches wie Metamask? Eventuell mit einer Brücke zu ETH? Die Gerüchteküche brodelt.</p>
+</li>
+<li>
+<p>DApp-Interaktion: Verschiedenen Drittanbieter-Apps werden mit der Wallet und ggf. untereinander kommunizieren können. Beispielsweise könnten Exchanges, Börsen oder Banken die IOTA-Wallet-Plattform, als Grundlage für eigene Anwendungen nutzen, um mit dem Tangle zu interagieren. Dies erschafft völlig neue Servicedienstleistungen und Anwendungsgebiete. Neben dem einfacheren und schnelleren Kauf/Verkauf von Miota, könnte dies auch Umtausch-Transaktionen von EUR/Miota in Echtzeit ermöglichen, wenn die Wallet eine Drittanbieter-App mit Banklizenz und somit direkter Bankverbindung bekommen würde.</p>
+</li>
+<li>
+<p>Zugriffskontrolle: Mit IOTA-Access kann der Zugriff/Zugang auf unterschiedlichste Geräte/Orte gewährt werden.</p>
+</li>
+<li>
+<p>Digital Assets: Die Verwaltung von Colored Coins und NFTs wird zukünftig ebenfalls mit der Wallet möglich sein.
+<br /></p>
+</li>
+</ul>
+<p><img src="https://iota-einsteiger-guide.de/media/images/wallet2.png" alt="Image of Assets" />
+<img src="https://iota-einsteiger-guide.de/media/images/wallet.png" alt="Image of Assets2" /></p>
+<p>skay</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../topic/3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../topic/5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../topic/3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../topic/5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
