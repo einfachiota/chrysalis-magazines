@@ -584,24 +584,16 @@ Die Berechnung der kumulierten Gewichtungen von Transaktionen ist relativ teuer 
 Verwenden von verschiedene Mechanismen zur Tip-Auswahl, die nicht mehr auf der kumulativen Gewichtung basieren und eine geringere Chance haben, gültige Transaktionen zurückzulassen.</p>
 <p>[$=project.imageAltText(1422)$]</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/7.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-new-milestone-selection"><a class="header" href="#was-ist-new-milestone-selection">Was ist &quot;New Milestone Selection&quot;</a></h1>
-<p>Ein neuer Meilenstein-Auswahlalgorithmus für den Koordinator (nur IOTA 1.X), der darauf abzielt, dass das Netzwerk so viel CTPS wie möglich unterstützt, und zwar mit einer höheren Recheneffizienz.</p>
+<p>Ein neuer Meilenstein-Auswahlalgorithmus wurde für den Koordinator entwickelt, der darauf abzielt, dass das Netzwerk mehr Transaktionen pro Sekunde verarbeiten kann.
+Kurz gesagt, wählt der Koordinator für den Meilstenstein nun intelligent Tips aus.</p>
+<p>Der Korrdinator erzeugt etwa alle 10 Sekunden einen Meilenstein, welcher wie jede andere Transaktionen auch mindestens zei Tips referenzieren muss. Tips sind die Messages im Tangle die noch nicht referenziert wurden. Der alte Algorithmus (Random Walk) hat einfach zufällige Tips genutzt. Der neue Algorithmus wählt auch erstmal zufällige Tips aus, überprüft sie dann aber einmal, um möglichst gute Tips zu nutzen. </p>
+<p><img src="what_is/./assets/8-1.png" alt="" /></p>
+<p>https://simulation1.tangle.works/</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/8.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-binary-transaction-layout"><a class="header" href="#was-ist-binary-transaction-layout">Was ist &quot;Binary Transaction Layout&quot;</a></h1>
-<p>Umstellung auf eine interne binäre Darstellung der ternären Transaktion. Dies ermöglicht es binäre Daten (1,0) für Validierung  und andere Verarbeitungen zu verwenden, ohne dass viele binär-ternäre Konvertierungen wie in der alten IOTA 1.0 Node-Software erforderlich sind. Dies sollte zu weiteren Leistungsverbesserungen führen.</p>
+<p>Umstellung auf eine interne binäre Darstellung der ternären Transaktion. Dies ermöglicht es binäre Daten  also Einsen und Nullen für Validierung  und andere Verarbeitungen zu verwenden, ohne dass binär-ternäre Konvertierungen wie in der alten IOTA 1.0 Node-Software erforderlich sind. Dies führt zu weiteren Leistungsverbesserungen im Netzwerk.</p>
 <p><strong>Technische Details:</strong> 
-Im IOTA 1.0 Mainnet besteht eine Transaktion aus 2.673 tryte-kodierten Zeichen und setzt sich aus verschiedenen Feldern unterschiedlicher Tryte-Längen zusammen.</p>
-<p>Wichtig ist, dass bei der derzeit verwendeten Kerl-Hash-Funktion ein Hash (und damit auch eine Adresse) naturgemäß nicht aus 243 Trits, sondern aus 48 Bytes besteht. Das bedeutet, dass für jede Adresse oder jeden Hash die 48-Byte-Darstellung absolut äquivalent zu der derzeit verwendeten 243-Trits-Darstellung ist, die nur das Ergebnis einer zusätzlichen Konvertierung zur Basis 3 ist.</p>
-<p>Das alte ternäre Transaktionslayout bestand aus den folgenden Typen:</p>
-<ul>
-<li>Integers (dt. ganze Zahlen) &gt; Ganze Zahlen sind einfachl in binärer Form zu kodieren.</li>
-<li>Hashes (hash (Curl), Adresse (Kerl), bundle (Kerl)</li>
-<li>Signature-Nachrichten-Fragment</li>
-</ul>
-<p>Ternäre Zeichenketten werden zukünftig kodiert als:</p>
-<ul>
-<li>1 byte per tryte (3 trits),</li>
-<li>1 byte per 5 trits or</li>
-<li>native 48 bytes for Kerl Hashes.</li>
-</ul>
+Im IOTA 1.0 Netzwerk besteht eine Transaktion aus 2.673 tryte-kodierten Zeichen und setzt sich aus verschiedenen Feldern unterschiedlicher Tryte-Längen zusammen.</p>
+<p>Im neuen IOTA 1.5 Chrysalis Netzwerk haben Transaktion eine variable Größe. Die maximale Größe für Nachrichten beträgt 32768 Byte. Das Indexfeld des Indexierungs-Payloads hat eine maximale Größe von 64 Bytes.</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/9.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="akuelles"><a class="header" href="#akuelles">Akuelles</a></h1>
 <h2 id="ki-author---zusammenfassung-und-Übersetzung"><a class="header" href="#ki-author---zusammenfassung-und-Übersetzung">KI Author - Zusammenfassung und Übersetzung</a></h2>
 <p>Der KI Author ist eine Künstliche Intelligenz, die einen IOTA Blogeintrag zusammenfasst und übersetzt.</p>
@@ -1083,6 +1075,9 @@ Eine voll funktionsfähige Typescript-Implementierung für schnelles Experimenti
 </li>
 </ul>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/roadmap/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-im-nächsten-magazin"><a class="header" href="#-im-nächsten-magazin">❌ Im nächsten Magazin</a></h1>
+<p>Im nächsten Magazin behandeln wir das Thema &quot;IOTA und die Umwelt&quot;. </p>
+<p>Wir schauen uns den Stromverbrauch von dem neuen IOTA Netzwerk an</p>
+<p>Hast du oder dein Projekt etwas mit unserem nächsten Thema zu tun? Schreibe uns doch kurz in unserem Discord oder eine E-Mal an magazin@einfachiota.de und mit etwas Glück bist du dabei!</p>
 <blockquote>
 <p><a href="https://hackmd.io/@eimag/SywIBddtO/edit">Draft Article</a></p>
 </blockquote>
