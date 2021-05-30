@@ -3,6 +3,25 @@
 ## KI Author - Zusammenfassung und Übersetzung
 Der KI Author ist eine Künstliche Intelligenz, die einen IOTA Blogeintrag zusammenfasst und übersetzt.
 
+
+### Auf dem Weg zur vollständigen Dezentralisierung mit IOTA 2.0
+
+> [May 28, 2021](https://blog.iota.org/path-towards-full-decentralization-with-iota-2-0/)
+
+Die IOTA Foundation berichtete über den erfolgreichen Abschluss des Chrysalis-Upgrade im vergangenen Monat. IOTA bewegt sich in Richtung seiner vollständigen Dezentralisierung mit jedem Node, der zum Konsens und zur Sicherheit des Netzwerks beiträgt. Die Entfernung des Koordinators wird IOTA zu einem der sichersten und skalierbarsten verteilten Ledgers machen.
+
+### Energiemessungen für das IOTA Netzwerk (Chrysalis Edition)
+
+> [May 14, 2021](https://blog.iota.org/internal-energy-benchmarks-for-iota/)
+
+Energie-Benchmarks für das IOTA-Netzwerk (Chrysalis Edition) vorgestellt. Ein Raspberry Pi-4 Node benötigt etwas mehr als ein Millionstel kWh pro IOTA-Nachricht/Transaktion, einschließlich der Kosten für den "Nachweis der Arbeit", oder auch "Proof of Work" (PoW). Eine Tasse Kaffee in einer Einserve-Maschine zu machen, verbraucht ca. 024 kWh (fast 22.000 mal so viel Energie).
+
+
+### IOTA Identity: Beta Release
+> [May 10, 2021](https://blog.iota.org/iota-identity-beta-release/)
+
+IOTA Identity ist ein Self Sovereign Identity (SSI) Framework, das es Menschen, Organisationen oder Maschinen ermöglicht, eine digitale Identität zu erstellen und vollständig zu kontrollieren. IOTA Identity ermöglicht IoT-Geräten ihre eigenen Identitäten zu erstellen und überprüfbare Aussagen über sich selbst zu sammeln. Das erste wichtige Feature, das wir mit dieser Beta-Version eingeführt haben, ermöglicht eine übergeordnete API zur Verwendung der IOTA-Identität.
+
 ### Das neue Chrysalis Netzwek is Live!
 > [Apr 28, 2021](https://blog.iota.org/the-new-chrysalis-network-is-live/)
 
@@ -52,7 +71,3 @@ Studierende der NORDAKADEMIE Graduate School in Hamburg entwickelten einen proof
 Die Object Management Group (OMG) arbeitet an Standards für IOTA Smart Contracts und anderen DLT-Systemen. Die OMG ist ein eigenständiges Gremium mit dem Ziel, ein Standardgremium für alle DLTs zu schaffen.
 
 
-### IOTA Identity: Beta Release
-> [May 10, 2021](https://blog.iota.org/iota-identity-beta-release/)
-
-IOTA Identity ist ein Self Sovereign Identity (SSI) Framework, das es Menschen, Organisationen oder Maschinen ermöglicht, eine digitale Identität zu erstellen und vollständig zu kontrollieren. IOTA Identity ermöglicht IoT-Geräten ihre eigenen Identitäten zu erstellen und überprüfbare Aussagen über sich selbst zu sammeln. Das erste wichtige Feature, das wir mit dieser Beta-Version eingeführt haben, ermöglicht eine übergeordnete API zur Verwendung der IOTA-Identität.

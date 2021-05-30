@@ -4,6 +4,19 @@
 
 ## KI Author - Zusammenfassung und Übersetzung
 
+### Towards Full Decentralization with IOTA 2.0
+
+> [May 28, 2021](https://blog.iota.org/path-towards-full-decentralization-with-iota-2-0/)
+
+The IOTA Foundation has announced the successful completion of the Chrysalis upgrade last month. IOTA is moving towards its full decentralization with every node contributing towards the consensus and security of the network. The removal of the Coordinator will make IOTA one of the most secure and scalable distributed ledgers.
+
+### Energy Benchmarks for the IOTA Network (Chrysalis Edition)
+
+> [May 14, 2021](https://blog.iota.org/internal-energy-benchmarks-for-iota/)
+
+Energy Benchmarks for the IOTA Network (Chrysalis Edition) unveiled. A Raspberry Pi 4 node uses just over a millionth of a kWh per IOTA message/transaction, including proof-of-work costs. Making one mug of coffee in a single-serve machine uses about.024 kWh (nearly 22,000 times as much energy)
+
+
 ### The new Chrysalis Network is Live!
 > Apr 28, 2021
 https://blog.iota.org/the-new-chrysalis-network-is-live/
