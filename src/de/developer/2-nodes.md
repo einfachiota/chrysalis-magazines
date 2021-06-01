@@ -1,3 +1,11 @@
+<!--
+---article_info
+title: Nodes
+author: [huhn]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+
 # Nodes
 
 IOTA-Netzwerke bestehen aus miteinander verbundenen Nodes, auf denen dieselbe Node-Software ausgeführt wird. Diese Software ermöglicht Lese- / Schreibzugriff auf das Tangle,  Validierung von Transaktionen und das Speichern von Transaktionen in ihren lokalen Ledgern.

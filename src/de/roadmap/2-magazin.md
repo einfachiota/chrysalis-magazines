@@ -1,3 +1,11 @@
+<!--
+---article_info
+title: Nodes
+author: [huhn]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+
 # ❌ Im nächsten Magazin
 
 Im nächsten Magazin behandeln wir das Thema "IOTA und die Umwelt". 
