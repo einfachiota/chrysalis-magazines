@@ -11,3 +11,8 @@
 - Bilder für Artikel (Höhe is flexibel)
     - 1 Spalte Breite 1240
     - 2 Spalten Breite 2480
+
+
+Sonderfälle:
+- Wir empfehlen eine Mindesbreite der Bilder von 1240
+- Im Zweifel einfach im #magazin Channel in unserem Discord fragen.
