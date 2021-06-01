@@ -1,5 +1,6 @@
 # Summary
 
+* [❌ Cover](./cover.md)
 - [🤓 Einleitung](./introduction.md)
 - [🤓 Schwerpunkt](./topic/README.md)
     - [🤓 Was ist Chrysalis?](./topic/1.md)
