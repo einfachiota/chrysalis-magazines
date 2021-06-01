@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="sidebar-visible no-js light">
+<html lang="de" class="sidebar-visible no-js ei-iota">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -38,7 +38,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ei-iota";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('ei-iota')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -102,7 +102,8 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ei_iota">ei-IOTA (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -153,7 +154,14 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
+                        <!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
 <p><img src="https://iota-einsteiger-guide.de/media/images/firefly-token-migration_blog-1-.jpg" alt="" /></p>
 <p>Wenn es um Chrysalis geht, wird Firefly dich ohne Probleme durch den gesamten Migrationsprozess führen. Alles, was du tun musst, ist deinen alten Seed in Firefly einzugeben und dem Schritt-für-Schritt-Prozess zu folgen. Die Pre-Chrysalis Migrationsperiode hat am 21. April begonnen und das neue Netzwerk startete am 28. April. Nutzer konnten wählen, ob sie während dieses Zeitraums migrieren möchten oder bis nach dem 28. April warteten. Es besteht keine Eile, deine Token zu migrieren - allerdings solltest du damit auf keinen Fall bis zum Coordicie update warten!</p>
 <p>Nachdem du deinen Seed eingegeben hast, wird Firefly eine neue Mnemonik erstellen und eine EdDSA-Adresse im Chrysalis-Netzwerk für deine Tokens generieren. Das schwierige Handling wird vollständig durch die Firefly-Wallet automatisiert und Token-Inhaber werden durch eine einfache Benutzeroberfläche geführt. Dieser Funktion dient als ergänzende Anleitung für die automatisierte Token-Migration. Betrachte ihn als ergänzende Referenz, um sicherzustellen, dass alles reibungslos abläuft!</p>

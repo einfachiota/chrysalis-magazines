@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="sidebar-visible no-js light">
+<html lang="de" class="sidebar-visible no-js ei-iota">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -40,7 +40,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ei-iota";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -66,7 +66,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('ei-iota')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -104,7 +104,8 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ei_iota">ei-IOTA (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -155,20 +156,48 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="einleitung"><a class="header" href="#einleitung">Einleitung</a></h1>
+                        <!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="einleitung"><a class="header" href="#einleitung">Einleitung</a></h1>
 <p>Das dritte einfachIOTA Magazin ist da! Dieses mal sind wir Online und das Thema ist das neue IOTA Chrysalis Netzwerk!</p>
 <p>Viel Spaß beim Lesen!</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/introduction.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="schwerpunkt---chrysalis"><a class="header" href="#schwerpunkt---chrysalis">Schwerpunkt - Chrysalis</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/introduction.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="schwerpunkt---chrysalis"><a class="header" href="#schwerpunkt---chrysalis">Schwerpunkt - Chrysalis</a></h1>
 <p>Am 28. April 2021 war es endlich so weit - das Chrysalis Netzwerk (IOTA 1.5) ging Online.</p>
 <p>Was nun alles neu ist und wie ihr eure Tokens von dem alten Netwerk in das neue Chryalis Netzwerk transferieren könnt, erfährst Du auf den nächsten Seiten!</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-chrysalis"><a class="header" href="#was-ist-chrysalis">Was ist Chrysalis?</a></h1>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-chrysalis"><a class="header" href="#was-ist-chrysalis">Was ist Chrysalis?</a></h1>
 <p>Die IOTA Foundation ist auf dem besten Weg, ihr Kernziel eines koordinationsfreien IOTA-Mainnet zu verwirklichen. Bei der Grundlagenforschung zum Coordicide und der Umsetzung in GoShimmer wurden erhebliche Fortschritte erzielt. Einige Coordicide-Module wurden bereits dem IOTA-Mainnet hinzugefügt, einschließlich Autopeering und Object-Storage. Bevor der Coordicide abgeschlossen werden kann, soll das IOTA-Mainnet zuvor weiter optimiert und eine unternehmenstaugliche Lösung für das Ökosystem bereitgestellt werden. </p>
 <p>Diese Zwischenaktualisierung läuft unter dem Projektnamen „Chrysalis“, eine Chrysalis (dt. Puppe) ist &quot;die Form, die eine Raupe annimmt, bevor sie als voll ausgebildete Motte oder als Schmetterling aus ihrem Kokon hervortritt&quot;. Im Kontext von IOTA steht Chrysalis für die Transformation des Mainnet in eine ausgereifte Form, um IOTA zur Produktionsreife zu bringen.</p>
 <p><img src="https://iota-einsteiger-guide.de/media/images/2_msrp09plbisdivo3t9kmwq.png" alt="Image of Chrysalis" /></p>
 <p>Chrysalis ist das umfangreichste Upgrade in der Geschichte von IOTA. Es betrifft alle Aspekte des Protokolls, Bibliotheken, Wallets und Software-Implementierungen, die von der IOTA Foundation entwickelt wurden. Mit dem Upgrade des Tangle werden noch offene technische Probleme und Ineffizienzen behoben und wesentliche Verbesserungen in Bezug auf Leistung, Stabilität, Zuverlässigkeit und Sicherheit implementiert. Exotische Aspekte des Protokolls werden durch etablierte Standards ersetzt und es wird eine Fülle von neuen Werkzeugen für Entwickler, Unternehmen und Börsen bereitgestellt.</p>
 <p>Das Chrysalis-Update enthält bereits viele Aspekte, die für die Entfernung des Koordinators erforderlich sind. Viele grundlegende Änderungen werden jetzt bewusst vorgenommen, sodass nur noch wenige Anpassungen für das eigentliche Coordicide-Ereignis nötig sind. Mit diesen wichtigen Protokollverbesserungen wird der Prozess der Adoption deutlich beschleunigt, somit wird es Unternehmen, Entwicklern, Börsen, Custodians und anderen Partnern ermöglicht, mit dem Start von Chrysalis auch mit der Implementierung ihrer Lösungen zu beginnen, da es keine grundlegenden Protokolländerungen (Signaturschema, Ledger-State, etc.) mehr geben wird.</p>
 <p>skay</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-neu"><a class="header" href="#was-ist-neu">Was ist neu?</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist neu?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-neu"><a class="header" href="#was-ist-neu">Was ist neu?</a></h1>
 <p><strong>EdDSA Support:</strong> Das Signaturschema Ed25519 wird eingeführt, es wird die alte Winternitz One-Time Signature (W-OTS) vollständig ersetzen.</p>
 <p><strong>Atomic Transactions:</strong> Das Bundle-Konstrukt wird entfernt und durch einfachere atomic Transaktionen ersetzt.</p>
 <p><strong>UTXO Model:</strong> Umstellung vom aktuellen Guthaben-Modell zur Verfolgung von Adressen auf das UTXO-Modell.</p>
@@ -194,7 +223,14 @@
 </ul>
 <p>skay</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/2.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="der-weg-dorthin"><a class="header" href="#der-weg-dorthin">Der weg dorthin</a></h1>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/3.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/3.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="firefly"><a class="header" href="#firefly">Firefly</a></h1>
 <h2 id="eine-neue-wallet-für-iota-15"><a class="header" href="#eine-neue-wallet-für-iota-15">Eine neue Wallet für IOTA 1.5</a></h2>
 <p>Die bevorstehenden grundlegenden Änderungen im IOTA-Protokoll (neues Signaturschema etc.) verlangen eine völlig neue Wallet-Architektur, IOTA hat diesen Umstand zum Anlass genommen, um die Wallet von Grund auf neu zu überdenken: von der Transaktionslogik über das Benutzererlebnis bis hin zum Design. Die neue Wallet namens &quot;Firefly&quot; soll als Plattform für das aktuelle und zukünftige IOTA-Ökosystem dienen.
 <br /></p>
@@ -267,7 +303,14 @@ Folglich existieren bereits einige nützliche Tools für andere Entwickler, mit 
 <p><img src="https://iota-einsteiger-guide.de/media/images/wallet2.png" alt="Image of Assets" />
 <img src="https://iota-einsteiger-guide.de/media/images/wallet.png" alt="Image of Assets2" /></p>
 <p>skay</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/4.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="migration-was-ist-zu-beachten"><a class="header" href="#migration-was-ist-zu-beachten">Migration, was ist zu beachten?</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/4.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="migration-was-ist-zu-beachten"><a class="header" href="#migration-was-ist-zu-beachten">Migration, was ist zu beachten?</a></h1>
 <p><img src="https://iota-einsteiger-guide.de/media/images/token-migration-security-1-.jpg" alt="" /></p>
 <blockquote>
 <p>Chrysalis - Sicherheit bei der Token-Migration</p>
@@ -292,7 +335,14 @@ Folglich existieren bereits einige nützliche Tools für andere Entwickler, mit 
 <p>f) Wenn du jemanden über eine private Nachricht auf Discord um Hilfe bitten möchstest, stelle sicher, dass DU derjenige bist, der die Unterhaltung beginnt: Die Auswahl eines offiziellen Gesprächspartners aus der Seitenleiste und das Starten der Konversation durch Sie selbst ist ohne Risiko, da Imitatoren nicht als grün gefärbte offizielle Mitglieder der IOTA Foundation in der Seitenleiste angezeigt werden können. Eine Konversation zu beginnen, indem man jemanden Offiziellen aus der Seitenleiste auswählt, ist daher sicher. Eine Direktnachricht von jemandem anzunehmen, der nur den gleichen Namen wie jemand in der Seitenleiste hat, ist nicht sicher. Es könnte sich um einen Betrüger handeln, der nur den gleichen Namen hat wie die offiziellen Mitarbeiter, die in der Seitenleiste angezeigt werden.</p>
 <p>g) Lade deine Software nur von vertrauenswürdigen Quellen herunter (normalerweise Webseiten, die mit <code>.IOTA.org</code> enden). Um sicherzustellen, dass du nur besagte vertrauenswürdige Anwendungen verwendest, ist es ein guter Anfang, nach Links in den offiziellen Blog-Beiträgen (https://blog.IOTA.org) zu suchen.</p>
 <p>h) Klicke niemals auf zufällige Links, die von angeblichen Mitgliedern oder angeblichen Moderatoren eines IOTA-bezogenen Social-Media-Kanals zur Verfügung gestellt werden, da sie ein hohes Risiko bergen, schädliche Software zu enthalten, die Ihr System kapern könnte.</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/5.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="firefly-1"><a class="header" href="#firefly-1">Firefly</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/5.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="firefly-1"><a class="header" href="#firefly-1">Firefly</a></h1>
 <p><img src="https://iota-einsteiger-guide.de/media/images/firefly-token-migration_blog-1-.jpg" alt="" /></p>
 <p>Wenn es um Chrysalis geht, wird Firefly dich ohne Probleme durch den gesamten Migrationsprozess führen. Alles, was du tun musst, ist deinen alten Seed in Firefly einzugeben und dem Schritt-für-Schritt-Prozess zu folgen. Die Pre-Chrysalis Migrationsperiode hat am 21. April begonnen und das neue Netzwerk startete am 28. April. Nutzer konnten wählen, ob sie während dieses Zeitraums migrieren möchten oder bis nach dem 28. April warteten. Es besteht keine Eile, deine Token zu migrieren - allerdings solltest du damit auf keinen Fall bis zum Coordicie update warten!</p>
 <p>Nachdem du deinen Seed eingegeben hast, wird Firefly eine neue Mnemonik erstellen und eine EdDSA-Adresse im Chrysalis-Netzwerk für deine Tokens generieren. Das schwierige Handling wird vollständig durch die Firefly-Wallet automatisiert und Token-Inhaber werden durch eine einfache Benutzeroberfläche geführt. Dieser Funktion dient als ergänzende Anleitung für die automatisierte Token-Migration. Betrachte ihn als ergänzende Referenz, um sicherzustellen, dass alles reibungslos abläuft!</p>
@@ -318,7 +368,14 @@ Die meisten Nutzer werden den gleichen Migrationsprozes, allerdings kommt es vor
 <p>Hinweis: Wenn du das Trinity-Backup verloren hast, kannst du in den Einstellungen von Trinity Desktop oder Trinity Mobile den Seed aus Trinity erneut exportieren.</p>
 <p><img src="https://iota-einsteiger-guide.de/media/images/1pasted-image-0.png" alt="" /></p>
 <p>Um über Chrysalis auf dem Laufenden zu bleiben und die verfügbaren Ressourcen für das größte Upgrade in der Geschichte von IOTA zu sehen, besuche die Projektseite von Chrysalis: https://chrysalis.iota.org. Wenn du weitere Fragen hast, schau in dem #firefly-discussion Kanal auf dem offiziellen IOTA Discord bei.</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/5.1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="ledger"><a class="header" href="#ledger">Ledger</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/5.1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="ledger"><a class="header" href="#ledger">Ledger</a></h1>
 <blockquote>
 <p>TODO!</p>
 </blockquote>
@@ -328,7 +385,14 @@ Die meisten Nutzer werden den gleichen Migrationsprozes, allerdings kommt es vor
 </blockquote>
 <h3 id="wichtiger-hinweis-für-ledger-nano-nutzer"><a class="header" href="#wichtiger-hinweis-für-ledger-nano-nutzer">Wichtiger Hinweis für Ledger Nano Nutzer</a></h3>
 <p>Chrysalis ist ein enormes Upgrade, das alle Bereiche des IOTA-Ökosystems tangiert. Wir haben die Entscheidung getroffen, die Ledger Nano-Migration nicht in die erste Firefly-Version aufzunehmen. Die Ledger Nano-Migration wird in Firefly bald nach dem Chrysalis-Upgrade verfügbar sein. Obwohl die Ledger-Implementierung fast fertig ist, wollen wir die Tests und den Einsatz nicht überstürzen. Wenn Ledger Nano-Benutzer nicht ein paar Wochen warten wollen und früher auf ihre Gelder zugreifen müssen, dann wird empfohlen, dass sie ihre Gelder vor dem 28. April auf einen regulären Seed übertragen.</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/5.2.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="nächste-haltestelle-coordicide"><a class="header" href="#nächste-haltestelle-coordicide">Nächste Haltestelle, Coordicide!</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/5.2.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="nächste-haltestelle-coordicide"><a class="header" href="#nächste-haltestelle-coordicide">Nächste Haltestelle, Coordicide!</a></h1>
 <p>Genau wie Bitcoin besteht das IOTA-Tangle aus Tausenden von Full-Nodes, die Messages über das Gossip-Protokoll übermitteln. Jeder Node verwendet dieses Protokoll, um zu validieren, dass seine Kopie des Ledgers mit dem Rest des Netzwerks konsistent ist. </p>
 <p>Die Art und Weise, wie die Konsens-Finalität im Tangle erreicht wird, ist heute zentralisiert. Eine Reihe von Transaktionen, die der DAG des Tangle hinzugefügt werden, werden von einem zentralisierten spezialisierten Node namens Koordinator als valide ausgewählt, während andere widersprüchliche Transaktionen zurückbleiben, ohne jemals bestätigt zu werden. Ähnlich wie beim Bitcoin (Checkpoints bis zum 16.06.2014) ist der Einsatz dieses zentralisierten „Finalitätsvorrichtung“ derzeit noch notwendig, um die Sicherheit des noch in den Kinderschuhen steckenden Netzwerks zu gewährleisten. </p>
 <p><img src="https://iota-einsteiger-guide.de/media/images/milestones.gif" alt="Image of Assets2" /></p>
@@ -338,7 +402,14 @@ Die Entfernung des Koordinators ist aus den genannten Gründen das nächste gro�
 <h1 id="iota-konsens-nach-dem-coordicide"><a class="header" href="#iota-konsens-nach-dem-coordicide">IOTA-Konsens nach dem Coordicide</a></h1>
 <p>Nach der Analyse verschiedener Ansätze kam das IF-Forschungsteam zu einer Lösung namens Coordicide, die auf der Lösung von Konflikten mithilfe eines Abstimmungssystems beruht. Dies bedeutet, dass die Nodes bei zwei beliebigen Transaktionen, die in Konflikt stehen, abstimmen und ihre Meinung darüber austauschen, welche als gültig erachtet wird. Aber damit ein solches Modell sicher funktioniert, müssen auch andere Maßnahmen ergriffen werden, um einige der Angriffsvektoren, denen dieser Prozess ausgesetzt ist, zu bekämpfen. Sybil, Eclipse und Spam Angriffe sind nur einige der Angriffsvektoren, die bekämpft werden müssen. Um den Koordinator zu entfernen, müssen daher eine Reihe von Herausforderungen gelöst werden. Coordicide handhabt all dies mit einer Reihe von Modulen und Funktionalitäten, die zusammenwirken, um das Erreichen eines Konsenses zu gewährleisten. Dieser Ansatz macht den Coordicide-Vorschlag und das zukünftige Protokoll modular, sodass jedes Modul unabhängig voneinander ersetzt oder verbessert werden kann. </p>
 <p>In einer weiteren Ausgabe werden wir erklären, was diese Funktionen sind und warum sie benötigt werden.</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/6.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-stronghold"><a class="header" href="#-stronghold">❌ Stronghold</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/topic/6.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="-stronghold"><a class="header" href="#-stronghold">❌ Stronghold</a></h1>
 <h2 id="was-ist-stronghold"><a class="header" href="#was-ist-stronghold">Was ist Stronghold?</a></h2>
 <blockquote>
 <p>Stronghold ist eine Sammlung von Mehrzweckbibliotheken zur sicheren Verwaltung von Passwörtern, persönlichen Daten und privaten Schlüsseln.</p>
@@ -533,9 +604,23 @@ Vorschläge für Themen kann jeder auf <a href="https://github.com/iota-communit
 letzter stammtisch vor druck: 31.05</li>
 </ul>
 </blockquote>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/einfachIOTA/2-stammtisch.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-"><a class="header" href="#was-ist-">Was ist ...</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/einfachIOTA/2-stammtisch.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-"><a class="header" href="#was-ist-">Was ist ...</a></h1>
 <p>In der <code>Was ist</code>Artikelreihe versuchen wir die vielen verschiedenen Projekte von der IOTA Foundation und der Community zu erklären.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-dust-protection"><a class="header" href="#was-ist-dust-protection">Was ist &quot;Dust Protection&quot;?</a></h1>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-dust-protection"><a class="header" href="#was-ist-dust-protection">Was ist &quot;Dust Protection&quot;?</a></h1>
 <p>Da IOTA &quot;feeless&quot;, also gebührenfrei ist, und man Mikrotransaktionen senden kann also zum Beipsiel 1 IOTA, können Angreifer damit das Netzwerk sehr einfach &quot;zuspammen&quot;. Dies bezeichnen wir als &quot;Dust&quot;, also &quot;Staub&quot;. Um dies zu vermeiden, erlauben wir nur Mikrotransaktionen unter 1Mi IOTA-Token an eine andere Adresse, wenn Sie bereits mit mindestens 1Mi aufgeladen wurde, wobei das auch ein spezieller &quot;Dust allowance output&quot; sein muss.</p>
 <h2 id="wie-funktioniert-das"><a class="header" href="#wie-funktioniert-das">Wie funktioniert das?</a></h2>
 <p>Die Dust Protection ist fest im Kernprotokoll verankert.</p>
@@ -543,13 +628,27 @@ letzter stammtisch vor druck: 31.05</li>
 <p>Diesen Umstand könnte man jedoch als Angriffsvektor nutzen, in dem man einfach ganz viele Adressen mit jeweils  mit einem IOTA Token &quot;auflädt&quot;, denn dann müssten alle diese Adressen vom gesamten Netzwerk gespeichert werden, und so würde der Speicherbedarf den jede Node grundsätzlich braucht (selbst ohne die aktuelle Historie aller Transaktionen zu sichern) bereits ins Unermessliche wachsen. Um das Ganze noch einmal zu verdeutlichen, mit einem MIOTA (Gegenwert zum Zeitpunkt dieses Artikels in etwa 1,40$) - könnte man bereits eine Million adressen mit jeweils einem IOTA &quot;Dusten&quot;, und diese müssten für immer alle von allen Nodes gesichert werden. Dies wird deutlich teuerer für einen Angreifer - und somit faktisch nicht &quot;bezahlbar&quot; mit der Einführung einer &quot;minimum balance&quot;, also einem minimalem Guthaben das jede Adresse haben muss nach Chrysalis. Genau genommen liegt dieser Wert bei mindestens einem MIOTA pro Adresse. </p>
 <p>Jedoch wird es dadurch nicht unmöglich auch kleinere Beträge zu senden. Denn sobald eine Adresse diese minimale Anzahl an Wert besitzt, kann man damit 10 kleinere Transaktionen von beliebiger Höhe empfangen, bis man wieder den Mindestwert aufladen muss. Jedoch ist hierfür noch weiterer Handlungsbedarf nötig - man muss so genannte <code>&quot;SigLockedDustAllowanceOutputs&quot;</code> freischalten. Wenn man bei einer Adresse dann Dust hat, kann man den speziellen Output natürlich nicht einfach weg senden und den Dust auf der Adresse zurück lassen, weil es dann wieder &lt; 1 MIOTA wären, was nicht erlaubt ist. Deswegen muss man in dem Fall den Dust vorher oder gleichzeitig senden.</p>
 <p><a href="https://github.com/iotaledger/protocol-rfcs/pull/32">RFC Link (auf English)</a></p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-eddsa-support"><a class="header" href="#was-ist-eddsa-support">Was ist &quot;EdDSA Support&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-eddsa-support"><a class="header" href="#was-ist-eddsa-support">Was ist &quot;EdDSA Support&quot;</a></h1>
 <p>Das aktuelle IOTA-Protokoll basiert auf dem Winternitz One-Time Signature (W-OTS) Schema, einem Hash-basierten Signaturschema, das die ternäre 243-Trit-Hash-Funktion Kerl verwendet. Dieses Signaturschema ist nachweislich resistent gegen einen ausreichend leistungsfähigen Quantencomputer, auf dem der Shor-Algorithmus läuft. Allerdings hat es im Gegensatz zu herkömmlichen ECDSA- oder EdDSA-Signaturen auch erhebliche Nachteile.</p>
 <p><strong>Zustandsabhängigkeit:</strong> W-OTS erlaubt nur einen einzigen sicheren Signiervorgang. Ab der zweiten Signatur sind so viele Informationen offengelegt, dass der private Schlüssel und damit das Geld auf dieser Adresse als unsicher gilt. Dies stellt ein ernsthaftes Sicherheitsrisiko dar, da das Signieren einer einzigen ungültigen Transaktion als ebenso gefährlich angesehen werden muss wie die Offenlegung des privaten Schlüssels selbst.</p>
 <p><strong>Größe:</strong> Die erzeugten Signaturen sind recht groß. In IOTA werden 2187 bis 6561 Trytes oder 1300 bis 3900 Bytes (je nach gewählter Sicherheitsstufe) für die Signatur reserviert.</p>
 <p><strong>Geschwindigkeit:</strong> Sie basiert auf der Hash-Funktion Keccak-384 und wurde entwickelt, um einen Kompromiss zwischen Größe und Geschwindigkeit zu erreichen. So muss die Hashing-Funktion in der Standardeinstellung 702 Mal ausgeführt werden, um eine Signatur zu validieren, was selbst auf leistungsfähiger Hardware zu erheblichem System-Overhead führen kann.</p>
 <p>Mit Chrysalis wird das neue gebräuchliche Signaturschema Ed25519 eingeführt, welches das alte W-OTS Schema vollständig ersetzt. Das Ed25519 ist ein modernes EdDSA-Signaturschema, das SHA-512 und Curve25519 verwendet, es reduziert drastisch die Transaktionsgröße und ermöglicht folglich eine deutliche Erhöhung der möglichen messages per second (mps). Ein weiterer Vorteil ist die Wiederverwendbarkeit von Adressen, wodurch sich die Benutzerfreundlichkeit deutlich erhöht und auch die Implementierung der IOTA Technologie in Apps, Börsen oder anderen Systemen erheblich vereinfacht. Ein Nachteil ist allerdings, dass es weniger quanten-robust ist, dieses Problem haben derzeit aber die meisten herkömmlichen Verschlüsselungssysteme. Derzeit wird bereits weltweit an geeigneten neuen Signaturschemen geforscht und sobald es eine praktikable Lösung gibt, kann diese von IOTA einfach übernommen werden.</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/2.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-atomic-transaction"><a class="header" href="#was-ist-atomic-transaction">Was ist &quot;Atomic Transaction&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/2.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-atomic-transaction"><a class="header" href="#was-ist-atomic-transaction">Was ist &quot;Atomic Transaction&quot;</a></h1>
 <p>IOTA 1.0 verwendete das Konzept der Bundles zur Erstellung von Transfers. Bundles sind eine Reihe von Transaktionen, die über ihre Stamm-Referenz (Trunk) miteinander verbunden sind. Diese Transaktionen haben ein festes Layout und eine feste Größe unabhängig von ihrem &quot;Inhalt&quot;. Eine Signatur mit Security Level 1 würde zwar auch in nur eine Transaktion passen, aber per default werden Security Level 2 Signaturen verwendet. Da die Level 2 Signatur von Wert-Transaktionen aber nicht in eine einzelne Transaktion passt, müssen mindestens 3 Transaktionen verwendet werden, um eine einfache Übertragung zu erstellen: 2 Transaktionen für die Eingabe + ihre Signatur und eine Transaktion (ohne Signatur). 
 Mit einem weiteren Nachteil von Bundles haben vor allem die Entwickler zu kämpfen, denn es ist viel komplizierter, alle Transaktionen von einem Bundle zu bekommen und diese richtig zu ordnen, anstatt nur eine einzelne Message zu verarbeiten.</p>
 <p><strong>Mit dem Update auf IOTA 1.5 wurde das alte Bundle-Konstrukt entfernt, stattdessen wurden die einfacheren Atomic-Transactions eingeführt. Dieser Wechsel bringt folgende Vorteile mit sich:</strong></p>
@@ -559,7 +658,14 @@ Mit einem weiteren Nachteil von Bundles haben vor allem die Entwickler zu kämpf
 <p><strong>Kürzere Merkle-Proofs (für Sharding):</strong> Die Merkle-Proofs für Inter-Shard-Transaktionen werden viel kürzer (mindestens 300%), wenn nicht alle Transaktionen in einem Bundle durchlaufen werden müssen, um zum nächsten Transfer zu gelangen. Dadurch werden die Inter-Shard-Transaktionen viel schneller und leichtgewichtiger.</p>
 <p><strong>Entwickler-freundlich:</strong> Einzelne Messages lassen sich viel einfacher verarbeiten.</p>
 <p><strong>Schlussfolgerung:</strong> Atomic-Transactions sind viel schneller, flexibler (variable Transaktionsgröße) und belasten das Netzwerk weniger, zudem sind sie für das später Sharding/Slicing besser geeignet als Bundles.</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/3.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-utxo"><a class="header" href="#was-ist-utxo">Was ist &quot;UTXO&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/3.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-utxo"><a class="header" href="#was-ist-utxo">Was ist &quot;UTXO&quot;</a></h1>
 <p>Die Implementierung des neuen Ledger-State (dt. Kassenbuchstatus) ist eines der letzten Sprungbretter zu einem voll funktionsfähigen Prototyp des Tangle ohne Koordinator, daher soll es mit dem UTXO-Modell sofort und auf die richtige Art implementiert werden. UTXO steht für &quot;unspent transaction output&quot;, was einfach bedeutet, dass man nicht nur die Guthaben auf der Adresse im Auge behält, sondern auch den Überblick darüber behält, woher die Guthaben stammen und wohin sie versendet werden, wenn sie ausgegeben werden. Jeder Token ist eindeutig identifizierbar und jede Ausgabe benennt genau den Token, die sie bewegen möchten.</p>
 <p>Das Modell der &quot;nicht verbrauchten Transaktionsausgaben (UTXO)&quot; definiert einen Ledger-Zustand, bei dem die Salden nicht direkt mit Adressen, sondern mit den Ausgaben von Transaktionen verbunden sind. In diesem Modell geben Transaktionen die Ausgaben früherer Transaktionen als Eingaben an, die verbraucht werden, um neue Ausgaben zu erzeugen. Eine Transaktion muss die Gesamtheit der angegebenen Eingaben verbrauchen.</p>
 <p><strong>Das alte Modell:</strong> IOTA 1.0 verwendete  ein Guthabenmodell zur Verfolgung von Adressen, bei dem jeder Adresse lediglich ein einziger Wert zugeordnet war (der aktuelle Guthabenstand). Der Ledger-State kann daher als ein einfaches Verzeichnis von Adressen und ihren entsprechenden Guthaben betrachtet werden:</p>
@@ -586,10 +692,24 @@ Mit einem weiteren Nachteil von Bundles haben vor allem die Entwickler zu kämpf
 <p>Innerhalb einer Transaktion, die UTXOs verwendet, bilden Eingänge und Ausgänge die zu signierenden Daten der Transaktion. Der Abschnitt, der die Eingänge entsperrt, wird Unlock-Block genannt. Ein Unlock-Block kann eine Signatur enthalten, die das Eigentum an der Adresse eines bestimmten Eingangs nachweist, und/oder andere Unlock-Kriterien.</p>
 <p>Das folgende Bild zeigt den Geldfluss mit UTXO:</p>
 <p><img src="https://iota-einsteiger-guide.de/media/images/68747470733a2f2f692e696d6775722e636f6d2f6833757866364e2e706e67.png" alt="Image of UTXO model" /></p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/4.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-autopeering"><a class="header" href="#was-ist-autopeering">Was ist &quot;Autopeering&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/4.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-autopeering"><a class="header" href="#was-ist-autopeering">Was ist &quot;Autopeering&quot;</a></h1>
 <p>Auto-Peering: In Peer-to-Peer-Netzwerken wie IOTA sind die Nachbarn einer Node die einzige Informationsquelle. Ein Peering-Mechanismus muss sich daher auf eine gesunde Anzahl ehrlicher Nachbarn konzentrieren, daher auf Nodes, die nicht versuchen, das Netzwerk zu schädigen.Bei IOTAs Auto-Peering-Mechanismus hat jede Node seine eigenen Kriterien für die Auswahl potenzieller Nachbarn. Ein Angreifer kann die Entscheidungen eines Nodes im Peer-Auswahlprozess nicht beeinflussen. Daher ist die bestimmte „Ansicht“ eines Nodes über das Netzwerk sowohl lokal als auch unvorhersehbar. Dies dient dem Schutz vor Angriffen von außen (z. B. Eclipse-Angriffen) und macht es Angreifern praktisch unmöglich, bestimmte Nodes im Peering-Prozess anzugreifen, während sichergestellt wird, dass die Nodes immer mindestens eine bestimmte Anzahl ehrlicher Nachbarn haben.</p>
 <p>Darüber hinaus wird der Auto-Peering-Mechanismus versuchen, ein kleines Weltnetzwerk zu erstellen, in dem Nodes von jedem anderen Node über eine kleine Anzahl von Zwischenschritten erreicht werden können. Diese Eigenschaft beschleunigt die Zeit, um einen Konsens zu erzielen. </p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/5.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-white-flag"><a class="header" href="#was-ist-white-flag">Was ist &quot;White-Flag&quot;?</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/5.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-white-flag"><a class="header" href="#was-ist-white-flag">Was ist &quot;White-Flag&quot;?</a></h1>
 <p>Der White-Flag Ansatz zur Berechnung der Guthaben ist ein einfacherer, konfliktvermeidender Ansatz (nur IOTA 1.5)), der die Geschwindigkeit und Effizienz der Tip-Auswahl verbessert, bestimmte Angriffe (z. B. Konflikt-Spam) eliminiert und die Notwendigkeit von reattachments (neu anhängen) deutlich reduziert. Die Bereitstellung von Koordinator-Meilensteinen ist ein mächtiges Werkzeug, es liefert globale und unveränderliche Zeitstempel. Auf diese Weise wird eine genau definierte und global akzeptierte Methode angeben, um den Ledger-Status eines Meilensteins zu berechnen, selbst wenn er widersprüchliche Transaktionen in seiner Vergangenheit enthält.</p>
 <p>Vorteile des neuen Ansatzes: </p>
 <ul>
@@ -599,7 +719,14 @@ Mit einem weiteren Nachteil von Bundles haben vor allem die Entwickler zu kämpf
 <li>Da Konflikte bei der Bilanzberechnung ignoriert werden, müssen sie bei der Auswahl der Spitzen der Knoten nicht berücksichtigt werden. Dies ermöglicht viel einfachere Algorithmen zur Auswahl von Spitzen und beschleunigt diesen Schritt erheblich.</li>
 <li>Wenn Sie diesen Ansatz in Kombination mit einer geeigneten TSA verwenden, muss bei regelmäßiger Verwendung keine ehrliche Transaktion jemals erneut angehängt werden.</li>
 </ul>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/6.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-urts-tip-selection"><a class="header" href="#was-ist-urts-tip-selection">Was ist &quot;URTS Tip-Selection&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/6.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-urts-tip-selection"><a class="header" href="#was-ist-urts-tip-selection">Was ist &quot;URTS Tip-Selection&quot;</a></h1>
 <p>Aufgrund des White-Flag-Bestätigungsalgorithmus ist es nicht mehr notwendig, eine komplexe Tip-Auswahl wie den &quot;random walk&quot; durchzuführen. Daher kann ein einfacherer, leistungsfähigerer Algorithmus zur Auswahl von Tipps verwendet werden, was wiederum den gesamten Nachrichtendurchsatz erhöht. Die neue URTS-Tip-Auswahl in der Node-Software, dieser ist deutlich schneller und effizienter als der alte Ansatz bei IOTA 1.0.</p>
 <p>Der Algorithmus zur Tip-Auswahl ist das Verfahren, nach dem Transaktionen zur Genehmigung ausgewählt werden. Ein guter Algorithmus ermöglicht es, dass das Tangle auf eine stabile und sichere Weise wächst. </p>
 <p>Um eine neue Transaktion an das Tangle anzuhängen, kann der Algorithmus bis zu achti vorherige Transaktionen auswählen und genehmigen - vorzugsweise Tips. Dieser Genehmigungsmechanismus repräsentiert den &quot;Glauben&quot; an das Tangle: Wenn Transaktion y die Transaktion x genehmigt, bedeutet dies, dass y glaubt, dass Transaktion x gültig ist und dass auch ihre gesamte Historie gültig ist.</p>
@@ -612,18 +739,39 @@ Die Berechnung der kumulierten Gewichtungen von Transaktionen ist relativ teuer 
 <p>Schnellere Konfliktlösung und damit geringere Wahrscheinlichkeit, dass eine Transaktion versehentlich an den falschen Teil des Tangle angehängt wird.
 Verwenden von verschiedene Mechanismen zur Tip-Auswahl, die nicht mehr auf der kumulativen Gewichtung basieren und eine geringere Chance haben, gültige Transaktionen zurückzulassen.</p>
 <p>[$=project.imageAltText(1422)$]</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/7.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-new-milestone-selection"><a class="header" href="#was-ist-new-milestone-selection">Was ist &quot;New Milestone Selection&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/7.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-new-milestone-selection"><a class="header" href="#was-ist-new-milestone-selection">Was ist &quot;New Milestone Selection&quot;</a></h1>
 <p>Ein neuer Meilenstein-Auswahlalgorithmus wurde für den Koordinator entwickelt, der darauf abzielt, dass das Netzwerk mehr Transaktionen pro Sekunde verarbeiten kann.
 Kurz gesagt, wählt der Koordinator für den Meilstenstein nun intelligent Tips aus.</p>
 <p>Der Korrdinator erzeugt etwa alle 10 Sekunden einen Meilenstein, welcher wie jede andere Transaktionen auch mindestens zei Tips referenzieren muss. Tips sind die Messages im Tangle die noch nicht referenziert wurden. Der alte Algorithmus (Random Walk) hat einfach zufällige Tips genutzt. Der neue Algorithmus wählt auch erstmal zufällige Tips aus, überprüft sie dann aber einmal, um möglichst gute Tips zu nutzen. </p>
 <p><img src="what_is/./assets/8-1.png" alt="" /></p>
 <p>https://simulation1.tangle.works/</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/8.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="was-ist-binary-transaction-layout"><a class="header" href="#was-ist-binary-transaction-layout">Was ist &quot;Binary Transaction Layout&quot;</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/8.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-binary-transaction-layout"><a class="header" href="#was-ist-binary-transaction-layout">Was ist &quot;Binary Transaction Layout&quot;</a></h1>
 <p>Umstellung auf eine interne binäre Darstellung der ternären Transaktion. Dies ermöglicht es binäre Daten  also Einsen und Nullen für Validierung  und andere Verarbeitungen zu verwenden, ohne dass binär-ternäre Konvertierungen wie in der alten IOTA 1.0 Node-Software erforderlich sind. Dies führt zu weiteren Leistungsverbesserungen im Netzwerk.</p>
 <p><strong>Technische Details:</strong> 
 Im IOTA 1.0 Netzwerk besteht eine Transaktion aus 2.673 tryte-kodierten Zeichen und setzt sich aus verschiedenen Feldern unterschiedlicher Tryte-Längen zusammen.</p>
 <p>Im neuen IOTA 1.5 Chrysalis Netzwerk haben Transaktion eine variable Größe. Die maximale Größe für Nachrichten beträgt 32768 Byte. Das Indexfeld des Indexierungs-Payloads hat eine maximale Größe von 64 Bytes.</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/9.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="akuelles"><a class="header" href="#akuelles">Akuelles</a></h1>
+<!--
+---article_info
+title: Nodes
+author: [KI Bot]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
 <h2 id="ki-author---zusammenfassung-und-Übersetzung"><a class="header" href="#ki-author---zusammenfassung-und-Übersetzung">KI Author - Zusammenfassung und Übersetzung</a></h2>
 <p>Der KI Author ist eine Künstliche Intelligenz, die einen IOTA Blogeintrag zusammenfasst und übersetzt.</p>
 <h3 id="auf-dem-weg-zur-vollständigen-dezentralisierung-mit-iota-20"><a class="header" href="#auf-dem-weg-zur-vollständigen-dezentralisierung-mit-iota-20">Auf dem Weg zur vollständigen Dezentralisierung mit IOTA 2.0</a></h3>
@@ -686,12 +834,26 @@ Im IOTA 1.0 Netzwerk besteht eine Transaktion aus 2.673 tryte-kodierten Zeichen 
 <p><a href="https://blog.iota.org/iota-standardization-update-april-2021/">Apr 02, 2021</a></p>
 </blockquote>
 <p>Die Object Management Group (OMG) arbeitet an Standards für IOTA Smart Contracts und anderen DLT-Systemen. Die OMG ist ein eigenständiges Gremium mit dem Ziel, ein Standardgremium für alle DLTs zu schaffen.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="vorschau"><a class="header" href="#vorschau">Vorschau</a></h1>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Nodes
+author: [huhn]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="vorschau"><a class="header" href="#vorschau">Vorschau</a></h1>
 <blockquote>
 <p>Mehr als die Vergangenheit interessiert mich die Zukunft, denn in ihr gedenke ich zu leben. - Albert Einstein</p>
 </blockquote>
 <p>Wir schauen in die offizielle Roadmap der IOTA Foundation und auf das nächste einfachIOTA Magazin.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="roadmap"><a class="header" href="#roadmap">Roadmap</a></h1>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Nodes
+author: [huhn]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="roadmap"><a class="header" href="#roadmap">Roadmap</a></h1>
 <p>Übersetzung der Interaktive Roadmap der IOTA-Forschung und -Entwicklung.</p>
 <blockquote>
 <p>https://roadmap.iota.org/</p>
@@ -1113,7 +1275,14 @@ Eine Demo-Anwendung, die verschiedene Funktionen von IOTA Identity zeigt und erk
 Eine voll funktionsfähige Typescript-Implementierung für schnelles Experimentieren und Prototyping.</p>
 </li>
 </ul>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/roadmap/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-im-nächsten-magazin"><a class="header" href="#-im-nächsten-magazin">❌ Im nächsten Magazin</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/roadmap/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Nodes
+author: [huhn]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="-im-nächsten-magazin"><a class="header" href="#-im-nächsten-magazin">❌ Im nächsten Magazin</a></h1>
 <p>Im nächsten Magazin behandeln wir das Thema &quot;IOTA und die Umwelt&quot;. </p>
 <p>Wir schauen uns den Stromverbrauch von dem neuen IOTA Netzwerk an</p>
 <p>Hast du oder dein Projekt etwas mit unserem nächsten Thema zu tun? Schreibe uns doch kurz in unserem Discord oder eine E-Mal an magazin@einfachiota.de und mit etwas Glück bist du dabei!</p>
@@ -1150,7 +1319,14 @@ reviews: [reviewer_1, reviewer_2]
 <li>iota.js: Eine anfängliche IOTA-Clientbibliothek in Typescript, die auch in einem Webbrowser verwendet werden kann</li>
 <li>iota.go: eine erste IOTA-Clientbibliothek in Golang</li>
 </ul>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/developer/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="nodes"><a class="header" href="#nodes">Nodes</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/developer/1.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Nodes
+author: [huhn]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="nodes"><a class="header" href="#nodes">Nodes</a></h1>
 <p>IOTA-Netzwerke bestehen aus miteinander verbundenen Nodes, auf denen dieselbe Node-Software ausgeführt wird. Diese Software ermöglicht Lese- / Schreibzugriff auf das Tangle,  Validierung von Transaktionen und das Speichern von Transaktionen in ihren lokalen Ledgern.</p>
 <p>Wir möchten dir hier eine Übersicht über die derzeitigen IOTA Nodes geben. Aktuell läuft das Chrysalis Netzwerk mit zwei verschiedenen Node implementionen im Mainnet- der Community-getriebenen Node <code>HORNET</code> und der von der IOTA Foundation implementierten Node <code>Bee</code>.</p>
 <h3 id="iri-außer-dienst"><a class="header" href="#iri-außer-dienst">IRI (außer Dienst)</a></h3>
@@ -1165,7 +1341,14 @@ reviews: [reviewer_1, reviewer_2]
 <p>Wasp, ein Node für Smart Contracts - Das IOTA Smart Contract Protocol (ISCP) ist ein 2-Layer-Protokoll, das auf dem Kernprotokoll aufbaut und von Goshimmer-Nodes ausgeführt wird. Die Entwicklung dieses Protokolls wird vollständig in einen  separaten Nodes namens Wasp entkoppelt. Wasp wird sich mit GoShimmer-Nodes verbinden, um Zugriff auf das Tangle zu erhalten.</p>
 <h3 id="chronicle-1"><a class="header" href="#chronicle-1">Chronicle</a></h3>
 <p>Das ist die offizielle Permanode Lösung der IOTA Foundation, sie ermöglicht, alle Transaktionen, die einen Node erreichen, in einer verteilten Datenbank zu speichern, die sicher ist und gut skaliert. Chronicle wird verwendet, um den unbegrenzten Datenfluss des Tangle zu speichern und abfragbar zu machen. Mit anderen Worten, eine Permanenz ermöglicht eine unbegrenzte Speicherung der gesamten Historie des Tangle und macht diese Daten leicht zugänglich. (Hier ist vieles noch nicht veröffentlicht und unklar, daher müssen die endgültigen Spezifikationen abgewartet werden)</p>
-<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/developer/2-nodes.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="impressum"><a class="header" href="#impressum">Impressum</a></h1>
+<footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/developer/2-nodes.md">Edit this file on GitHub.</a></footer><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="impressum"><a class="header" href="#impressum">Impressum</a></h1>
 <p>Bildernachweise:</p>
 <ul>
 <li>Photo by <code>luis gomes</code> from Pexels.com</li>

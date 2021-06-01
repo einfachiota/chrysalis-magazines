@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="de" class="sidebar-visible no-js light">
+<html lang="de" class="sidebar-visible no-js ei-iota">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -38,7 +38,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ei-iota";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('ei-iota')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -102,7 +102,8 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ei_iota">ei-IOTA (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -153,7 +154,14 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="was-ist-autopeering"><a class="header" href="#was-ist-autopeering">Was ist &quot;Autopeering&quot;</a></h1>
+                        <!--
+---article_info
+title: Was ist Chrysalis?
+author: [author_1]
+reviews: [reviewer_1, reviewer_2]
+---
+-->
+<h1 id="was-ist-autopeering"><a class="header" href="#was-ist-autopeering">Was ist &quot;Autopeering&quot;</a></h1>
 <p>Auto-Peering: In Peer-to-Peer-Netzwerken wie IOTA sind die Nachbarn einer Node die einzige Informationsquelle. Ein Peering-Mechanismus muss sich daher auf eine gesunde Anzahl ehrlicher Nachbarn konzentrieren, daher auf Nodes, die nicht versuchen, das Netzwerk zu schädigen.Bei IOTAs Auto-Peering-Mechanismus hat jede Node seine eigenen Kriterien für die Auswahl potenzieller Nachbarn. Ein Angreifer kann die Entscheidungen eines Nodes im Peer-Auswahlprozess nicht beeinflussen. Daher ist die bestimmte „Ansicht“ eines Nodes über das Netzwerk sowohl lokal als auch unvorhersehbar. Dies dient dem Schutz vor Angriffen von außen (z. B. Eclipse-Angriffen) und macht es Angreifern praktisch unmöglich, bestimmte Nodes im Peering-Prozess anzugreifen, während sichergestellt wird, dass die Nodes immer mindestens eine bestimmte Anzahl ehrlicher Nachbarn haben.</p>
 <p>Darüber hinaus wird der Auto-Peering-Mechanismus versuchen, ein kleines Weltnetzwerk zu erstellen, in dem Nodes von jedem anderen Node über eine kleine Anzahl von Zwischenschritten erreicht werden können. Diese Eigenschaft beschleunigt die Zeit, um einen Konsens zu erzielen. </p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/5.md">Edit this file on GitHub.</a></footer>

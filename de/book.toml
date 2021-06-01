@@ -7,7 +7,10 @@ title = "Chrysalis Magazin"
 
 [output.html]
 theme = "../theme"
+default-theme = "ei-iota"
 git-repository-url = "https://github.com/einfachiota/chrysalis-magazines"
+git-repository-icon = "fa-github"
+
 additional-css = ["theme/open-in.css"]
 
 [preprocessor.open-on-gh]
