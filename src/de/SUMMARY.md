@@ -5,7 +5,7 @@
 - [🤓 Schwerpunkt](./topic/README.md)
     - [🤓 Was ist Chrysalis?](./topic/1.md)
     - [🤓 Was ist neu?](./topic/2.md)
-    - [🤓 Der weg dorthin](./topic/3.md)
+    - [🤓 Der Weg zu Chrysalis](./topic/3.md)
     - [🤓 Neues Wallet - Firefly](./topic/4.md)
     - [🤓 Migration, was ist zu beachten?](./topic/5.md)
         - [🤓 Firefly](./topic/5.1.md)
