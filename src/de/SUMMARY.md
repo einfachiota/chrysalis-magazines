@@ -13,7 +13,7 @@
     - [🤓 Nächste Haltestelle, Coordicide!](./topic/6.md)
     - [🚨 Stronghold](./topic/7-stronghold.md)
 - [🤓 einfachIOTA](./einfachIOTA/README.md)
-    - [❌ IOTA Einsteiger Guide](./einfachIOTA/1-einsteiger-guiide.md)
+    - [🤓 IOTA Einsteiger Guide](./einfachIOTA/1-einsteiger-guiide.md)
     - [🤓 Stammtisch - IOTA, Bier und Diskussionen](./einfachIOTA/2-stammtisch.md)
 - [🤓 Was ist ...](./what_is/README.md)
     - [🤓 Was ist "Dust Protection"](./what_is/1.md)
