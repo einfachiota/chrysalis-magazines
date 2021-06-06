@@ -1,7 +1,7 @@
 <!--
 ---article_info
-title: Was ist Chrysalis?
-author: [author_1]
+title: Schwerpunkt - Chrysalis
+author: [huhn]
 reviews: [TomMax2407, Doenermaker]
 ---
 -->

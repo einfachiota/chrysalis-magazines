@@ -6,7 +6,7 @@ reviews: [ruegenlord, reviewer_2]
 ---
 -->
 
-# ❌ Stronghold
+# Stronghold
 
 ## Was ist Stronghold?
 > Stronghold ist eine Sammlung von Mehrzweckbibliotheken zur sicheren Verwaltung von Passwörtern, persönlichen Daten und privaten Schlüsseln.
