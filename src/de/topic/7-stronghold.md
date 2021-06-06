@@ -33,7 +33,7 @@ Hier sind einige mögliche Anwendungsbeispiele für Stronghold:
 ### Wallet
 ![](https://iota-einsteiger-guide.de/media/images/2_qmh-muqw-ehjshl5rg_jlg.png)
 
-Alice' IOTA-Wallet wird durch Stronghold geschützt, welche sie so konfigurieren kann (siehe obige Grafik), dass sie die Aktivitäten in ihrer Wallet überwacht und gefährliche Ereignisse verhindert.
+Alice's IOTA-Wallet wird durch Stronghold geschützt, welche sie so konfigurieren kann (siehe obige Grafik), dass sie die Aktivitäten in ihrer Wallet überwacht und gefährliche Ereignisse verhindert.
 
 
 ### Exchanges
