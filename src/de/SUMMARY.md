@@ -32,4 +32,5 @@
 - [🤓 Developer](./developer/README.md)
     - [🤓 Libraries](./developer/1.md)
     - [🤓 Nodes](./developer/2-nodes.md)
-- [🧐Impressum](./IMPRINT.md)
+- [❌ Glossar](./GLOSSARY.md)
+- [🧐 Impressum](./IMPRINT.md)
