@@ -2,14 +2,14 @@
 ---article_info
 title: Stronghold
 author: [author_1]
-reviews: [ruegenlord, DanieKrie]
+reviews: [ruegenlord, DanieKrie, CrashOverride]
 ---
 -->
 
 # Stronghold
 
 ## Was ist Stronghold?
-> Stronghold ist eine Sammlung von Mehrzweckbibliotheken zur sicheren Verwaltung von Passwörtern, persönlichen Daten und privaten Schlüsseln.
+> Stronghold ist eine Sammlung von Mehrzweckbibliotheken zur sicheren Verwaltung und Schutz von jeglichem Digitalen Geheimnis z.B. Passwörtern, persönlichen Daten, privaten Schlüsseln etc.
 
 ## Stronghold: Kurz und knackig erklärt
 
@@ -51,7 +51,7 @@ Anstatt persönlich identifizierbare Informationen in einer zentralen Datenbank 
 
 
 ### Software-Entwickler
-Die Verwendung der Stronghold-Befehlszeilenschnittstelle oder des Systemdämons als lokales Geheim- und Abrufsystem erhöht die Betriebssicherheit der Programmiererin Alice und trägt dazu bei, eine versehentliche Offenlegung zu verhindern.
+Die Verwendung der Stronghold-Befehlszeilenschnittstelle oder des Systemdienst als lokales Geheim- und Abrufsystem erhöht die Betriebssicherheit der Programmiererin Alice und trägt dazu bei, eine versehentliche Offenlegung zu verhindern.
 
 
 ## Nützliche Links:
