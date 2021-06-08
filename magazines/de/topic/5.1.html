@@ -158,34 +158,34 @@
 ---article_info
 title: Migration mit Firefly
 author: [author_1]
-reviews: [DanieKrie, CrashOverride]
+reviews: [DanieKrie, CrashOverride, TomMax2407, ]
 ---
 -->
 <h1 id="migration-mit-firefly"><a class="header" href="#migration-mit-firefly">Migration mit Firefly</a></h1>
 <p><img src="https://iota-einsteiger-guide.de/media/images/firefly-token-migration_blog-1-.jpg" alt="" /></p>
 <p>Wenn es um Chrysalis geht, wird Firefly dich Step-by-Step durch den gesamten Migrationsprozess führen. Alles was du tun musst, ist deinen alten Seed in Firefly einzugeben und dem Schritt-für-Schritt-Prozess zu folgen. Die Pre-Chrysalis Migrationsperiode begann am 21. April und das neue Netzwerk startete am 28. April. 
 Als Nutzer konntest du wählen, ob du bereits während dieses Zeitraums migrieren wolltest oder damit bis nach dem 28. April warten möchtest. Es besteht keine Eile, deine Tokens zu migrieren - allerdings wird von der IOTA Foundation empfohlen dies vor dem Coordicide-Update durchzuführen!</p>
-<p>Nachdem du deinen Seed eingegeben hast, wird Firefly eine neue Mnemonik erstellen und eine EdDSA-Adresse im Chrysalis-Netzwerk für deine Tokens generieren. Dieses schwierige Handling wird vollständig durch die Firefly-Wallet automatisiert durchgeführt und die Token-Inhaber werden über eine einfache Benutzeroberfläche durch den gesamten Prozess geführt. Dieser Artikel dient als weiterführende Anleitung für die automatisierte Token-Migration. Betrachte ihn als ergänzende Referenz, um sicherzustellen, dass alles reibungslos abläuft!</p>
+<p>Nachdem du deinen Seed eingegeben hast, wird Firefly eine neue Mnemonik erstellen und eine EdDSA-Adresse im Chrysalis-Netzwerk für deine Token generieren. Dieses schwierige Handling wird vollständig automatisiert durch die Firefly-Wallet durchgeführt und die Token-Inhaber werden über eine einfache Benutzeroberfläche durch den gesamten Prozess geführt. Dieser Artikel dient als weiterführende Anleitung für die automatisierte Token-Migration. Betrachte ihn als ergänzende Referenz, um sicherzustellen, dass alles reibungslos abläuft!</p>
 <p>Wir raten dir außerdem den IOTA Foundation Blogbeitrag über &quot;Sicherheit während der Token-Migration&quot; zu lesen oder den vorherigen Artikel hier im Heft &quot;Migration, was ist zu beachten?&quot;.</p>
 <h3 id="migrieren-von-geldern"><a class="header" href="#migrieren-von-geldern">Migrieren von Geldern</a></h3>
-<p>Möchtest du deine Tokens auf das neue Netzwerk migrieren? Das ist ganz einfach, doch einige Dinge solltest du beachten:
+<p>Möchtest du deine Token auf das neue Netzwerk migrieren? Das ist ganz einfach, doch einige Dinge solltest du beachten:
 Die meisten Nutzer werden den gleichen Migrationsprozess durchlaufen, allerdings kommt es vor, dass einige Nutzer einen etwas anderen Ablauf haben. Doch auch bei Abweichungen hat die IOTA Foundation den Übergang so einfach wie möglich gestaltet. Der Prozess bietet dir Optionen, die dich bei der Migration unterstützen. </p>
 <p>Die Schritte werden dir nun im Folgenden erläutert.</p>
-<p>Beachte, wenn sich deine Tokens auf einer Börse befinden, musst du keinen Migrationsprozess einleiten, da die Börsen die Token-Migration für dich durchführen.</p>
+<p>Beachte, dass du keinen Migrationsprozess einleiten musst, wenn sich deine Token auf einer Börse befinden, da die Börsen die Token-Migration für dich durchführen.</p>
 <p>Wenn du viele kleine Beträge (&lt; 1Mi) hast, die über viele Adressen verteilt sind, ist es eventuell nicht möglich, diese kleinen Beträge zu migrieren. In diesem Fall empfehlen wir dir, diese Beträge zunächst über die Trinity-Wallet zu konsolidieren, indem man einfach das gesamtes Guthaben vor dem 28. April auf eine Adresse schickt. &lt;- Anmerkung DanieKrie: Ist das nach dem 28. April nicht mehr möglich? Wir haben ja schon Juni, was sollen Nutzer machen, die immer noch Kleinstbeträge haben? #CrashOverride: Ich stimme Danielkrie zu. Dieser Satz sollte gelöscht werden. Seit start des neuen Netzwerks werden nur noch MIgrationtransfers von Guthaben + reinen Datentransaktionen von dem IOTA 1.0 Netzwerk unterstützt</p>
-<p>Unabhängig davon, ob man Trinity auf einem Desktop-Computer oder auf einem mobilen Gerät verwendet und unabhängig davon, ob die Migration vor dem Netzwerk-Update oder danach einleitet wurde, folgen alle Token-Migrationen einem grundlegenden Prozess:</p>
+<p>Unabhängig davon, ob man Trinity auf einem Desktop-Computer oder auf einem mobilen Gerät verwendet, und unabhängig davon, ob die Migration vor dem Netzwerk-Update oder danach eingeleitet wurde, folgen alle Token-Migrationen einem grundlegenden Prozess:</p>
 <ol>
-<li>Importiere deine IOTAs nach Firefly</li>
-<li>Prüfe ob der Kontostand korrekt ist</li>
+<li>Importiere deine IOTAs nach Firefly.</li>
+<li>Prüfe, ob der Kontostand korrekt ist.</li>
 <li>Erstelle ein neues Passwort und eine neue PIN für deine Wallet.</li>
-<li>Erstelle eine Wiederherstellungsphrase und ein Stronghold-Backup für dein Wallet</li>
-<li>Starte den automatischen Migrationsprozess</li>
-<li>Erkunde Firefly </li>
+<li>Erstelle eine Wiederherstellungsphrase und ein Stronghold-Backup für dein Wallet.</li>
+<li>Starte den automatischen Migrationsprozess.</li>
+<li>Erkunde Firefly.</li>
 </ol>
 <h3 id="standardablauf-einer-token-migration"><a class="header" href="#standardablauf-einer-token-migration">Standardablauf einer Token-Migration</a></h3>
-<p>Lade zunächst Firefly auf deinen Rechner (Windows, Mac oder Linux) herunter. Bitte nutze hier nur die Download-Links von der Firefly Website https://firefly.iota.org. Nachdem du Firefly installiert und geöffnet hast, bieten sich dir zwei Möglichkeiten den bestehenden Seed in Firefly zu laden: Entweder durch eine Textsicherung oder eine Dateisicherung.</p>
-<p>Text-Backup - IOTA-Seed eingeben (81 Zeichen).</p>
-<p>Dateibackup - Importieren eine Trinity SeedVault Datei (mit der Endung .kdbx).</p>
+<p>Lade zunächst Firefly auf deinen Rechner (Windows, Mac oder Linux) herunter. Bitte nutze hier nur die Download-Links von der Firefly Website https://firefly.iota.org. Nachdem du Firefly installiert und geöffnet hast, bieten sich dir zwei Möglichkeiten, den bestehenden Seed in Firefly zu laden: entweder durch eine Textsicherung oder eine Dateisicherung.</p>
+<p>Textbackup - IOTA-Seed eingeben (81 Zeichen).</p>
+<p>Dateibackup - Importieren einer Trinity-SeedVault-Datei (mit der Endung .kdbx).</p>
 <p>Hinweis: Wenn du dein Trinity-Backup verloren hast, kannst du in den Einstellungen von Trinity Desktop oder Trinity Mobile den Seed aus Trinity erneut exportieren.</p>
 <p><img src="https://iota-einsteiger-guide.de/media/images/1pasted-image-0.png" alt="" /></p>
 <p>Um über Chrysalis auf dem Laufenden zu bleiben und die verfügbaren Ressourcen für das größte Upgrade in der Geschichte von IOTA zu sehen, besuche die Projektseite von Chrysalis: https://chrysalis.iota.org. Wenn du weitere Fragen hast, schau in dem #firefly-discussion Kanal auf dem offiziellen IOTA Discord vorbei.</p>
