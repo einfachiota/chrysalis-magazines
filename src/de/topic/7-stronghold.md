@@ -9,7 +9,7 @@ reviews: [ruegenlord, DanieKrie, CrashOverride]
 # Stronghold
 
 ## Was ist Stronghold?
-> Stronghold ist eine Sammlung von Mehrzweckbibliotheken zur sicheren Verwaltung und Schutz von jeglichem Digitalen Geheimnis z.B. Passwörtern, persönlichen Daten, privaten Schlüsseln etc.
+> Stronghold ist eine Sammlung von Mehrzweckbibliotheken zur sicheren Verwaltung und Schutz von digitalen Geheimnissen z.B. Passwörter, sehr persönliche Daten oder private Schlüssel.
 
 ## Stronghold: Kurz und knackig erklärt
 
