@@ -2,13 +2,13 @@
 ---article_info
 title: IOTA Einsteiger Guide
 author: [vromvonbeyond]
-reviews: [reviewer_1, reviewer_2]
+reviews: [DanieKrie, reviewer_2]
 ---
 -->
 
 # Stammtisch - IOTA, Bier und Diskussionen
 
-## Virtual Stammtisch
+## Virtueller Stammtisch
 
 **Wo?** Im einfachIOTA Discord im Voice Channel: #Stammtisch. Nebenbei wird in der #kneipe gechattet. Dort musst du zum Startzeitpunkt in den Voice Channel "Stammtisch"  wechseln. 
 
@@ -36,4 +36,4 @@ Auf dem letzten Stammtisch am xx.xx.xxxx wurden folgende Dinge diskutiert:
 
 > **TODO:**
 > - [Liste](https://github.com/iota-community)
-> letzter stammtisch vor druck: 31.05
+> letzter stammtisch vor druck: tbd
