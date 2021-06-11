@@ -817,15 +817,15 @@ Verwenden von verschiedene Mechanismen zur Tip-Auswahl, die nicht mehr auf der k
 <p>[$=project.imageAltText(1422)$]</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/7.md">Edit this file on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><!--
 ---article_info
-title: Was ist Chrysalis?
+title: Was ist "New Milestone Selection"?
 author: [author_1]
-reviews: [reviewer_1, reviewer_2]
+reviews: [Doenermaker, reviewer_2]
 ---
 -->
-<h1 id="was-ist-new-milestone-selection"><a class="header" href="#was-ist-new-milestone-selection">Was ist &quot;New Milestone Selection&quot;</a></h1>
-<p>Ein neuer Meilenstein-Auswahlalgorithmus wurde für den Koordinator entwickelt, der darauf abzielt, dass möglichst alle Messages so schnell wie möglich bestätigt werden.
-Kurz gesagt, wählt der Koordinator für den Meilstenstein nun intelligent Tips aus.</p>
-<p>Der Koordinator erzeugt etwa alle 10 Sekunden einen Meilenstein, welcher wie jede andere Message auch mindestens zwei Tips referenzieren sollte (gibt spezielle Fälle in denen nur ein Tip vorhanden ist, dann wird nur einer genommen). Tips sind die Messages im Tangle, die noch nicht von anderen Messages referenziert wurden (Grau im Bild).</p>
+<h1 id="was-ist-new-milestone-selection"><a class="header" href="#was-ist-new-milestone-selection">Was ist &quot;New Milestone Selection&quot;?</a></h1>
+<p>Um das Ziel zu erreichen, möglichst alle Messages so schnell wie möglich durch den Koordinator zu bestätigen, wurde für diesen ein neuer Meilenstein-Auswahlalgorithmus entwickelt.
+Kurz gesagt, wählt der Koordinator die Tips für den Meilstenstein jetzt intelligent aus.</p>
+<p>Der Koordinator erzeugt etwa alle 10 Sekunden einen Meilenstein, welcher wie jede andere Message auch mindestens zwei Tips referenzieren sollte (es gibt auch spezielle Fälle in denen nur ein Tip vorhanden ist, dann wird nur einer genommen). Tips sind die Messages im Tangle, die noch nicht von anderen Messages referenziert wurden (Grau im rechten Bereich des Bildes).</p>
 <p><img src="https://user-images.githubusercontent.com/46689931/120787374-917daf00-c52f-11eb-8355-7da504ad060b.png" alt="image" /></p>
 <p>Der alte Algorithmus (Random Walk) hat einfach zufällige Tips genutzt. Der neue Algorithmus wählt auch erstmal zufällige Tips aus, überprüft sie dann aber einmal, um Tips zu nutzen, die möglichst viele andere Messages referenzieren. </p>
 <p>Ein Tip, der nur wenige von den neuen Messages referenziert
