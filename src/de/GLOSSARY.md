@@ -85,6 +85,8 @@
 ## R
 **RFC (Requests for Comments; Bitte um Kommentare)**: ein nummeriertes Dokument, in dem Protokolle, Konzepte, Methoden und Programme behandelt, beschrieben und definiert werden. 
 
+**Reattachments**: Wiederanhängen einer Transaktion an den Tangle. Dieser Prozess besteht lediglich darin, den Arbeitsnachweis (Proof of Work) und den Tippauswahlprozess durchzuführen, um die Transaktion wieder an einen anderen Teil des Tangle anzuhängen.
+
 ## S
 **Sharding**: Als Sharing bezeichnet man eigentlich die Aufteilung einer großen Datenbank auf mehrere Datenbankinstanzen. Im DLT-Kontext wird damit ein Mechanismus zur besseren Skalierbarkeit der Knoten beschrieben, der einen höheren Durchsatz von Transaktionen ermöglicht. Dies erreicht man z.B. dadurch, dass ein Knoten jeweils nur eine Teilmenge von Transaktionen verarbeitet. Um Begriffsverwirrung zu vermeiden, wird im IOTA-Kontext auch der Begriff „Slicing“ verwendet.
 
