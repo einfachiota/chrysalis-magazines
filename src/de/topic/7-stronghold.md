@@ -21,7 +21,7 @@ Stronghold verwendet versionierte und dateibasierte Snapshots mit doppelter Vers
 
 Die entwicklerfreundlichen Bibliotheken von Stronghold integrieren das IOTA-Protokoll und dienen als Referenzimplementierung für jeden, der nach Inspiration oder den besten Tools seiner Klasse sucht. Die Low-Level-Bibliotheken haben keinerlei Bezug zur Kryptowährung oder dem Tangle. Diese Funktionen befinden sich auf höherer Ebene, so dass Stronghold auch für Software-Projekte eingesetzt werden kann, die nicht direkt etwas mit Distributed Ledger zu tun haben, sondern bspw. lediglich ihre wertvollen Daten lokal schützen wollen.
 
-Intern setzt die IOTA Foundation Stronghold zur Sicherung ihrer neuen Wallet Software "Firefly" ein. Außerdem ist Stronghold die Grundlage für die neue Wallet Library wallet.rs. Diese wurde ebenfalls in Rust geschrieben, kann jedoch durch bindings auch mit anderen Programmiersprachen wie NodeJS, Java oder Python genutzt werden.
+Intern setzt die IOTA Foundation Stronghold zur Sicherung ihrer neuen Wallet Software "Firefly" ein. Außerdem ist Stronghold die Grundlage für die neue Wallet Library "wallet.rs". Diese wurde ebenfalls in Rust geschrieben, kann jedoch durch bindings auch mit anderen Programmiersprachen wie NodeJS, Java oder Python genutzt werden.
 
 
 ## Wo kann man Stronghold einsetzen?
