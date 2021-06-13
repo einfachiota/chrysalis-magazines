@@ -46,7 +46,7 @@
 ## I
 **Impersonification (auch Impersonation)**: Beschreibt einen Identitätswechsel, der oft in betrügerischer Absicht verwendet wird, um sich Zugang zu einem System zu verschaffen, in dem man sich als berechtigte Instanz ausgibt.
 
-**Inter-Shard-Transaktionen**: Bezeichnet Transaktionen die zwischen unterschiedlichen Teilmengen (Shards) eines DLT durchgeführt werden müssen. -> siehe auch **Sharding**
+**Inter-Shard-Transaktionen**: Bezeichnet Transaktionen die zwischen unterschiedlichen Teilmengen (Shards) eines DLT durchgeführt werden müssen. (siehe auch -> **Sharding**)
 
 
 ## J
@@ -59,7 +59,7 @@
 ## L
 **Legacy-Netzwerk**: Bezeichnung für das alte IOTA-Netzwerk (IOTA 1.0)
 
-**Local Snapshot**: Wird von einem IOTA-Knoten (node) durchgeführt, um die Datenbank zu bereinigen bzw. die Datenbankgröße zu reduzieren (siehe auch -> Snapshot). Dadurch ist eine schnellere Synchronisierung möglich.
+**Local Snapshot**: Wird von einem IOTA-Knoten (node) durchgeführt, um die Datenbank zu bereinigen bzw. die Datenbankgröße zu reduzieren (siehe auch -> **Snapshot**). Dadurch ist eine schnellere Synchronisierung möglich.
 
 ## M
 **Man in the Middle-Angriff**: Ermöglicht dem Angreifer Einsicht oder sogar Kontrolle des Datenverkehrs zwischen zwei Kommunikationspartnern.
@@ -83,6 +83,9 @@
 
 
 ## R
+**Random-Walk-Tip-Selection (Zufallsweg-Tip-Auswahl)**: Der komplexe Random-Walk-Algorithmus hat rein zufällige Tips ausgewählt und wurde in IOTA 1.5 durch eine gleichmäßig-zufällige Tip-Auswahl ersetzt (siehe auch -> **TSA**).
+
+**Reattachments**: Wiederanhängen einer Transaktion an den Tangle im IOTA 1.0 Netzwerk. Kann gutwillig (wenn die ursprüngliche Transaktion nicht bestätigt wurde) oder böswillig eingesetzt werden. Im letzteren Fall, beim sogenannten 'reuse' der Adresse, konnte man IOTA-Token durch Wiederholen der ersten Transaktion abbuchen, wenn von der Adresse bereits IOTA verschickt wurden.
 **RFC (Requests for Comments; Bitte um Kommentare)**: ein nummeriertes Dokument, in dem Protokolle, Konzepte, Methoden und Programme behandelt, beschrieben und definiert werden. 
 
 ## S
@@ -93,14 +96,16 @@
 ## T
 **Tangle**: Bezeichnung für den IOTA-Ledger.
 
-**Token**: Wert einer Blockchain oder DLT, bei IOTA heißt dieser "IOTA-Token".
-
 **Tip**: Eine noch nicht genehmigte Transaktion.
+
+**Token**: Wert einer Blockchain oder DLT, bei IOTA heißt dieser "IOTA-Token".
 
 **TPS (Transactions per Second)**: Durchsatz von validierten Transaktionen in einer Sekunde.
 
+**TSA (Tip-Selection-Algorithm)**: Algorithmus zur Berechnung der Tip-Auswahl. Bestimmt die Art und Weise, in der noch ausstehenden Transaktionen genehmigt werden. Überprüft die randomisierte Auswahl, um Tips zu nutzen, die möglichst viele andere Messages referenzieren.  
+
 ## U
-**URTS (Uniformly Random Tip Selection; gleichmäßig-zufällige Tip-Auswahl)**: Strategie zur Auswahl von bis zu acht Transaktionen, die durch eine neue Transaktion genehmigt werden sollen.
+**URTS (Uniformly-Random-Tip-Selection; gleichmäßig-zufällige Tip-Auswahl)**: Strategie zur Auswahl von bis zu acht Transaktionen, die durch eine neue Transaktion genehmigt werden sollen.
 
 **UTXO (Unspent Transaction Output)**: beschreibt den Kern des Bitcoin-Protokolls. Die Verwendung des auf IOTA angepassten UTXO-Modells ermöglicht eine Validierung von Transaktionen in einer konstanten Zeit. Es erhöht die Aussagekraft des Ledger-Zustands, um Anwendungsfälle wie „colored coins“ und „Layer1 smart contracts“ zu realisieren. 
 
