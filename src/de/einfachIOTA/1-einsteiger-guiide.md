@@ -98,11 +98,9 @@ Hinweis: Der Open-Source Koordinator kann nur Transaktionen bestätigen, Konsens
 
 ### IOTA ohne Koordinator
 
-Der Koordinator wird in naher Zukunft abgeschaltet (Coordicide), diesbezüglich wurden alle Forschungsarbeiten weitestgehend abgeschlossen und von mehreren Universitäten überprüft. Der Entwicklungsfahrplan (Roadmap) der IOTA zur Produktionsreife und Adoption führt wurde definiert und wird derzeit umgesetzt. Vor dem Coordicide wird das IOTA-Netzwerk mit einer Zwischenaktualisierung namens Chrysalis vollständig optimiert, um eine Unternehmenstaugliche Lösung für das Ökosystem anzubieten, auch hier wurde bereits eine Release-Strategie veröffentlicht.
+Der Koordinator wird in naher Zukunft abgeschaltet (Coordicide), diesbezüglich wurden alle Forschungsarbeiten weitestgehend abgeschlossen und von mehreren Universitäten überprüft. Der Entwicklungsfahrplan (Roadmap) der IOTA zur Produktionsreife und Adoption führt wurde definiert und wird derzeit umgesetzt. Das IOTA-Netzwerk wurde bereits mit einem sehr großen auf den Coordicide vorbereitenden Update namens Chrysalis vollständig optimiert, um bereits jetzt eine Unternehmens taugliche Lösung für das Ökosystem anzubieten.
 
- 
-
-Die anstehende Abschaltung (voraussichtlich 2021) des Koordinators stellt sicher, dass das Netzwerk ohne den Koordinator einen Konsens erzielt und gleichzeitig die folgenden Eigenschaften aufweist:
+Die anstehende Abschaltung des Koordinators stellt sicher, dass das Netzwerk ohne den Koordinator einen Konsens erzielt und gleichzeitig die folgenden Eigenschaften aufweist:
 
 Skalierbar: Die Transaktionsrate im Netzwerk ist  nicht durch das Protokoll begrenzt, eine beispiellose Skalierbarkeit wird  ermöglicht.  
 Sicher: Ein Angreifer kann den Konsens nicht  beeinflussen.  
@@ -142,6 +140,20 @@ Um den Koordinator zu entfernen, müssen eine Reihe von Herausforderungen gelös
 
 Hinweis: Wer direkt tiefere Einblicke zum Post Koordinator Konsensmechanismus wünscht, der erfährt in dem Themenbereich Coordicide mehr (nicht mehr ganz aktuell), bitte unbedingt auch alle aktuelleren weiterführenden Erklärungen lesen.
 
+
+IOTA 2.0 Development Network (DevNet)
+
+Nach Jahren harter Arbeit, um die theoretischen Grundlagen durch das Team und akademische Partner in Code zu implementieren, und fast einem Jahr ausgiebiger Tests, Validierung und iterativer Entwicklung zusammen mit der Community, wurde im Juni 2021 das IOTA 2.0 Development Network (DevNet) gestartet. Es ist das erste vollständig dezentralisierte, skalierbare und gebührenfreie IOTA-Netzwerk, wie es bei der Gründung des Projekts im Jahr 2015 vorgesehen war. Das DevNet 2.0 beinhaltet:
+
+- Keine Gebühren.
+- Keine Blöcke.
+- Keine Chain.
+- Keine Miner.
+- Keine verschwendete Energie.
+- Keine Zensur.
+- Keine Zentralisierung (ohne Koordinator).
+- Keine Genehmigungen.
+- Totale Freiheit!
  
 
 Schlüsselfaktoren der IOTA Distributed Ledger Technologie im produktionsfertigen Zustand (nach der Entfernung des Koordinators)
