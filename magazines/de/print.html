@@ -810,23 +810,28 @@ reviews: [Doenermaker, DanieKrie]
 </ul>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/6.md">Edit this file on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><!--
 ---article_info
-title: Was ist Chrysalis?
+title: Was ist "URTS Tip-Selection"
 author: [author_1]
-reviews: [reviewer_1, reviewer_2]
+reviews: [DanieKrie, reviewer_2]
 ---
 -->
 <h1 id="was-ist-urts-tip-selection"><a class="header" href="#was-ist-urts-tip-selection">Was ist &quot;URTS Tip-Selection&quot;</a></h1>
-<p>Aufgrund des White-Flag-Bestätigungsalgorithmus ist es nicht mehr notwendig, eine komplexe Tip-Auswahl wie den &quot;random walk&quot; durchzuführen. Daher kann ein einfacherer, leistungsfähigerer Algorithmus zur Auswahl von Tipps verwendet werden, was wiederum den gesamten Nachrichtendurchsatz erhöht. Die neue URTS-Tip-Auswahl in der Node-Software, dieser ist deutlich schneller und effizienter als der alte Ansatz bei IOTA 1.0.</p>
-<p>Der Algorithmus zur Tip-Auswahl ist das Verfahren, nach dem Transaktionen zur Genehmigung ausgewählt werden. Ein guter Algorithmus ermöglicht es, dass das Tangle auf eine stabile und sichere Weise wächst. </p>
-<p>Um eine neue Transaktion an das Tangle anzuhängen, kann der Algorithmus bis zu achti vorherige Transaktionen auswählen und genehmigen - vorzugsweise Tips. Dieser Genehmigungsmechanismus repräsentiert den &quot;Glauben&quot; an das Tangle: Wenn Transaktion y die Transaktion x genehmigt, bedeutet dies, dass y glaubt, dass Transaktion x gültig ist und dass auch ihre gesamte Historie gültig ist.</p>
+<p>Der Algorithmus zur Tip-Auswahl ist das Verfahren nach dem Transaktionen zur Genehmigung ausgewählt werden. Ein guter Algorithmus ermöglicht es, dass das Tangle auf eine stabile und sichere Weise wächst. </p>
+<p>Aufgrund des White-Flag-Bestätigungsalgorithmus, den wir im vorherigen Artikel beschrieben haben, ist es nicht mehr notwendig, eine komplexe Tip-Auswahl wie den &quot;random walk&quot; (Zufallsweg) durchzuführen. In der Vergangenheit wurde dieser Algorithmus für die Tip-Auswahl verwendet, da dies nicht nur zu einer gesunden Tangle-Struktur führte, sondern es uns auch ermöglichte, den schwersten und damit bevorzugten Teil des Tangles zu identifizieren. Dieser Mechanismus war zwar für die Konsensfindung unerlässlich, zeigte aber auch Eigenschaften, die weniger wünschenswert waren. Daher wurde ein einfacherer, leistungsfähigerer Algorithmus implementiert, der eine Steigerung des gesamten Nachrichtendurchsatz ermöglicht. </p>
+<p>Die neue Tip-Auswahl URTS (Uniformly-Random-Tip-Selection) erhöht die Zuverlässigkeit in der Node-Software und verringert den Bedarf an Reattachments und Promotionen. Der neue Prozess ist deutlich schneller und effizienter als der alte Ansatz bei IOTA 1.0. </p>
+<p>Um eine neue Transaktion an das Tangle anzuhängen, kann der Algorithmus bis zu acht vorherige Transaktionen auswählen und genehmigen - vorzugsweise Tips. Dieser Genehmigungsmechanismus repräsentiert den &quot;Glauben&quot; an das Tangle: Wenn Transaktion y die Transaktion x genehmigt, bedeutet dies, dass y glaubt, dass Transaktion x und auch ihre gesamte Historie gültig ist.</p>
 <p>[$=project.imageAltText(1421)$]</p>
-<p>In der Vergangenheit wurde als Algorithmus für die Tip-Auswahl der &quot;random walk&quot; (Zufallsweg) verwendet, dieser war zwar für die Konsensbildung unerlässlich, brachte aber auch einige unerwünschte Eigenschaften mit sich:</p>
-<p>Ehrliche Transaktionen konnten verweisen, wenn sie nicht genügend Gewichtung aufwiesen. Dies führte zu einem erhöhten Bedarf an Promotionen und Reattachments (auch ohne Angriffe), was wiederum die Zuverlässigkeit der Transaktionen deutlich beeinträchtigte.
-Angreifer haben mit dem random walk gespielt und bösartige Strukturen wie parasitäre Ketten erschafft, damit wurde Splitting-Angriffe durchgeführt, um das Netzwerk daran zu hindern, einen Konsens zu erzielen.
-Die Berechnung der kumulierten Gewichtungen von Transaktionen ist relativ teuer und stellt ein Problem für die Skalierbarkeit des Protokolls dar, insbesondere in Hochdurchsatzszenarien.</p>
-<p>Durch das Hinzufügen einer Abstimmungsebene zur Identifizierung des bevorzugten Teils des Tangle (als zusätzliches Modul) ergeben sich folgende Vorteile:</p>
-<p>Schnellere Konfliktlösung und damit geringere Wahrscheinlichkeit, dass eine Transaktion versehentlich an den falschen Teil des Tangle angehängt wird.
-Verwenden von verschiedene Mechanismen zur Tip-Auswahl, die nicht mehr auf der kumulativen Gewichtung basieren und eine geringere Chance haben, gültige Transaktionen zurückzulassen.</p>
+<p>Der in der Vergangenheit verwendete &quot;random walk&quot;-Algorithmus brachte unter anderem folgende negative Eigenschaften mit sich:</p>
+<ul>
+<li>Ehrliche Transaktionen konnten fallen gelassen werden, wenn sie nicht genügend Gewichtung hatten. Dies führte zu einem erhöhten Bedarf an Promotionen und Reattachments (auch ohne Angriffe), was wiederum die Zuverlässigkeit der Transaktionen deutlich beeinträchtigte.</li>
+<li>Angreifer haben mit dem &quot;random walk&quot; gespielt und bösartige Strukturen wie parasitäre Ketten erschaffen, mit denen Splitting-Angriffe durchgeführt wurden, die das Netzwerk daran hinderten, einen Konsens zu erzielen.</li>
+<li>Die Berechnung der kumulierten Gewichtungen von Transaktionen ist relativ teuer und stellt ein Problem für die Skalierbarkeit des Protokolls dar, insbesondere in Hochdurchsatzszenarien.</li>
+</ul>
+<p>Durch das Hinzufügen einer Abstimmungsebene als zusätzliches Modul zur Identifizierung des bevorzugten Teils des Tangle ergeben sich folgende Vorteile:</p>
+<ul>
+<li>Schnellere Konfliktlösung und damit geringere Wahrscheinlichkeit, dass eine Transaktion versehentlich an den falschen Teil des Tangle angehängt wird.</li>
+<li>Verwenden von verschiedenen Mechanismen zur Tip-Auswahl, die nicht mehr auf der kumulativen Gewichtung basieren und damit weniger gültige Transaktionen fallen lassen.</li>
+</ul>
 <p>[$=project.imageAltText(1422)$]</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/7.md">Edit this file on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><!--
 ---article_info
