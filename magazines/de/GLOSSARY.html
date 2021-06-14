@@ -169,13 +169,13 @@
 <h2 id="h"><a class="header" href="#h">H</a></h2>
 <h2 id="i"><a class="header" href="#i">I</a></h2>
 <p><strong>Impersonification (auch Impersonation)</strong>: Beschreibt einen Identitätswechsel, der oft in betrügerischer Absicht verwendet wird, um sich Zugang zu einem System zu verschaffen, in dem man sich als berechtigte Instanz ausgibt.</p>
-<p><strong>Inter-Shard-Transaktionen</strong>: Bezeichnet Transaktionen die zwischen unterschiedlichen Teilmengen (Shards) eines DLT durchgeführt werden müssen. -&gt; siehe auch <strong>Sharding</strong></p>
+<p><strong>Inter-Shard-Transaktionen</strong>: Bezeichnet Transaktionen die zwischen unterschiedlichen Teilmengen (Shards) eines DLT durchgeführt werden müssen. (siehe auch -&gt; <strong>Sharding</strong>)</p>
 <h2 id="j"><a class="header" href="#j">J</a></h2>
 <h2 id="k"><a class="header" href="#k">K</a></h2>
 <p><strong>Node (Knoten)</strong>: IOTA-Netzwerke bestehen aus miteinander verbundenen Nodes, auf denen dieselbe Node-Software ausgeführt wird. Diese Software ermöglicht Lese- / Schreibzugriff auf das Tangle,  Validierung von Transaktionen und das Speichern von Transaktionen in ihren lokalen Ledgern.</p>
 <h2 id="l"><a class="header" href="#l">L</a></h2>
 <p><strong>Legacy-Netzwerk</strong>: Bezeichnung für das alte IOTA-Netzwerk (IOTA 1.0)</p>
-<p><strong>Local Snapshot</strong>: Wird von einem IOTA-Knoten (node) durchgeführt, um die Datenbank zu bereinigen bzw. die Datenbankgröße zu reduzieren (siehe auch -&gt; Snapshot). Dadurch ist eine schnellere Synchronisierung möglich.</p>
+<p><strong>Local Snapshot</strong>: Wird von einem IOTA-Knoten (node) durchgeführt, um die Datenbank zu bereinigen bzw. die Datenbankgröße zu reduzieren (siehe auch -&gt; <strong>Snapshot</strong>). Dadurch ist eine schnellere Synchronisierung möglich.</p>
 <h2 id="m"><a class="header" href="#m">M</a></h2>
 <p><strong>Man in the Middle-Angriff</strong>: Ermöglicht dem Angreifer Einsicht oder sogar Kontrolle des Datenverkehrs zwischen zwei Kommunikationspartnern.</p>
 <p><strong>Meilensteine</strong>: Signierte Transaktion ohne Wert, die vom Coordinator in regelmässigen Abständen gesendet werden, um das aktuelle Netzwerk zu sichern.</p>
@@ -186,17 +186,20 @@
 <h2 id="p"><a class="header" href="#p">P</a></h2>
 <h2 id="q"><a class="header" href="#q">Q</a></h2>
 <h2 id="r"><a class="header" href="#r">R</a></h2>
-<p><strong>RFC (Requests for Comments; Bitte um Kommentare)</strong>: ein nummeriertes Dokument, in dem Protokolle, Konzepte, Methoden und Programme behandelt, beschrieben und definiert werden. </p>
+<p><strong>Random-Walk-Tip-Selection (Zufallsweg-Tip-Auswahl)</strong>: Der komplexe Random-Walk-Algorithmus hat rein zufällige Tips ausgewählt und wurde in IOTA 1.5 durch eine gleichmäßig-zufällige Tip-Auswahl ersetzt (siehe auch -&gt; <strong>TSA</strong>).</p>
+<p><strong>Reattachments</strong>: Wiederanhängen einer Transaktion an den Tangle im IOTA 1.0 Netzwerk. Kann gutwillig (wenn die ursprüngliche Transaktion nicht bestätigt wurde) oder böswillig eingesetzt werden. Im letzteren Fall, beim sogenannten 'reuse' der Adresse, konnte man IOTA-Token durch Wiederholen der ersten Transaktion abbuchen, wenn von der Adresse bereits IOTA verschickt wurden.
+<strong>RFC (Requests for Comments; Bitte um Kommentare)</strong>: ein nummeriertes Dokument, in dem Protokolle, Konzepte, Methoden und Programme behandelt, beschrieben und definiert werden. </p>
 <h2 id="s"><a class="header" href="#s">S</a></h2>
 <p><strong>Sharding</strong>: Als Sharing bezeichnet man eigentlich die Aufteilung einer großen Datenbank auf mehrere Datenbankinstanzen. Im DLT-Kontext wird damit ein Mechanismus zur besseren Skalierbarkeit der Knoten beschrieben, der einen höheren Durchsatz von Transaktionen ermöglicht. Dies erreicht man z.B. dadurch, dass ein Knoten jeweils nur eine Teilmenge von Transaktionen verarbeitet. Um Begriffsverwirrung zu vermeiden, wird im IOTA-Kontext auch der Begriff „Slicing“ verwendet.</p>
 <p><strong>Snapshot</strong>: Im IOTA-Tangle werden durch einen Snapshot alle Transaktionen mit einem leeren Saldo sowie Metadaten gelöscht. Übrig bleibt eine Liste mit Adressen und Salden, die einen neuen Anfangspunkt (Genesis) für den Tangle darstellt. </p>
 <h2 id="t"><a class="header" href="#t">T</a></h2>
 <p><strong>Tangle</strong>: Bezeichnung für den IOTA-Ledger.</p>
-<p><strong>Token</strong>: Wert einer Blockchain oder DLT, bei IOTA heißt dieser &quot;IOTA-Token&quot;.</p>
 <p><strong>Tip</strong>: Eine noch nicht genehmigte Transaktion.</p>
+<p><strong>Token</strong>: Wert einer Blockchain oder DLT, bei IOTA heißt dieser &quot;IOTA-Token&quot;.</p>
 <p><strong>TPS (Transactions per Second)</strong>: Durchsatz von validierten Transaktionen in einer Sekunde.</p>
+<p><strong>TSA (Tip-Selection-Algorithm)</strong>: Algorithmus zur Berechnung der Tip-Auswahl. Bestimmt die Art und Weise, in der noch ausstehenden Transaktionen genehmigt werden. Überprüft die randomisierte Auswahl, um Tips zu nutzen, die möglichst viele andere Messages referenzieren.</p>
 <h2 id="u"><a class="header" href="#u">U</a></h2>
-<p><strong>URTS (Uniformly Random Tip Selection; gleichmäßig-zufällige Tip-Auswahl)</strong>: Strategie zur Auswahl von bis zu acht Transaktionen, die durch eine neue Transaktion genehmigt werden sollen.</p>
+<p><strong>URTS (Uniformly-Random-Tip-Selection; gleichmäßig-zufällige Tip-Auswahl)</strong>: Strategie zur Auswahl von bis zu acht Transaktionen, die durch eine neue Transaktion genehmigt werden sollen.</p>
 <p><strong>UTXO (Unspent Transaction Output)</strong>: beschreibt den Kern des Bitcoin-Protokolls. Die Verwendung des auf IOTA angepassten UTXO-Modells ermöglicht eine Validierung von Transaktionen in einer konstanten Zeit. Es erhöht die Aussagekraft des Ledger-Zustands, um Anwendungsfälle wie „colored coins“ und „Layer1 smart contracts“ zu realisieren. </p>
 <h2 id="v"><a class="header" href="#v">V</a></h2>
 <h2 id="w"><a class="header" href="#w">W</a></h2>
