@@ -175,7 +175,7 @@ Die Eliminierung des Coordinators, der aktuell noch alle Transaktionen verarbeit
 
 - **Schlankes System**: Konzipiert für Geräte, wie z.B. Sensoren, die an einem Niedrigenergie-Netzwerk teilnehmen.
 
-- **Modularität**: Ein modularer Aufbau ermöglicht es, Bestandteile des Protokolls unabhängig voneinander weiterzuentwickeln. Der mehrschichtige Ansatz ermöglicht zukünftig Updates des Basisprotokolls, in ähnlicher Weise wie beim Internetprotokoll. Ein Protokoll welches sich nicht updaten lässt, ist kein Protokoll.
+- **Modularität**: Ein modularer Aufbau ermöglicht es, Bestandteile des Protokolls unabhängig voneinander weiterzuentwickeln. Der mehrschichtige Ansatz ermöglicht zukünftig Updates des Basisprotokolls, in ähnlicher Weise wie beim Internetprotokoll. Ein Protokoll, welches sich nicht updaten lässt, ist kein Protokoll.
 
 - **Zuverlässige Führung**: Die IOTA Foundation als gemeinnützige Organisation nach deutschem Recht optimiert die Akzeptanz und zukünftige Entwicklung des IOTA-Netzwerks. Das Fehlen von Minern ermöglicht es, neue Funktionen ohne Interessenkonflikte umzusetzen.
 
