@@ -2,7 +2,7 @@
 ---article_info
 title: Stronghold
 author: [author_1]
-reviews: [ruegenlord, DanieKrie, CrashOverride]
+reviews: [ruegenlord, DanieKrie, CrashOverride, vrom]
 ---
 -->
 
@@ -13,20 +13,20 @@ reviews: [ruegenlord, DanieKrie, CrashOverride]
 
 ## Stronghold: Kurz und knackig erklärt
 
-Bei Stronghold handelt es sich um eine mittels der Programmiersprache Rust entwickelte Software-Implementierung. Ihr alleiniger Zweck ist es, digitale Geheimnisse, wie Seeds, Schlüssel oder Passwörter vor der Gefahr durch Hacker und versehentliche Lecks zu schützen. 
+Bei Stronghold handelt es sich um eine Software-Implementierung die mittels der Programmiersprache Rust extrem sicher entwickelt wurde. Ihr alleiniger Zweck ist es, digitale Geheimnisse, wie Seeds, Schlüssel oder Passwörter vor der Gefahr durch Hacker und versehentliche Leaks zu schützen. 
 
 ## Wie genau funktioniert das?
 
 Stronghold verwendet versionierte und dateibasierte Snapshots mit doppelter Verschlüsselung, die leicht gesichert und sicher zwischen Geräten ausgetauscht werden können. Entwickelt in Rust, bietet Stronghold starke Garantien für Speichersicherheit und Prozessintegrität. 
 
-Die entwicklerfreundlichen Bibliotheken von Stronghold integrieren das IOTA-Protokoll und dienen als Referenzimplementierung für jeden, der nach Inspiration oder den besten Tools seiner Klasse sucht. Die Low-Level-Bibliotheken haben keinerlei Bezug zur Kryptowährung oder dem Tangle. Diese Funktionen befinden sich auf höherer Ebene, so dass Stronghold auch für Software-Projekte eingesetzt werden kann, die nicht direkt etwas mit Distributed Ledger zu tun haben, sondern bspw. lediglich ihre wertvollen Daten lokal schützen wollen.
+Die entwicklerfreundlichen Bibliotheken von Stronghold integrieren das IOTA-Protokoll und dienen als Referenzimplementierung für jeden, der nach Inspiration oder den besten Tools seiner Klasse sucht. Die Low-Level-Bibliotheken haben keinerlei Bezug zur Kryptowährung oder dem Tangle. Diese Funktionen befinden sich erst auf höherer Ebene, so dass Stronghold auch für Software-Projekte eingesetzt werden kann, welche nicht direkt etwas mit einem Distributed Ledger zu tun haben, sondern bspw. lediglich bestimmte wertvollen Daten lokal schützen soll.
 
-Intern setzt die IOTA Foundation Stronghold zur Sicherung ihrer neuen Wallet Software "Firefly" ein. Außerdem ist Stronghold die Grundlage für die neue Wallet Library "wallet.rs". Diese wurde ebenfalls in Rust geschrieben, kann jedoch durch bindings auch mit anderen Programmiersprachen wie NodeJS, Java oder Python genutzt werden.
+Intern setzt die IOTA Foundation Stronghold zur Sicherung ihrer neuen Wallet Software "Firefly" ein. Außerdem ist Stronghold die Grundlage für die neue Wallet Library "wallet.rs". Diese wurde ebenfalls in Rust geschrieben, kann jedoch durch "bindings" auch mit anderen Programmiersprachen wie NodeJS, Java oder Python genutzt werden.
 
 
 ## Wo kann man Stronghold einsetzen?
 
-Aufgrund der hohen Flexibilität gibt es neben der Sicherung von Kryptowährungs-Wallets noch viele weitere spannende Anwendungen, die mit Stronghold erstellt werden können. Die Low-Level-Engine ist völlig Anwendungsfall unabhängig und so flexibel, dass die Verschlüsselungsalgorithmen nach Belieben ausgetauscht, auf neue Weise zusammengestellt und mit anderen Teilen praktisch jedes Stacks erweitert werden können. Die High-Level-Bibliotheken werden so solide sein, dass sie von Haus aus eine enorme Sicherheit mitbringen.
+Aufgrund der hohen Flexibilität gibt es neben der Sicherung von Kryptowährungs-Wallets noch viele weitere spannende Anwendungen, die mit Stronghold erstellt werden können. Die Low-Level-Engine von Stronghold ist völlig Anwendungsfall unabhängig und so flexibel, dass die Verschlüsselungsalgorithmen nach Belieben ausgetauscht, auf neue Weise zusammengestellt und mit anderen Teilen praktisch jedes "Stacks" erweitert werden können. Die High-Level-Bibliotheken werden so solide sein, dass sie von Haus aus eine enorme Sicherheit mitbringen.
 
 Hier sind einige mögliche Anwendungsbeispiele für Stronghold:
 
@@ -44,14 +44,14 @@ Das sichere Säubern des Speichers nach der Verwendung eines Passwortes ist eine
 
 
 ### Multimedia-Center
-Alice leiht einen Film aus, den sie mit ihrem Handy auf dem Smart TV abspielt. Der Film wird als verschlüsselter Stream an das Smart TV gesendet und ein Entschlüsselungsschlüssel wird mit dem Stronghold ihres Gerätes synchronisiert. Nach 48 Stunden wird der Schlüssel durch den Dienst aus ihrem Stronghold gelöscht und der Film kann nicht mehr abgespielt werden.
+Alice leiht sich einen Film aus, den sie mit ihrem Handy auf dem Smart TV abspielt. Der Film wird als verschlüsselter Stream an das Smart TV gesendet und ein Entschlüsselungskey wird mit dem Stronghold ihres Gerätes synchronisiert. Nach 48 Stunden wird der Schlüssel durch den Dienst aus ihrem Stronghold gelöscht und der Film kann nicht mehr abgespielt werden.
 
 ### GDPR-Datenprozessoren und -Controller
-Anstatt persönlich identifizierbare Informationen in einer zentralen Datenbank zu speichern, die auf einen Schlag gestohlen werden können, kann Alice sich dafür entscheiden, den Zugriff auf ihre Daten direkt aus ihrer Stronghold-basierten Anwendung heraus freizugeben und zu widerrufen.
+Anstatt persönlich identifizierbare Informationen in einer zentralen Datenbank zu speichern, die auf einen Schlag gestohlen werden können, kann Alice sich dafür entscheiden, den Zugriff auf ihre Daten direkt aus ihrer Stronghold-basierten Anwendung heraus freizugeben oder zu widerrufen.
 
 
 ### Software-Entwickler
-Die Verwendung der Stronghold-Befehlszeilenschnittstelle oder des Systemdienst als lokales Geheim- und Abrufsystem erhöht die Betriebssicherheit der Programmiererin Alice und trägt dazu bei, eine versehentliche Offenlegung zu verhindern.
+Die Verwendung der Stronghold-Befehlszeilenschnittstelle oder des Systemdienstes als lokales Geheim- und Abrufsystems erhöht die Betriebssicherheit der Programmiererin Alice und trägt dazu bei, eine versehentliche Offenlegung zu verhindern.
 
 
 ## Nützliche Links:
