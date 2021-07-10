@@ -3,7 +3,7 @@ Die Client Bibliothek abstrahiert die Komplexität des IOTA-Protokolls in einfac
 
 #### Aktuelles Ziel
 - **Java-Bindungen**
-Erstellung einer Bindung zu der Java Programmiersprache, mit der die Rust-Bibliothek in Java verwenden werden kann.
+Erstellung einer Bindung zu der Java-Programmiersprache, mit der die Rust-Bibliothek in Java verwendet werden kann.
 
 #### Nächste Ziele
 - **C Beta-Version**
@@ -23,7 +23,7 @@ Eine Go-basierte Bibliothek mit intuitiven Methoden für die IOTA-Funktionalitä
 Eine Rust-basierte Bibliothek mit intuitiven Methoden für die IOTA-Funktionalität, z. B. Senden und Empfangen von Transaktionen.
 
 - **Python-Bindungen**
-Ertellung einer Bindung, mit der die Rust-Bibliothek in Python verwenden werden kann.
+Erstellung einer Bindung, mit der die Rust-Bibliothek in Python verwendet werden kann.
 
 - **Node.js Bindungen**
-Ertellung einer Bindung, mit der die Bibliothek iota.rs in Node.js über Neon verwenden können.
+Erstellung einer Bindung, mit der die Bibliothek iota.rs in Node.js über Neon verwendet werden kann.
