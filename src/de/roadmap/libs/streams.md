@@ -1,4 +1,4 @@
-### IOTA-Streams
+### IOTA Streams
 Mit IOTA Streams können Geräte jeder Größe verschlüsselte Datenströme senden und darauf zugreifen.
 
 #### Aktuelles Ziel
@@ -29,7 +29,7 @@ Formale Spezifikation der Konstrukte, die die Funktionalität von IOTA Streams b
 Eine Alpha-Implementierung zur Validierung der IOTA Streams-Funktionalität mit unserer Community und unseren Partnern vor Beginn der endgültigen Implementierung.
 
 - **Unterstützung der Rustbibliothek**
-Unterstützung für IOTA-Streams in der Rust-Bibliothek.
+Unterstützung für IOTA Streams in der Rust-Bibliothek.
 
 - **Rustimplementierung**
 Eine Veröffentlichung von IOTA Streams in einem Rust-Client.
