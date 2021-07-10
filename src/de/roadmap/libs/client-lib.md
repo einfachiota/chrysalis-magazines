@@ -1,5 +1,5 @@
-### Client Bibliothek
-Die Client Bibliothek abstrahiert die Komplexität des IOTA-Protokolls in einfache, einheitliche Methoden.
+### Client-Bibliothek
+Die Client-Bibliothek abstrahiert die Komplexität des IOTA-Protokolls in einfache, einheitliche Methoden.
 
 #### Aktuelles Ziel
 - **Java-Bindungen**
