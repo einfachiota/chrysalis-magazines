@@ -11,7 +11,7 @@ Unterstützung für Ledger Nano S und X über USB.
 Das Design von UX und UI der ersten Version von Firefly Mobile.
 
 - **Mobile Alpha Release**
-Eine Alpha-Version für die Firefly Mobile-App.
+Eine Alpha-Version für die Firefly Mobile App.
 
 - **Mobile Beta-Version**
 Eine Beta-Version für die Firefly Mobile App.
@@ -32,15 +32,15 @@ Die Beta-Version ist die letzte Phase vor der Produktionsbereitschaft. Die App i
 - **Desktop Alpha Release**
 Die Freigabe der neuen Brieftasche an eine geschlossene Alpha-Testgruppe ist ein wichtiger Schritt in Richtung eines produktionsbereiten Produkts.
 
-- **Desktop-Audit**
+- **Desktop Audit**
 Ein externes Audit zur Überprüfung der Sicherheit der Brieftasche.
 
-- **HStronghold Integration**
-Eine sichere Handhabung und Lagerung des Seeds ist unerlässlich. Stronghold ist eine auf Rust basierende Bibliothek, die alle Maßnahmen zum Schutz des Samens ergreift.
+- **Stronghold Integration**
+Eine sichere Handhabung und Lagerung des Seeds ist unerlässlich. Stronghold ist eine auf Rust basierende Bibliothek, die alle Maßnahmen zum Schutz des Seeds ergreift.
 
 - **Wallet Spezifikation**
 Das Erstellen einer Open-Source-, zusammensetzbaren und erweiterbaren Anwendung erfordert eine detaillierte und sorgfältige Planung.
 
-- **Desktop-Design**
+- **Desktop Design**
 Das Design von UX und UI der ersten Version von Firefly Desktop.
 
