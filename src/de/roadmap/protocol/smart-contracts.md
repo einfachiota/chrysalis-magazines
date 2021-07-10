@@ -16,4 +16,4 @@ Veröffentlichung der intelligenten Verträge im IOTA-Mainnet.
 
 #### Zuletzt erreichte Ziele
 - **Alpha Release**
-Alpha-Version des IOTA Smart-Vertragsprotokolls. Protokollspezifikationen, implementation der `Wasp` Node und erste Version der Entwicklertools.
+Alpha-Version des IOTA Smart-Vertragsprotokolls. Protokollspezifikationen, Implementierung der `Wasp` Node und erste Version der Entwicklertools.
