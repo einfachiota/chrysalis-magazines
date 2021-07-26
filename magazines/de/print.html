@@ -790,7 +790,7 @@ Mit einem weiteren Nachteil von Bundles haben vor allem die Entwickler zu kämpf
 ---article_info
 title: Was ist "UTXO"?
 author: [author_1]
-reviews: [Doenermaker, DanieKrie]
+reviews: [Doenermaker, DanieKrie, marhoc83]
 ---
 -->
 <h1 id="was-ist-utxo"><a class="header" href="#was-ist-utxo">Was ist &quot;UTXO&quot;?</a></h1>
@@ -818,7 +818,7 @@ reviews: [Doenermaker, DanieKrie]
 <li>Parallele Validierung von Transaktionen.</li>
 <li>Einfachere Erkennung von Doppelausgaben, da widersprüchliche Transaktionen auf dieselbe UTXO verweisen würden. Das bedeutet eine schnellere und genauere Konfliktbehandlung, dementsprechend wird die Belastbarkeit sowie die Sicherheit des Protokolls verbessert.</li>
 <li>Wiederholungsschutz für das Wiederverwenden von Adressen. Die Wiederholung einer gleichen Transaktion würde sich als bereits angewandt oder vorhanden manifestieren und somit keine Auswirkungen haben.</li>
-<li>Das UTXO-Modell ermöglicht auch, auf einfache Weise Features wie &quot;Digital Assets&quot; zu implementieren, bei denen Benutzer IOTA-Token so markieren können, dass sie eine vorher festgelegt &quot;Bedeutung&quot; haben (und behalten). Wenn man bedenkt, dass 99% der bestehenden &quot;Smmart Contracts&quot; eigentlich nur dazu verwenden werden, Tokens zu kreieren, die sich auf einen bestimmten Anwendungsfall beziehen, ist dies ein interessantes Feature, welches einen großen Mehrwert für das IOTA-Ökosystem darstellt.</li>
+<li>Das UTXO-Modell ermöglicht auch, auf einfache Weise Features wie &quot;Digital Assets&quot; zu implementieren, bei denen Benutzer IOTA-Token so markieren können, dass sie eine vorher festgelegt &quot;Bedeutung&quot; haben (und behalten). Wenn man bedenkt, dass 99% der bestehenden &quot;Smart Contracts&quot; eigentlich nur dazu verwenden werden, Tokens zu kreieren, die sich auf einen bestimmten Anwendungsfall beziehen, ist dies ein interessantes Feature, welches einen großen Mehrwert für das IOTA-Ökosystem darstellt.</li>
 </ul>
 <p>Technisch gesehen können Salden nicht mehr mit Adressen verknüpft werden, was den Abstraktionsgrad erhöht und somit andere Arten von Ausgaben ermöglicht. Man könnte bspw. einen Ausgabetyp definieren, der das Guthaben erst freigibt, wenn eine bestimmte Bedingung (PoW oder ein anderes Entsperrkriterium) erfüllt ist.</p>
 <p>Innerhalb einer Transaktion, die UTXOs verwendet, bilden Eingänge und Ausgänge die zu signierenden Daten der Transaktion. Der Abschnitt, der die Eingänge entsperrt, wird Unlock-Block genannt. Ein Unlock-Block kann eine Signatur enthalten, die das Eigentum an der Adresse eines bestimmten Eingangs nachweist und/oder andere Unlock-Kriterien (Entsperrkriterien).</p>
