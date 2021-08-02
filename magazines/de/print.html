@@ -891,9 +891,9 @@ Kurz gesagt, wählt der Koordinator die Tips für den Meilstenstein jetzt intell
 <p>Der Koordinator erzeugt etwa alle 10 Sekunden einen Meilenstein, welcher wie jede andere Message auch mindestens zwei Tips referenzieren sollte. Tips sind die Messages im Tangle, die noch nicht von anderen Messages referenziert wurden (Grau im rechten Bereich des Bildes).</p>
 <p><img src="https://user-images.githubusercontent.com/46689931/120787374-917daf00-c52f-11eb-8355-7da504ad060b.png" alt="image" /></p>
 <p>Der alte Algorithmus (Random Walk) hat einfach zufällige Tips genutzt. Der neue Algorithmus wählt auch erstmal zufällige Tips aus, überprüft sie dann aber einmal, um Tips zu nutzen, die möglichst viele andere Messages referenzieren. </p>
-<p>Ein Tip, der nur wenige von den neuen Messages referenziert
+<p>Ein Tip, der nur wenige von den neuen Messages referenziert:
 <img src="https://user-images.githubusercontent.com/46689931/120787460-ac502380-c52f-11eb-8fe4-aaf391f3ecba.png" alt="image" /></p>
-<p>Ein anderer Tip, der viel mehr von den neuen Messages referenziert
+<p>Ein anderer Tip, der viel mehr von den neuen Messages referenziert:
 <img src="https://user-images.githubusercontent.com/46689931/120787563-c984f200-c52f-11eb-9dc7-a2ee12ca5201.png" alt="image" /></p>
 <p>https://simulation1.tangle.works/</p>
 <footer id="open-on-gh">Found a bug? <a href="https://github.com/einfachiota/chrysalis-magazines/edit/main/src/de/what_is/8.md">Edit this file on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><!--
@@ -904,7 +904,7 @@ reviews: [Doenermaker, CrashOverride]
 ---
 -->
 <h1 id="was-ist-binary-transaction-layout"><a class="header" href="#was-ist-binary-transaction-layout">Was ist &quot;Binary Transaction Layout&quot;?</a></h1>
-<p>Die Umstellung auf eine interne binäre Darstellung der ternären Transaktion. Dies ermöglicht es binäre Daten - also Einsen und Nullen - für Validierung und andere Verarbeitungen zu verwenden, ohne dass binär-ternäre Konvertierungen wie in der alten IOTA 1.0 Node-Software erforderlich sind. Da alle modernen Computer Prozessoren enthalten die nach dem Binären Format arbeiten, führt dies zu weiteren Leistungsverbesserungen im IOTA-Netzwerk.</p>
+<p>Die Umstellung auf eine interne binäre Darstellung der ternären Transaktion. Dies ermöglicht es, binäre Daten - also Einsen und Nullen - für die Validierung und andere Verarbeitungen zu verwenden, ohne dass binär-ternäre Konvertierungen wie in der alten IOTA 1.0 Node-Software erforderlich sind. Da alle modernen Computer Prozessoren enthalten, die nach dem binären Format arbeiten, führt dies zu weiteren Leistungsverbesserungen im IOTA-Netzwerk.</p>
 <p><strong>Technische Details:</strong> 
 Im IOTA 1.0 Netzwerk besteht eine Transaktion aus 2.673 tryte-kodierten Zeichen und setzt sich aus verschiedenen Feldern unterschiedlicher Tryte-Längen zusammen.</p>
 <p>Im neuen IOTA 1.5 Chrysalis Netzwerk haben Transaktion eine variable Größe. Die maximale Größe für Nachrichten beträgt 32768 Byte. Das Indexfeld des Indexierungs-Payloads hat eine maximale Größe von 64 Bytes.</p>
