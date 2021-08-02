@@ -44,7 +44,7 @@ Das sichere Säubern des Speichers nach der Verwendung eines Passwortes ist eine
 
 
 ### Multimedia-Center
-Alice leiht sich einen Film aus, den sie mit ihrem Handy auf dem Smart TV abspielt. Der Film wird als verschlüsselter Stream an das Smart TV gesendet und ein Entschlüsselungskey wird mit dem Stronghold ihres Gerätes synchronisiert. Nach 48 Stunden wird der Schlüssel durch den Dienst aus ihrem Stronghold gelöscht und der Film kann nicht mehr abgespielt werden.
+Alice leiht sich einen Film aus, den sie mit ihrem Handy auf dem Smart TV abspielt. Der Film wird als verschlüsselter Stream an das Smart TV gesendet und ein Schlüssel zum entschlüsseln wird mit dem Stronghold ihres Gerätes synchronisiert. Nach 48 Stunden wird der Schlüssel durch den Dienst aus ihrem Stronghold gelöscht und der Film kann nicht mehr abgespielt werden.
 
 ### GDPR-Datenprozessoren und -Controller
 Anstatt persönlich identifizierbare Informationen in einer zentralen Datenbank zu speichern, die auf einen Schlag gestohlen werden können, kann Alice sich dafür entscheiden, den Zugriff auf ihre Daten direkt aus ihrer Stronghold-basierten Anwendung heraus freizugeben oder zu widerrufen.
