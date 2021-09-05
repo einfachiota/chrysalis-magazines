@@ -27,13 +27,11 @@ Wer mit der "Mute" Taste umgehen kann, bekommt gerne auch die Rolle "Plaudertasc
 5. Alkohol ist gut, zu viel Alkohol eher nicht. Vor allem wenn man noch mitreden will...
 
 **Themen?**
-Vorschläge für Themen kann jeder auf [auf Github](https://github.com/iota-community/community-events/tree/main/page/stammtisch) machen!
 
 ## Was wird im Stammtisch diskutiert?
-Unser Teammember `vrom`stellt jede Woche eine Liste mit aktuellen IOTA Themen zusammen. Jeder hat die Möglichkeit Punkte hinzuzufügen.
+Unser Community Manager `vrom` stellt jede Woche eine Liste mit aktuellen IOTA Themen vor. Jeder hat die Möglichkeit eigene Themen hinzuzufügen.
+Vorschläge für Themen kann jeder auf dem [IOTA Community Github](https://github.com/iota-community/community-events/tree/main/page/stammtisch) machen!
 
-Auf dem letzten Stammtisch am xx.xx.xxxx wurden folgende Dinge diskutiert: 
 
-> **TODO:**
+## Links
 > - [Liste](https://github.com/iota-community)
-> letzter stammtisch vor druck: tbd
