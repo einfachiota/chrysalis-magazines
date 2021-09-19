@@ -5,8 +5,23 @@
 Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Knotendatenbank steuern kann.
 
 #### Nächste Ziele
+- **Lokale Snapshots**
+Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Knotendatenbank steuern kann.
+
 - **MQTT-Unterstützung**
 Unterstützung für das MQTT-Pubsub-Messaging-Protokoll hinzufügen.
+
+- **Erneuerung des Plugin-Systems**
+Ein neueres und flexibleres Plugin-System wird entwickelt, damit unter anderem Drittparteien mit eigenen Plugins die Funktionalitäten von Bee einfach und effizient erweitern können.
+
+- **Erneuerung der Node Architektur**
+Basierend auf dem ASB (Actor System Backstage) Prinzip in Zusammenarbeit mit dem Chronicle Team.
+
+- **Initial-Implementierung der Coordicide Netzwerkschicht**
+Implementierung der aktuellen Version von GoShimmer ohne die libp2p Voraussetzungen um innerhalb des IOTA 2.0 Devnet betrieben zu werden.
+
+- **Initial-Implementierung des "Coordicide Data-Flow Modells**
+Implementierung des Data-Flow Models wie in den Forschungsspezifikationen dokumentiert: https://github.com/iotaledger/IOTA-2.0-Research-Specifications/blob/main/2.4%20Data%20Flow.md
 
 #### Zuletzt erreichte Ziele
 - **Beta-Version**
