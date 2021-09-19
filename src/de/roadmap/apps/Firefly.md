@@ -2,16 +2,10 @@
 ### Firefly
 
 #### Aktuelles Ziel
-- **Ledger Nano Integration**
-Unterstützung für Ledger Nano S und X über USB.
-
-
-#### Nächste Ziele
-- **Mobile Design**
-Das Design von UX und UI der ersten Version von Firefly Mobile.
-
 - **Mobile Alpha Release**
 Eine Alpha-Version für die Firefly Mobile App.
+
+#### Nächste Ziele
 
 - **Mobile Beta-Version**
 Eine Beta-Version für die Firefly Mobile App.
@@ -20,6 +14,12 @@ Eine Beta-Version für die Firefly Mobile App.
 Eine Produktionsversion von Firefly Mobile im Mainnet.
 
 #### Zuletzt erreichte Ziele
+- **Ledger Nano Integration**
+Unterstützung für Ledger Nano S und X über USB.
+
+- **Mobile Design**
+Das Design von UX und UI der ersten Version von Firefly Mobile.
+
 - **Desktop Production Release**
 Eine Produktionsversion der Firefly-Brieftasche im Mainnet.
 
