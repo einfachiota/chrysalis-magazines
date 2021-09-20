@@ -2,11 +2,11 @@
 
 #### Aktuelles Ziel
 - **Lokale Snapshots**
-Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Knotendatenbank steuern kann.
+Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Node-Datenbank steuern kann.
 
 #### Nächste Ziele
 - **Lokale Snapshots**
-Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Knotendatenbank steuern kann.
+Eine Implementierung lokaler Snapshots, mit der der Benutzer die Größe der Node-Datenbank steuern kann.
 
 - **MQTT-Unterstützung**
 Unterstützung für das MQTT-Pubsub-Messaging-Protokoll hinzufügen.
