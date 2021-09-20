@@ -2,14 +2,25 @@
 Mit IOTA Streams können Geräte jeder Größe verschlüsselte Datenströme senden und darauf zugreifen.
 
 #### Aktuelles Ziel
-- **Dokumentation und Beispiele**
-Verbesserung der Dokumentation und Beispiele für Rust und alle Bindungen.
+- **Gegenwärtig wurden keine aktuellen Ziele definiert**
 
 #### Nächste Ziele
 - **Streams Explorer**
 Ein benutzerdefinierter Streams-Explorer, der einen Überblick über einen bestimmten Datenstrom gibt.
 
+- **Integration von IOTA Identity**
+Integration mit der IOTA Identity Library um IOTA Stream Eignern und Usern eine dezentrale Identität zu ermöglichen.
+
+- **Integration von IOTA Stronghold**
+Integration der IOTA Stronghold Library um die Sicherheit und das Nutzungserlebnis des Schlüsselmanagements zu verbessern.
+
+- **Aktualisierte Spezifikationen für Chrysalis**
+Update der aktuellen IOTA STreams Spezifikation bezüglich Anpassungen der letzten Änderungen für Chrysalis.
+
 #### Zuletzt erreichte Ziele
+- **Dokumentation und Beispiele**
+Verbesserung der Dokumentation und Beispiele für Rust und alle Bindungen.
+
 - **Node.js Bindungen**
 Node.js-Bindungen über Neon für die Rust-Bibliothek.
 
