@@ -2,13 +2,16 @@
 Die Wallet-Bibliothek vereinfacht Implementierungen, die den IOTA-Token verwenden.
 
 #### Aktuelles Ziel
-- **Ledger Nano Support**
-Für Benutzer, die die Bibliothek mit einem Ledger Nano nutzen möchten.
+- **Erweiterte Testabdeckung**
+Erweiterte Testabdeckung über die gesamte Wallet Library hinweg.
 
 #### Nächste Ziele
 Aktuell keine.
 
 #### Zuletzt erreichte Ziele
+- **Ledger Nano Support**
+Für Benutzer, die die Bibliothek mit einem Ledger Nano nutzen möchten.
+
 - **Java-Bindungen**
 Bindungen, mit denen die Bibliothek wallet.rs in Java verwendet werden kann.
 
