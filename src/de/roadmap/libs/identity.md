@@ -2,8 +2,8 @@
 IOTA Identity implementiert die vorgeschlagenen Standards für DID und überprüfbare Anmeldeinformationen, um eine Identität für Personen, Organisationen und Dinge zu ermöglichen.
 
 #### Aktuelles Ziel
-- **Beta-Version**
-Beta-Version des von W3C in Rust vorgeschlagenen Standards für dezentrale Identifikatoren (DID). Dies umfasst die Verwaltung von DID-Dokumenten, das Veröffentlichen und Lesen von DID-Dokumenten von IOTA.
+- **Produktionsfreigabe**
+In dieser Version kann das Framework in der Produktion verwendet werden. Zukünftige Updates bieten Tools für Abwärtskompatibilität und Versionsübergang.
 
 #### Nächste Ziele
 - **Kommunikationsbibliotheken**
@@ -18,9 +18,6 @@ Externe Prüfung, die eine Überprüfung der Sicherheits- und Kryptografievorgä
 - **C-Bindungen**
 C-Bindungen mit vollständiger Abdeckung der Bibliothek zur Unterstützung der nativen App-Entwicklung und IoT-Geräte.
 
-- **Produktionsfreigabe**
-In dieser Version kann das Framework in der Produktion verwendet werden. Zukünftige Updates bieten Tools für Abwärtskompatibilität und Versionsübergang.
-
 - **Datenschutzfunktionen**
 Das Framework unterstützt Selective Disclosure und Zero Knowledge Proofs, reduziert die Menge der freigegebenen Informationen auf ein Minimum und maximiert so den Datenschutz.
 
@@ -29,6 +26,9 @@ Der Identitätsagent bietet eine Möglichkeit, sofort Identitätsnachrichten zu 
 
 
 #### Zuletzt erreichte Ziele
+- **Beta-Version**
+Beta-Version des von W3C in Rust vorgeschlagenen Standards für dezentrale Identifikatoren (DID). Dies umfasst die Verwaltung von DID-Dokumenten, das Veröffentlichen und Lesen von DID-Dokumenten von IOTA.
+
 - **Spezifikation**
 Eine umfassende Spezifikation für die Identität auf IOTA.
 
