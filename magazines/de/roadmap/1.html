@@ -161,18 +161,54 @@ reviews: [TomMax2407, CrashOverride]
 <p>Vollständige Dezentralisierung des IOTA-Netzwerks durch Entfernen des Koordinators. Dies ist die Zukunft der erlaubnislosen und skalierbaren verteilten Hauptbuchtechnologie.</p>
 <h4 id="aktuelles-ziel"><a class="header" href="#aktuelles-ziel">Aktuelles Ziel</a></h4>
 <ul>
-<li><strong>Nectar</strong>
-Ein nahezu funktionsreiches Netzwerk zum Testen und Benchmarking von IOTA 2.0, das Mana und Fast-Probabilistic Consensus präsentiert.</li>
+<li><strong>Devnet Verbesserungen</strong>
+Einführen von diversen Verbesserungen in die IOTA 2.0 Devnet Umgebung. Inkl. Funktionen wie Congestion Control (Staukontrolle), Konsens- und Zeitstempelabstimmungen.</li>
 </ul>
 <h4 id="nächste-ziele"><a class="header" href="#nächste-ziele">Nächste Ziele</a></h4>
 <ul>
-<li><strong>Honey</strong>
-Der endgültige Release-Kandidat für IOTA 2.0, Honey, wird alle Module gemäß der vollständigen und endgültigen Spezifikation von IOTA 2.0 enthalten.</li>
+<li>
+<p><strong>Insentiviertes Test-Netz</strong>
+Das Testnetz wird mit einem Insentiv-Modell ausgestattet wodurch Sicherheitsforscher Belohnungen für das finden von Bugs und Sicherheitslücken bekommen. Dies führt zu  schnelleren Entwicklung, Fehlerbehebung und Wachstum des IOTA Ökosystems.</p>
+</li>
+<li>
+<p><strong>Verbesserte Staukontrolle (Congestion Control)</strong>
+Neupositionierung der Scheduler (Planer) Komponente an das Ende des Datenstroms.</p>
+</li>
+<li>
+<p><strong>Verbesserter &quot;Rate Setter&quot;</strong>
+Programmerweiterung, sodass die Zeit für eine zur Bearbeitung vorgesehenen Transaktion geschätzt werden kann und das Nutzungerlebnis auch durch verbesserungen in den zugehörigen Tools merklich steigt.</p>
+</li>
+<li>
+<p><strong>Vereinfachung des Konsensus</strong>
+Ersetzen des bisher genutzen FCoB-Verfahrens (Fast-Consensus-of-Barcelona-Regel) mittels On-Tangle-Voting und zusätzlicher Nutzung von FPC als Metastabilitätsbrecher.</p>
+</li>
+<li>
+<p><strong>Zeitstempel-Voting</strong>
+Aktivierung der Zeitstempel-Qualitäts-Erzwingung.</p>
+</li>
+<li>
+<p><strong>Reorganisation</strong>
+Dies erlaubt den Nodes (Knoten) sich von einer fehlerhaften Zustand wieder &quot;Erholen&quot; und wieder ordnungsgemäß am Tangle partizipieren durch Anpassung auf Bassis der vorherschenden Zustimmungsgewichtung. </p>
+</li>
+<li>
+<p><strong>Inklusions-Wertung</strong>
+Kombiniert die Zeitstempel Qualität sowie das defizit auf den Nodes (Knoten), um die geplanten Transaktionen zu optimieren.</p>
+</li>
+<li>
+<p><strong>lokale Schnappschüsse (Snapshots)</strong>
+Erlaubt einer Node (Knoten) Ihre alten Daten lokal zu bereinigen, während die für den Ledger-State erforderlichen Informationen beibehalten werden. </p>
+</li>
 </ul>
 <h4 id="zuletzt-erreichte-ziele"><a class="header" href="#zuletzt-erreichte-ziele">Zuletzt erreichte Ziele</a></h4>
 <ul>
-<li><strong>Pollen</strong>
-Das erste offizielle Testnetz des IOTA 2.0-Netzwerks. Das Pollennetzwerk ist in erster Linie ein Forschungsprüfstand zur Validierung von Konzepten für IOTA 2.0.</li>
+<li>
+<p><strong>Pollen</strong>
+Das erste offizielle Testnetz des IOTA 2.0-Netzwerks. Das Pollennetzwerk ist in erster Linie ein Forschungsprüfstand zur Validierung von Konzepten für IOTA 2.0.</p>
+</li>
+<li>
+<p><strong>IOTA 2.0 Devnet</strong>
+Ein nahezu funktionsreiches Netzwerk zum Testen und Benchmarking von IOTA 2.0, das Mana und Fast-Probabilistic Consensus präsentiert.</p>
+</li>
 </ul>
 <h3 id="smart-contracts"><a class="header" href="#smart-contracts">Smart Contracts</a></h3>
 <p>Ein Layer-2-Protokoll für dezentrale, automatisch ausgeführte Programme, mit denen digitale Assets und Token verschoben werden können.</p>
@@ -614,8 +650,8 @@ WASM-Bindungen für die Rust-Bibliothek.</p>
 <p>IOTA Identity implementiert die vorgeschlagenen Standards für DID und überprüfbare Anmeldeinformationen, um eine Identität für Personen, Organisationen und Dinge zu ermöglichen.</p>
 <h4 id="aktuelles-ziel-8"><a class="header" href="#aktuelles-ziel-8">Aktuelles Ziel</a></h4>
 <ul>
-<li><strong>Beta-Version</strong>
-Beta-Version des von W3C in Rust vorgeschlagenen Standards für dezentrale Identifikatoren (DID). Dies umfasst die Verwaltung von DID-Dokumenten, das Veröffentlichen und Lesen von DID-Dokumenten von IOTA.</li>
+<li><strong>Produktionsfreigabe</strong>
+In dieser Version kann das Framework in der Produktion verwendet werden. Zukünftige Updates bieten Tools für Abwärtskompatibilität und Versionsübergang.</li>
 </ul>
 <h4 id="nächste-ziele-8"><a class="header" href="#nächste-ziele-8">Nächste Ziele</a></h4>
 <ul>
@@ -636,10 +672,6 @@ Externe Prüfung, die eine Überprüfung der Sicherheits- und Kryptografievorgä
 C-Bindungen mit vollständiger Abdeckung der Bibliothek zur Unterstützung der nativen App-Entwicklung und IoT-Geräte.</p>
 </li>
 <li>
-<p><strong>Produktionsfreigabe</strong>
-In dieser Version kann das Framework in der Produktion verwendet werden. Zukünftige Updates bieten Tools für Abwärtskompatibilität und Versionsübergang.</p>
-</li>
-<li>
 <p><strong>Datenschutzfunktionen</strong>
 Das Framework unterstützt Selective Disclosure und Zero Knowledge Proofs, reduziert die Menge der freigegebenen Informationen auf ein Minimum und maximiert so den Datenschutz.</p>
 </li>
@@ -650,6 +682,10 @@ Der Identitätsagent bietet eine Möglichkeit, sofort Identitätsnachrichten zu 
 </ul>
 <h4 id="zuletzt-erreichte-ziele-8"><a class="header" href="#zuletzt-erreichte-ziele-8">Zuletzt erreichte Ziele</a></h4>
 <ul>
+<li>
+<p><strong>Beta-Version</strong>
+Beta-Version des von W3C in Rust vorgeschlagenen Standards für dezentrale Identifikatoren (DID). Dies umfasst die Verwaltung von DID-Dokumenten, das Veröffentlichen und Lesen von DID-Dokumenten von IOTA.</p>
+</li>
 <li>
 <p><strong>Spezifikation</strong>
 Eine umfassende Spezifikation für die Identität auf IOTA.</p>
