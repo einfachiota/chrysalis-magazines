@@ -3,13 +3,18 @@ Chronicle ist eine auf Rust basierende Permanode, die die gesamte Geschichte des
 
 
 #### Aktuelles Ziel
+- **Selektiver Permanode für das Chrysalis Netzwerk**
+Ein selektiver Permanode speichert und filtert einen benutzerdefinierten Satz von Transaktionen. Dieser Version wird für Chrysalis  (aka IOTA 1.5) entwickelt.
+
+#### Nächste Ziele
 - **Permanode-Dashboard**
 Ein Dashboard, mit dem Benutzer ihre permanente Instanz überwachen und steuern können.
 
-#### Nächste Ziele
-- **Selektiver Permanode**
-Ein selektiver Permanode speichert und filtert einen benutzerdefinierten Satz von Transaktionen.
+- **Selektiver Permanode für das Honey Netzwerk**
+Ein selektiver Permanode speichert und filtert einen benutzerdefinierten Satz von Transaktionen. Dieser Version wird für Chrysalis  (aka IOTA 2.0) entwickelt.
 
+- **Bestätigungszeitanalyse**
+Berechnet und Speicher unter anderem die durchschnittle Bestätigungszeit
 
 #### Zuletzt erreichte Ziele
 
