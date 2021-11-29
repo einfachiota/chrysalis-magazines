@@ -4,7 +4,7 @@
 
 
 ## A
-**Alvarium**: 
+**Alvarium**: Ein Consortium zur Erforschung und Weiterentwicklung der Data Confidence Fabric (DCF)-Technologie, von der IOTA Foundation, Dell und Intel.
 
 **Atomic Transactions (Atomare Transaktionen)**: Ersetzt das bisherige Bundle-Konstrukt; verringert den Wartungsaufwand durch Reduzierung der Netzwerkaufwände und verbessert den Spam-Schutz.
 
