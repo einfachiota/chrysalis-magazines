@@ -35,7 +35,7 @@ Tokenization ist eine der größten Innovationen im DLT-Raum und ermöglicht vö
 
 > [Oct 21, 2021](https://blog.iota.org/iota-smart-contracts-beta-release/)
 
-Die Beta-Version von programmierbaren Smart Contracts ist jetzt auf dem IOTA 2.0 DevNet verfügbar. Die IOTA Foundation geht einen großen Schritt, um IOTA eine neue Utility-Ebene hinzuzufügen. Der Release zeigt die Stärken des modularen Ansatzes, der sich spezial auf Entwickler richtet. Smart Contracts kann man in verschiedenen Programmiersprachen wie z. B. Go, Rust oder Typescript schreiben - der Release beinhaltet auch eine Ethereum VM (EVM), welche die Programmiersprache Solidity unterstützt.
+Die Beta-Version von programmierbaren Smart Contracts ist jetzt auf dem IOTA 2.0 DevNet verfügbar. Die IOTA Foundation geht einen großen Schritt, um IOTA eine neue Utility-Ebene hinzuzufügen. Der Release zeigt die Stärken des modularen Ansatzes, der sich speziell an Entwickler richtet. Smart Contracts kann man in verschiedenen Programmiersprachen wie z. B. Go, Rust oder Typescript schreiben - der Release beinhaltet auch eine Ethereum VM (EVM), welche die Programmiersprache Solidity unterstützt.
 
 ### EBSI - Eine Distributed Ledger Technology (DLT) für Europe 
 
