@@ -21,7 +21,7 @@ Das Shimmer Netzwerk ist ein incentiviertes IOTA Staging-Netzwerk, eine Art Entw
 
 > [Nov 16, 2021](https://blog.iota.org/introducing-iota-staking/)
 
-IOTA führt das Staking für alle IOTA-Tokenhalter ein. Stake IOTA-Token und verdiene Staking-Belohnungen von zum Beispiel Token-Airdrops. IOTA verwandelt sich in ein vollständig dezentrales, programmierbares Multi-Asset-Register (Mulit-Asset-Ledger). Das Shimmer-Netzwerk wird das erste Projekt sein, das das IOTA-Netzwerk nutzt, um die neuen Tokens gerecht zu verteilen.
+IOTA führt das Staking für alle IOTA-Tokenhalter ein. Stake IOTA-Token und verdiene Staking-Belohnungen von zum Beispiel Token-Airdrops. IOTA verwandelt sich in ein vollständig dezentrales, programmierbares Multi-Asset-Register (Mulit-Asset-Ledger). Das Shimmer-Netzwerk wird mit Assembly das erste Projekt sein, das das IOTA-Netzwerk nutzt, um die neuen Tokens gerecht zu verteilen.
 
 
 ### IOTA Tokenization Framework Specifications
@@ -67,7 +67,7 @@ IOTA Identity ist ein Self Sovereign Identity (SSI) Framework, das es Menschen, 
 ### Das neue Chrysalis Netzwerk ist live!
 > [Apr 28, 2021](https://blog.iota.org/the-new-chrysalis-network-is-live/)
 
-Das Chrysalis Netzwerk-Upgrade ist offiziell live. Token im Wert von mehr als 1,4 Milliarden USD wurden für die Migration vor dem Netzwerkstart gesperrt. Der nächste wichtige Meilenstein zu einem vollständig dezentralen IOTA 2.0 steht vor der Tür: Das Nectar-Netzwerk, welches in nur wenigen Wochen startet.
+Das Chrysalis Netzwerk-Upgrade ist offiziell live. Token im Wert von mehr als 1,4 Milliarden USD wurden für die Migration vor dem Netzwerkstart migriert. Der nächste wichtige Meilenstein zu einem vollständig dezentralen IOTA 2.0 steht vor der Tür: Das Nectar-Netzwerk, welches in nur wenigen Wochen startet.
 
 
 ### Digital Green Certificates: Eine dezentrale and interoperable Infrastruktur
